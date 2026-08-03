@@ -69,3 +69,41 @@ $base_path = rtrim(str_replace('\\', '/', (string) $base_path), '/');
 if ($base_path !== '') {
     $base_path .= '/';
 }
+
+/**
+ * Build a clean site route (no .php extension).
+ *
+ * Examples:
+ *   route() / route('index') / route('/')  → /
+ *   route('about-us')                      → /about-us
+ *   route('about-us.php')                  → /about-us
+ *   route('services/ai-development.php')   → /services/ai-development
+ *   route('index.php#portfolio')           → /#portfolio
+ *   route('#reviews')                      → /#reviews
+ */
+function route(string $path = ''): string
+{
+    $hash = '';
+    if (($hashPos = strpos($path, '#')) !== false) {
+        $hash = substr($path, $hashPos);
+        $path = substr($path, 0, $hashPos);
+    }
+
+    $path = str_replace('\\', '/', trim($path));
+    $path = preg_replace('/\.php$/i', '', $path) ?? $path;
+    $path = trim($path, '/');
+
+    if ($path === '' || strcasecmp($path, 'index') === 0) {
+        return '/' . ($hash !== '' ? $hash : '');
+    }
+
+    return '/' . $path . $hash;
+}
+
+/**
+ * HTML-escaped clean route for use in href/action attributes.
+ */
+function route_attr(string $path = ''): string
+{
+    return htmlspecialchars(route($path), ENT_QUOTES, 'UTF-8');
+}

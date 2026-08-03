@@ -69,6 +69,25 @@ Built as a PHP site with Composer dependencies (PHPMailer + phpdotenv), MySQL fo
 
 Configuration is loaded in `includes/config.php` via `vlucas/phpdotenv`.
 
+## Clean URL routing
+
+Apache (OSPanel) uses [`.htaccess`](.htaccess) so pages are served without `.php` in the browser:
+
+| Page | Clean route |
+| --- | --- |
+| Home | `/` |
+| About | `/about-us` |
+| Contact | `/contact-us` |
+| Services index | `/services` |
+| Service detail | `/services/ai-development` |
+| Hire index | `/hire` |
+| Hire detail | `/hire/react-developer` |
+| Form endpoint | `/form-handler` |
+
+- Old `*.php` URLs 301-redirect to the clean path.
+- Build links with `route('about-us')` or `route_attr('services/ai-development')` from [`includes/config.php`](includes/config.php) (both accept optional `.php` and `#hash` suffixes).
+- Requires Apache `mod_rewrite` and `AllowOverride` for `.htaccess` (default in OSPanel).
+
 ## Project structure
 
 ```
@@ -81,6 +100,7 @@ Configuration is loaded in `includes/config.php` via `vlucas/phpdotenv`.
 ├── includes/            # Shared PHP (config, DB, mail, header/footer, hire sections)
 ├── services/            # Individual service pages
 ├── .env.example         # Environment template (copy to .env)
+├── .htaccess            # Clean URL rewrites (Apache)
 ├── composer.json        # PHP dependencies
 ├── form-handler.php     # Contact/inquiry POST endpoint (JSON)
 ├── index.php            # Home

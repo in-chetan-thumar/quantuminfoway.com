@@ -68,7 +68,7 @@ function blog_img_src($p, $bp, $fallback) {
                 <p><?php echo htmlspecialchars($hero_sub); ?></p>
                 <div class="hero-actions">
                     <a href="#blog-grid" class="btn btn-primary btn-lg">Browse Articles</a>
-                    <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-ghost btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-ghost btn-lg">Talk to an Expert</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Topic highlights">
                     <span><?php echo count($posts); ?> articles</span>
@@ -140,7 +140,7 @@ function blog_img_src($p, $bp, $fallback) {
                 <p>Recent guides and comparisons — each linked to the Quantum Infoway service that matches the topic.</p>
             </div>
             <div class="blog-featured-layout">
-                <a class="blog-lead-card reveal reveal-up" href="<?php echo $bp . htmlspecialchars(isset($lead['service']) ? $lead['service'] : 'services/ai-development.php'); ?>">
+                <a class="blog-lead-card reveal reveal-up" href="<?php echo route_attr(isset($lead['service']) ? $lead['service'] : 'services/ai-development'); ?>">
                     <div class="blog-lead-media" style="background:<?php echo htmlspecialchars(isset($lead['tint']) ? $lead['tint'] : '#EEF0F8'); ?>">
                         <img src="<?php echo blog_img_src($lead, $bp, $fallback_img); ?>" alt="" loading="eager">
                     </div>
@@ -157,7 +157,7 @@ function blog_img_src($p, $bp, $fallback) {
                 </a>
                 <div class="blog-side-stack">
                     <?php foreach ($side as $p): ?>
-                    <a class="blog-side-card reveal reveal-up" href="<?php echo $bp . htmlspecialchars(isset($p['service']) ? $p['service'] : 'services/ai-development.php'); ?>">
+                    <a class="blog-side-card reveal reveal-up" href="<?php echo route_attr(isset($p['service']) ? $p['service'] : 'services/ai-development'); ?>">
                         <div class="blog-side-media" style="background:<?php echo htmlspecialchars(isset($p['tint']) ? $p['tint'] : '#EEF0F8'); ?>">
                             <img src="<?php echo blog_img_src($p, $bp, $fallback_img); ?>" alt="" loading="lazy">
                         </div>
@@ -200,7 +200,7 @@ function blog_img_src($p, $bp, $fallback) {
             <div class="blog-grid" id="blogGrid">
                 <?php foreach ($posts as $i => $p):
                     $slug = blog_tag_slug(isset($p['tag']) ? $p['tag'] : '');
-                    $href = $bp . htmlspecialchars(isset($p['service']) ? $p['service'] : 'services/ai-development.php');
+                    $href = route_attr(isset($p['service']) ? $p['service'] : 'services/ai-development');
                     $tint = isset($p['tint']) ? $p['tint'] : '#EEF0F8';
                 ?>
                 <a class="blog-card reveal reveal-up" href="<?php echo $href; ?>" data-tag="<?php echo htmlspecialchars($slug); ?>">
@@ -229,10 +229,10 @@ function blog_img_src($p, $bp, $fallback) {
     <section class="section dark-band" id="blog-cta">
         <div class="container">
             <div class="service-cta-band has-rays reveal reveal-up">
-                <img class="cta-rays" src="<?php echo $bp; ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
+                <img class="cta-rays" src="<?php echo htmlspecialchars($base_path); ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Building something these insights describe?</h2>
                 <p>Share what you are evaluating. We respond within one business day with a read on fit and a proposed next step.</p>
-                <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>

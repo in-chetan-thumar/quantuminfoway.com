@@ -8,13 +8,13 @@
                     <h2>Have an idea? <span class="gradient-text">Let's build it together.</span></h2>
                     <p>Free consultation — we respond within 24 hours.</p>
                 </div>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
 
             <!-- Link columns -->
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>index.php" class="brand footer-brand-logo">
+                    <a href="<?php echo route_attr(''); ?>" class="brand footer-brand-logo">
                         <span class="brand-mark">Q</span>
                         <span class="brand-text">Quantum<em>Infoway</em></span>
                     </a>
@@ -35,52 +35,52 @@
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>about-us.php">About Us</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>index.php#portfolio">Case Studies</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>index.php#reviews">Testimonials</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>blogs.php">Blogs</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact Us</a></li>
+                        <li><a href="<?php echo route_attr('about-us'); ?>">About Us</a></li>
+                        <li><a href="<?php echo route_attr('#portfolio'); ?>">Case Studies</a></li>
+                        <li><a href="<?php echo route_attr('#reviews'); ?>">Testimonials</a></li>
+                        <li><a href="<?php echo route_attr('blogs'); ?>">Blogs</a></li>
+                        <li><a href="<?php echo route_attr('contact-us'); ?>">Contact Us</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/custom-software-development.php">Custom Software</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/web-app-development.php">Web Apps</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/mobile-app-development.php">Mobile Apps</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/ui-ux-design.php">UI/UX Design</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/enterprise-application-development.php">Enterprise Apps</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/ai-development.php">AI Development</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/cloud-and-devops.php">Cloud &amp; DevOps</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/data-analytics-and-science.php">Data Analytics</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/google-workspace.php">Google Workspace</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/mvp-development.php">MVP Build &amp; Rescue</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services.php">View all services →</a></li>
+                        <li><a href="<?php echo route_attr('services/custom-software-development'); ?>">Custom Software</a></li>
+                        <li><a href="<?php echo route_attr('services/web-app-development'); ?>">Web Apps</a></li>
+                        <li><a href="<?php echo route_attr('services/mobile-app-development'); ?>">Mobile Apps</a></li>
+                        <li><a href="<?php echo route_attr('services/ui-ux-design'); ?>">UI/UX Design</a></li>
+                        <li><a href="<?php echo route_attr('services/enterprise-application-development'); ?>">Enterprise Apps</a></li>
+                        <li><a href="<?php echo route_attr('services/ai-development'); ?>">AI Development</a></li>
+                        <li><a href="<?php echo route_attr('services/cloud-and-devops'); ?>">Cloud &amp; DevOps</a></li>
+                        <li><a href="<?php echo route_attr('services/data-analytics-and-science'); ?>">Data Analytics</a></li>
+                        <li><a href="<?php echo route_attr('services/google-workspace'); ?>">Google Workspace</a></li>
+                        <li><a href="<?php echo route_attr('services/mvp-development'); ?>">MVP Build &amp; Rescue</a></li>
+                        <li><a href="<?php echo route_attr('services'); ?>">View all services →</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Industries</h4>
                     <ul>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/fintech-app-development.php">Fintech</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/healthcare-app-development.php">Healthcare</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/real-estate-app-development.php">Real Estate</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>services/travel-app-development.php">Travel &amp; Hospitality</a></li>
+                        <li><a href="<?php echo route_attr('services/fintech-app-development'); ?>">Fintech</a></li>
+                        <li><a href="<?php echo route_attr('services/healthcare-app-development'); ?>">Healthcare</a></li>
+                        <li><a href="<?php echo route_attr('services/real-estate-app-development'); ?>">Real Estate</a></li>
+                        <li><a href="<?php echo route_attr('services/travel-app-development'); ?>">Travel &amp; Hospitality</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Hire Developers</h4>
                     <ul>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire/laravel-developer.php">Laravel</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire/react-developer.php">React</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire/angular-developer.php">Angular</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire/node-js-developer.php">Node.js</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire/python-developer.php">Python</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire/full-stack-developer.php">Full Stack</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire/ai-engineer.php">AI Engineer</a></li>
-                        <li><a href="<?php echo htmlspecialchars($base_path); ?>hire.php">View all roles →</a></li>
+                        <li><a href="<?php echo route_attr('hire/laravel-developer'); ?>">Laravel</a></li>
+                        <li><a href="<?php echo route_attr('hire/react-developer'); ?>">React</a></li>
+                        <li><a href="<?php echo route_attr('hire/angular-developer'); ?>">Angular</a></li>
+                        <li><a href="<?php echo route_attr('hire/node-js-developer'); ?>">Node.js</a></li>
+                        <li><a href="<?php echo route_attr('hire/python-developer'); ?>">Python</a></li>
+                        <li><a href="<?php echo route_attr('hire/full-stack-developer'); ?>">Full Stack</a></li>
+                        <li><a href="<?php echo route_attr('hire/ai-engineer'); ?>">AI Engineer</a></li>
+                        <li><a href="<?php echo route_attr('hire'); ?>">View all roles →</a></li>
                     </ul>
                 </div>
 
@@ -111,9 +111,9 @@
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars(SITE_NAME); ?>. All rights reserved.</p>
                 <ul class="footer-legal">
-                    <li><a href="<?php echo htmlspecialchars($base_path); ?>privacy-policy.php">Privacy Policy</a></li>
-                    <li><a href="<?php echo htmlspecialchars($base_path); ?>terms-and-conditions.php">Terms &amp; Conditions</a></li>
-                    <li><a href="<?php echo htmlspecialchars($base_path); ?>sitemap.php">Sitemap</a></li>
+                    <li><a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a></li>
+                    <li><a href="<?php echo route_attr('terms-and-conditions'); ?>">Terms &amp; Conditions</a></li>
+                    <li><a href="<?php echo route_attr('sitemap'); ?>">Sitemap</a></li>
                 </ul>
             </div>
         </div>

@@ -156,7 +156,7 @@ foreach ($sitemap as $g) {
                 <p>A complete index of company pages, services, hire roles, insights, and legal documents.</p>
                 <div class="hero-actions">
                     <a href="#sitemap-index" class="btn btn-primary btn-lg">Browse index</a>
-                    <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-ghost btn-lg">Contact Us</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-ghost btn-lg">Contact Us</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Sitemap stats">
                     <span><?php echo (int) $total; ?> links</span>
@@ -173,7 +173,7 @@ foreach ($sitemap as $g) {
                         <li><a href="#hire-ai">Hire roles</a></li>
                         <li><a href="#legal">Legal</a></li>
                     </ul>
-                    <a href="<?php echo $bp; ?>services.php">View all services →</a>
+                    <a href="<?php echo route_attr('services'); ?>">View all services →</a>
                 </div>
             </div>
         </div>
@@ -185,7 +185,7 @@ foreach ($sitemap as $g) {
             <a href="#services-ai">Services</a>
             <a href="#hire-ai">Hire</a>
             <a href="#legal">Legal</a>
-            <a href="<?php echo $bp; ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -207,7 +207,7 @@ foreach ($sitemap as $g) {
                     <ul class="sitemap-list">
                         <?php foreach ($group['links'] as $link): ?>
                         <li>
-                            <a href="<?php echo $bp . htmlspecialchars($link[0]); ?>">
+                            <a href="<?php echo route_attr($link[0]); ?>">
                                 <span><?php echo htmlspecialchars($link[1]); ?></span>
                                 <em aria-hidden="true">→</em>
                             </a>
@@ -223,10 +223,10 @@ foreach ($sitemap as $g) {
     <section class="section dark-band" id="sitemap-cta">
         <div class="container">
             <div class="service-cta-band has-rays reveal reveal-up">
-                <img class="cta-rays" src="<?php echo $bp; ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
+                <img class="cta-rays" src="<?php echo htmlspecialchars($base_path); ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Cannot find what you need?</h2>
                 <p>Tell us what you are evaluating. We respond within one business day.</p>
-                <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>

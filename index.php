@@ -19,7 +19,7 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="hero-rotator">We craft <span class="rotator-word gradient-text" id="wordRotator">Web Applications</span><span class="caret"></span></div>
                 <p>We design and build AI-powered digital products for startups, mid-market companies, and enterprises, delivering intelligent solutions tailored to your business.</p>
                 <div class="hero-actions">
-                    <a href="contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="/contact-us" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#services" class="btn btn-ghost btn-lg">Explore Services</a>
                 </div>
                 <div class="hero-pills" aria-label="Core services">
@@ -106,7 +106,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Predictive interface design</li>
                         <li>Smart prototyping</li>
                     </ul>
-                    <a href="services/ui-ux-design.php" class="pill-link">Learn more →</a>
+                    <a href="/services/ui-ux-design" class="pill-link">Learn more →</a>
                 </article>
                 <article class="service-card reveal reveal-up">
                     <div class="service-icon tone-blue">
@@ -119,7 +119,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Internal tools &amp; operational systems</li>
                         <li>Customer-facing mobile apps</li>
                     </ul>
-                    <a href="services/web-mobile-applications.php" class="pill-link">Learn more →</a>
+                    <a href="/services/web-mobile-applications" class="pill-link">Learn more →</a>
                 </article>
                 <article class="service-card reveal reveal-up">
                     <div class="service-icon tone-cyan">
@@ -132,7 +132,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>CI/CD &amp; container orchestration</li>
                         <li>AI-based monitoring &amp; intelligent alerting</li>
                     </ul>
-                    <a href="services/cloud-and-devops.php" class="pill-link">Learn more →</a>
+                    <a href="/services/cloud-and-devops" class="pill-link">Learn more →</a>
                 </article>
                 <article class="service-card reveal reveal-up">
                     <div class="service-icon tone-pink">
@@ -145,7 +145,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Automated test execution</li>
                         <li>Intelligent regression &amp; edge case detection</li>
                     </ul>
-                    <a href="services/ai-powered-qa-testing.php" class="pill-link">Learn more →</a>
+                    <a href="/services/ai-powered-qa-testing" class="pill-link">Learn more →</a>
                 </article>
             </div>
         </div>
@@ -171,7 +171,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Smart process handling &amp; escalation</li>
                         <li>Human-in-the-loop design</li>
                     </ul>
-                    <a href="services/agentic-ai.php" class="pill-link">Learn more →</a>
+                    <a href="/services/agentic-ai" class="pill-link">Learn more →</a>
                 </article>
                 <article class="service-card reveal reveal-left">
                     <div class="service-icon tone-blue">
@@ -184,7 +184,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>RAG pipelines &amp; knowledge systems</li>
                         <li>Computer vision &amp; NLP</li>
                     </ul>
-                    <a href="services/ai-integration.php" class="pill-link">Learn more →</a>
+                    <a href="/services/ai-integration" class="pill-link">Learn more →</a>
                 </article>
                 <article class="service-card reveal reveal-left">
                     <div class="service-icon tone-cyan">
@@ -197,7 +197,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Multilingual &amp; multichannel support</li>
                         <li>Voice &amp; text automation</li>
                     </ul>
-                    <a href="services/conversational-ai.php" class="pill-link">Learn more →</a>
+                    <a href="/services/conversational-ai" class="pill-link">Learn more →</a>
                 </article>
                 <article class="service-card reveal reveal-left">
                     <div class="service-icon tone-pink">
@@ -210,7 +210,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Team-specific prompt engineering</li>
                         <li>Function-specific workflow design</li>
                     </ul>
-                    <a href="services/claude-code-ai-for-teams.php" class="pill-link">Learn more →</a>
+                    <a href="/services/claude-code-ai-for-teams" class="pill-link">Learn more →</a>
                 </article>
             </div>
         </div>
@@ -236,7 +236,7 @@ require_once __DIR__ . '/includes/header.php';
                         <li>Functional &amp; regression testing</li>
                         <li>Performance validation</li>
                     </ul>
-                    <a href="services/ai-powered-qa-testing.php" class="pill-link">Learn more →</a>
+                    <a href="/services/ai-powered-qa-testing" class="pill-link">Learn more →</a>
                 </article>
                 <article class="service-card reveal reveal-up">
                     <div class="service-icon tone-blue">
@@ -767,11 +767,11 @@ require_once __DIR__ . '/includes/header.php';
                     <span class="eyebrow">From the Blog</span>
                     <h2>Technology <span class="gradient-text">Insights</span></h2>
                 </div>
-                <a href="blogs.php" class="btn btn-ghost">View All →</a>
+                <a href="/blogs" class="btn btn-ghost">View All →</a>
             </div>
             <div class="insights-grid">
                 <?php foreach ($home_insights as $post): ?>
-                <a href="<?php echo htmlspecialchars($post['service']); ?>" class="insight-card reveal reveal-up">
+                <a href="<?php echo route_attr($post['service']); ?>" class="insight-card reveal reveal-up">
                     <div class="insight-media" style="--insight-tint: <?php echo htmlspecialchars($post['tint']); ?>">
                         <?php if (!empty($post['image'])): ?>
                         <img src="<?php echo htmlspecialchars($post['image']); ?>" alt="" loading="lazy" width="640" height="360">
@@ -813,9 +813,9 @@ require_once __DIR__ . '/includes/header.php';
                 </ul>
             </div>
 
-            <form class="inquiry-form reveal reveal-right" id="inquiryForm" action="form-handler.php" method="post" novalidate>
+            <form class="inquiry-form reveal reveal-right" id="inquiryForm" action="/form-handler" method="post" novalidate>
                 <h3>Talk to an Expert</h3>
-                <p class="home-form-note">Or open the <a href="contact-us.php">full contact page</a> for more details.</p>
+                <p class="home-form-note">Or open the <a href="/contact-us">full contact page</a> for more details.</p>
                 <input type="hidden" name="page_source" value="home">
                 <div class="form-row">
                     <label for="name">Full Name *</label>
@@ -853,7 +853,7 @@ require_once __DIR__ . '/includes/header.php';
                     <label for="qx_hp_field">Leave blank</label>
                     <input type="text" id="qx_hp_field" name="qx_hp_field" value="" tabindex="-1" autocomplete="new-password" inputmode="none">
                 </div>
-                <p class="form-privacy">By submitting, you agree to our <a href="privacy-policy.php">Privacy Policy</a> and <a href="terms-and-conditions.php">Terms &amp; Conditions</a>.</p>
+                <p class="form-privacy">By submitting, you agree to our <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms-and-conditions">Terms &amp; Conditions</a>.</p>
                 <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
                     <span class="btn-text">Send Inquiry</span>
                     <span class="btn-loading" aria-hidden="true">

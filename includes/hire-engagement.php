@@ -71,7 +71,7 @@ $bp = htmlspecialchars(isset($base_path) ? $base_path : '');
                 <h3>Tell us which model fits — we will recommend the leanest path.</h3>
                 <p>Quantum Infoway scopes every engagement before any quote becomes final.</p>
             </div>
-            <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary">Talk to an Expert</a>
+            <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary">Talk to an Expert</a>
         </div>
     </div>
 </section>

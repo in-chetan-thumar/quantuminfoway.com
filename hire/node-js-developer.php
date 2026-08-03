@@ -45,7 +45,7 @@ $hire_related = [
                 <h1>Hire Node.js Developers</h1>
                 <p>Dedicated Node.js developers who build production-grade APIs, microservices, and real-time applications. AI-augmented engineering for faster delivery and fewer production issues.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What They Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -92,7 +92,7 @@ $hire_related = [
             <a href="#pricing">Pricing</a>
             <a href="#work">Work</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -181,7 +181,7 @@ $hire_related = [
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Ready to Hire a Node.js Developer? Let's Talk.</h2>
                 <p>Quantum Infoway matches you with vetted Node.js developers who care about production quality and clear communication.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>

@@ -20,7 +20,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <h1>AI Automation Company</h1>
                 <p>We automate the work that used to need human judgment, from document processing to support triage to internal knowledge, with agentic workflows, retrieval, and human oversight built in.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What We Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -67,7 +67,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <a href="#work">Work</a>
             <a href="#guide">Guide</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -124,7 +124,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <h3>Automate your highest friction process</h3>
                     <p>Tell us where your team loses the most time. We will get back to you within one business day.</p>
                 </div>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -231,7 +231,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Automate your highest friction process</h2>
                 <p>Tell us where your team loses the most time. We will get back to you within one business day.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -250,9 +250,9 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>How do we get started with AI automation?</summary><div class="faq-body">Start with a scoped pilot on your highest friction process, prove the outcome on real data, then expand from there. Data preparation often takes 30 to 40 percent of the timeline, and payback commonly lands within 2 to 6 months. We handle the pilot through to production and hand over code and infrastructure you own.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-development.php"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/agentic-ai.php"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-integration.php"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-development'); ?>"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/agentic-ai'); ?>"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-integration'); ?>"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
             </div>
         </div>
     </section>

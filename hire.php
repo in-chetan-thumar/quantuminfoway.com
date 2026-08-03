@@ -153,7 +153,7 @@ $faqs = [
                 <h1>Hire top 1% AI-native developers across <span class="gradient-text">30 stacks</span></h1>
                 <p>Skip the recruiting funnel. Pre-vetted developers and engineers fluent in AI-native workflows (Claude Code, agentic systems, RAG), across web, mobile, no-code, and cloud. Less than 1% of applicants make our team. $25–$50/hour all-in, with a 30-day replacement guarantee.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#role-directory" class="btn btn-ghost btn-lg">Browse Roles</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -201,7 +201,7 @@ $faqs = [
             <a href="#pricing">Pricing</a>
             <a href="#timezones">Time Zones</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo $bp; ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -262,7 +262,7 @@ $faqs = [
                         $dir_ico_i++;
                         $idx = str_pad((string) ($ci + 1), 2, '0', STR_PAD_LEFT);
                     ?>
-                    <a class="dir-card reveal reveal-up" href="<?php echo $bp . htmlspecialchars($c[0]); ?>">
+                    <a class="dir-card reveal reveal-up" href="<?php echo route_attr($c[0]); ?>">
                         <div class="dir-card-top">
                             <span class="dir-card-ico"><img src="<?php echo $si . $ico; ?>" alt=""></span>
                             <span class="dir-card-index"><?php echo $idx; ?></span>
@@ -362,10 +362,10 @@ $faqs = [
     <section class="section dark-band" id="services-cross">
         <div class="container">
             <div class="service-cta-band has-rays reveal reveal-up">
-                <img class="cta-rays" src="<?php echo $bp; ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
+                <img class="cta-rays" src="<?php echo htmlspecialchars($base_path); ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Need a project team instead of individual engineers?</h2>
                 <p>Sometimes you need outcomes, not bodies. Browse specialised services — managed project teams that deliver end-to-end.</p>
-                <a href="<?php echo $bp; ?>services.php" class="btn btn-primary btn-lg">See All Services</a>
+                <a href="<?php echo route_attr('services'); ?>" class="btn btn-primary btn-lg">See All Services</a>
             </div>
         </div>
     </section>
@@ -390,10 +390,10 @@ $faqs = [
     <section class="section dark-band" id="service-cta">
         <div class="container">
             <div class="service-cta-band has-rays reveal reveal-up">
-                <img class="cta-rays" src="<?php echo $bp; ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
+                <img class="cta-rays" src="<?php echo htmlspecialchars($base_path); ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Tell us what you are hiring for</h2>
                 <p>Share the role, stack, and timeline. We will respond within one business day with a proposed engineer match and next steps.</p>
-                <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>

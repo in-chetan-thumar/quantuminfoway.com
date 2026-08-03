@@ -17,7 +17,7 @@ if (!isset($hire_insights) || !is_array($hire_insights) || !count($hire_insights
         </div>
         <div class="related-strip hire-insights-strip reveal reveal-up">
             <?php foreach ($hire_insights as $ins): ?>
-            <a class="related-card" href="<?php echo $bp . htmlspecialchars($ins[0]); ?>">
+            <a class="related-card" href="<?php echo route_attr($ins[0]); ?>">
                 <span><?php echo htmlspecialchars(isset($ins[2]) ? $ins[2] : 'Guide'); ?></span>
                 <strong><?php echo htmlspecialchars($ins[1]); ?></strong>
                 <?php if (!empty($ins[3])): ?>

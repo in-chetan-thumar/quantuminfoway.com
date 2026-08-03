@@ -45,7 +45,7 @@ $hire_related = [
                 <h1>Hire Python Developers for Backend Systems, AI, and <span class="gradient-text">Data Engineering</span></h1>
                 <p>Our Python developers build everything from REST APIs to machine learning pipelines. AI-assisted development practices ensure clean, testable code whether we are building a Django application or training a custom model.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What They Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -92,7 +92,7 @@ $hire_related = [
             <a href="#pricing">Pricing</a>
             <a href="#work">Work</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -181,7 +181,7 @@ $hire_related = [
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Your Python Project, Built by Specialists</h2>
                 <p>Quantum Infoway matches you with vetted Python developers who care about production quality and clear communication.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>

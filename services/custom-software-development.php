@@ -20,7 +20,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <h1>Custom Software Development That Ships <span class="gradient-text">and Scales</span></h1>
                 <p>Software built for your exact workflow: web platforms, internal systems, integrations, and AI powered products. Published pricing and delivery measured in weeks.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What We Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -67,7 +67,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <a href="#work">Work</a>
             <a href="#guide">Guide</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -124,7 +124,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <h3>Let's Build The Next Big Thing</h3>
                     <p>Fill in the form or schedule a meeting to map out a path to success.</p>
                 </div>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -231,7 +231,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Let's Build The Next Big Thing</h2>
                 <p>Fill in the form or schedule a meeting to map out a path to success.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -252,10 +252,10 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-development.php"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/agentic-ai.php"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-automation.php"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-integration.php"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-development'); ?>"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/agentic-ai'); ?>"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-automation'); ?>"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-integration'); ?>"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
             </div>
         </div>
     </section>

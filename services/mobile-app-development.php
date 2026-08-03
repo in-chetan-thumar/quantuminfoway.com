@@ -20,7 +20,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <h1>Mobile Apps Built With AI-Native <span class="gradient-text">Engineering</span></h1>
                 <p>We build native and cross-platform mobile apps that perform in production, not just in demos. AI-augmented development means faster delivery, smarter testing, and apps that scale from day one.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What We Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -67,7 +67,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <a href="#work">Work</a>
             <a href="#guide">Guide</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -124,7 +124,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <h3>Let's Build The Next Big Thing</h3>
                     <p>Fill in the form or schedule a meeting to map out a path to success.</p>
                 </div>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -245,7 +245,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Let's Build The Next Big Thing</h2>
                 <p>Fill in the form or schedule a meeting to map out a path to success.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -262,10 +262,10 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>What is the typical cost of a mobile app?</summary><div class="faq-body">Cost depends on complexity, platform choice, and features. We offer flexible engagement models. Contact us for a detailed estimate based on your requirements.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-development.php"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/agentic-ai.php"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-automation.php"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-integration.php"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-development'); ?>"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/agentic-ai'); ?>"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-automation'); ?>"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-integration'); ?>"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
             </div>
         </div>
     </section>

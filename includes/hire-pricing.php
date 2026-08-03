@@ -32,7 +32,7 @@ $bp = htmlspecialchars(isset($base_path) ? $base_path : '');
             </div>
             <div class="hire-price-note">
                 <p><?php echo htmlspecialchars($hire_pricing_note); ?></p>
-                <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary">Get a scoped quote</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary">Get a scoped quote</a>
             </div>
         </div>
     </div>

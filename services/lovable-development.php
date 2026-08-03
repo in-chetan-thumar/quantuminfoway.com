@@ -20,7 +20,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <h1>Take Your Lovable App to <span class="gradient-text">Production</span></h1>
                 <p>Lovable gets you from idea to working app in days. We make that app hold up, with security audits, Supabase scaling, tests and CI, code you own on GitHub, and a clean path off Lovable Cloud when you need one. Build with us from day one or bring us the app you already shipped.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What We Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -67,7 +67,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <a href="#work">Work</a>
             <a href="#guide">Guide</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -124,7 +124,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <h3>Start with a free architecture and security audit of your Lovable app.</h3>
                     <p>Tell Quantum Infoway about your workflow — we will propose a scoped next step.</p>
                 </div>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -213,7 +213,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Start with a free architecture and security audit of your Lovable app.</h2>
                 <p>Tell Quantum Infoway about your workflow — we will propose a scoped next step.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -234,10 +234,10 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>What does a Lovable rescue cost?</summary><div class="faq-body">It depends on what the audit finds, which is why the audit comes first and is free. Urgent security fixes are usually a matter of days. A full hardening pass with tests, CI, and monitoring typically runs a few weeks at published blended rates of $25 to $50 per hour. You get a fixed scope and price after the audit, so there are no surprises.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-development.php"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/agentic-ai.php"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-automation.php"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-integration.php"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-development'); ?>"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/agentic-ai'); ?>"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-automation'); ?>"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-integration'); ?>"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
             </div>
         </div>
     </section>

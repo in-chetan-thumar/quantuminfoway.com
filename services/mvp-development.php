@@ -20,7 +20,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <h1>Build Your MVP, or Rescue the One <span class="gradient-text">You Shipped</span></h1>
                 <p>We build production grade MVPs, and we scale, rebuild, secure, and take over products built on no code tools like Supabase, Lovable, Xano, and WeWeb or vibe coded with Cursor, Claude Code, and Copilot. From prototype to production, with engineering that holds up as you grow.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What We Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -67,7 +67,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <a href="#work">Work</a>
             <a href="#guide">Guide</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -124,7 +124,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <h3>Start Your MVP Build or Rescue</h3>
                     <p>Tell us about your product and where it is stuck. We will get back to you within one business day.</p>
                 </div>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -245,7 +245,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Start Your MVP Build or Rescue</h2>
                 <p>Tell us about your product and where it is stuck. We will get back to you within one business day.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>
@@ -266,10 +266,10 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>Can you move my product off a no code platform?</summary><div class="faq-body">Yes. When you outgrow a no code or low code platform, we migrate the data and rebuild the logic on a stack you control, usually a Xano or Node backend with a React or Next front end. We avoid a hard cutover, so the live product keeps running through the move.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-development.php"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/agentic-ai.php"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-automation.php"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
-                <a class="related-card" href="<?php echo htmlspecialchars($base_path); ?>services/ai-integration.php"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-development'); ?>"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/agentic-ai'); ?>"><span>Related</span><strong>AI Agents →</strong><p>AI Automation</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-automation'); ?>"><span>Related</span><strong>AI Automation →</strong><p>AI Integration</p></a>
+                <a class="related-card" href="<?php echo route_attr('services/ai-integration'); ?>"><span>Related</span><strong>AI Integration →</strong><p>Conversational AI</p></a>
             </div>
         </div>
     </section>

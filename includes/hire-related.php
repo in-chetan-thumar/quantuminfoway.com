@@ -15,7 +15,7 @@ if (!isset($hire_related) || !is_array($hire_related)) {
 ?>
 <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
     <?php foreach ($hire_related as $r): ?>
-    <a class="related-card" href="<?php echo $bp . htmlspecialchars($r[0]); ?>">
+    <a class="related-card" href="<?php echo route_attr($r[0]); ?>">
         <span>Related</span>
         <strong><?php echo htmlspecialchars($r[1]); ?></strong>
         <p><?php echo htmlspecialchars($r[2]); ?></p>

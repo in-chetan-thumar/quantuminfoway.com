@@ -119,7 +119,7 @@ $certs = [
                 <h1>We build and scale custom <span class="gradient-text">digital products</span></h1>
                 <p>Quantum Infoway is an AI-native software development company headquartered in Mumbai, founded in 2014, serving clients in 13+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#proof" class="btn btn-ghost btn-lg">See proof</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Company highlights">
@@ -161,7 +161,7 @@ $certs = [
             <a href="#how-we-work">How we work</a>
             <a href="#life">Life</a>
             <a href="#leadership">Leadership</a>
-            <a href="<?php echo $bp; ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -174,7 +174,7 @@ $certs = [
             </div>
             <div class="about-proof-grid">
                 <?php foreach ($proof as $p): ?>
-                <a class="about-proof-card reveal reveal-up" href="<?php echo $bp; ?>index.php#portfolio">
+                <a class="about-proof-card reveal reveal-up" href="<?php echo route_attr('#portfolio'); ?>">
                     <div class="about-proof-media">
                         <img src="<?php echo $si . htmlspecialchars($p['img']); ?>" alt="" loading="lazy">
                     </div>
@@ -330,10 +330,10 @@ $certs = [
     <section class="section dark-band" id="about-cta">
         <div class="container">
             <div class="service-cta-band has-rays reveal reveal-up">
-                <img class="cta-rays" src="<?php echo $bp; ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
+                <img class="cta-rays" src="<?php echo htmlspecialchars($base_path); ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Let&rsquo;s build the next big thing</h2>
                 <p>Fill in the form or talk to our team to map out a path to success.</p>
-                <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>

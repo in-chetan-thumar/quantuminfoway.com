@@ -20,7 +20,7 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>How Quantum Infoway collects, uses, shares, and protects personal data when you visit our website or contact us through it.</p>
                 <div class="hero-actions">
                     <a href="#legal-body" class="btn btn-primary btn-lg">Read the policy</a>
-                    <a href="<?php echo $bp; ?>terms-and-conditions.php" class="btn btn-ghost btn-lg">Terms &amp; Conditions</a>
+                    <a href="<?php echo route_attr('terms-and-conditions'); ?>" class="btn btn-ghost btn-lg">Terms &amp; Conditions</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Policy highlights">
                     <span>India data fiduciary</span>
@@ -218,8 +218,8 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>We may update this Privacy Policy from time to time. Material changes will be posted on this page with a new effective date. Please review this page periodically. Continued use of the Site after an update constitutes acknowledgement of the updated policy.</p>
 
                 <h2 id="contact">12. Contact</h2>
-                <p>For any question about this Privacy Policy or our data practices, contact <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, call <a href="tel:+918511108041"><?php echo $phone; ?></a>, or use our <a href="<?php echo $bp; ?>contact-us.php">contact page</a>.</p>
-                <p class="legal-cross">Also see our <a href="<?php echo $bp; ?>terms-and-conditions.php">Terms &amp; Conditions</a>.</p>
+                <p>For any question about this Privacy Policy or our data practices, contact <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, call <a href="tel:+918511108041"><?php echo $phone; ?></a>, or use our <a href="<?php echo route_attr('contact-us'); ?>">contact page</a>.</p>
+                <p class="legal-cross">Also see our <a href="<?php echo route_attr('terms-and-conditions'); ?>">Terms &amp; Conditions</a>.</p>
             </article>
         </div>
     </section>
@@ -227,10 +227,10 @@ $phone = htmlspecialchars(SITE_PHONE);
     <section class="section dark-band" id="legal-cta">
         <div class="container">
             <div class="service-cta-band has-rays reveal reveal-up">
-                <img class="cta-rays" src="<?php echo $bp; ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
+                <img class="cta-rays" src="<?php echo htmlspecialchars($base_path); ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Have a privacy or data question?</h2>
                 <p>Reach out and we will respond within one business day.</p>
-                <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Contact Us</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Contact Us</a>
             </div>
         </div>
     </section>

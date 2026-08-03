@@ -75,8 +75,8 @@ require_once __DIR__ . '/includes/header.php';
                     <p><?php echo htmlspecialchars(SITE_NAME); ?> has delivered for <strong>150+ clients</strong> across <strong>13+ countries</strong>, with <strong>12+ years</strong> of shipping websites, web apps, mobile products, and AI-powered platforms for startups, mid-market companies, and enterprises.</p>
                     <p>We build with modern stacks such as <strong>Laravel, PHP, React, Angular, Node.js, WordPress, iOS, and Android</strong> — plus AI integrations, agents, and conversational experiences.</p>
                     <div class="contact-consult-links">
-                        <a href="index.php#services" class="pill-link">Product Development →</a>
-                        <a href="index.php#ai-services" class="pill-link">AI Services →</a>
+                        <a href="/#services" class="pill-link">Product Development →</a>
+                        <a href="/#ai-services" class="pill-link">AI Services →</a>
                     </div>
                     <div class="contact-async">
                         <span class="contact-async-label">Prefer async?</span>
@@ -161,7 +161,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <form class="inquiry-form contact-page-form reveal reveal-right" id="contactPageForm" action="form-handler.php" method="post" novalidate>
+            <form class="inquiry-form contact-page-form reveal reveal-right" id="contactPageForm" action="/form-handler" method="post" novalidate>
                 <div class="contact-form-head">
                     <span class="contact-form-badge">Free consultation</span>
                     <h3>Talk to an Expert</h3>
@@ -228,7 +228,7 @@ require_once __DIR__ . '/includes/header.php';
                     <label for="qx_hp_field_contact">Leave blank</label>
                     <input type="text" id="qx_hp_field_contact" name="qx_hp_field" value="" tabindex="-1" autocomplete="new-password" inputmode="none">
                 </div>
-                <p class="form-privacy">By submitting, you agree to our <a href="<?php echo htmlspecialchars(isset($base_path) ? $base_path : ''); ?>privacy-policy.php">Privacy Policy</a> and <a href="<?php echo htmlspecialchars(isset($base_path) ? $base_path : ''); ?>terms-and-conditions.php">Terms &amp; Conditions</a>.</p>
+                <p class="form-privacy">By submitting, you agree to our <a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a> and <a href="<?php echo route_attr('terms-and-conditions'); ?>">Terms &amp; Conditions</a>.</p>
                 <button type="submit" class="btn btn-primary btn-block" id="contactSubmitBtn">
                     <span class="btn-text">Talk to an Expert</span>
                     <span class="btn-loading" aria-hidden="true">

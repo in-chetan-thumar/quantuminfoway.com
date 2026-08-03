@@ -362,7 +362,7 @@ function build_thank_you_email(array $data, string $logoSrc = ''): array
         . '</tr></table>'
         . '<p style="margin:0 0 22px;font-size:14px;line-height:1.65;color:#5d6780;">Want to add timeline, budget, or reference links? Just reply to this email — it reaches our team directly.</p>'
         . '<p style="margin:0 0 24px;">'
-        . email_primary_button(email_site_url() . '/contact-us.php', 'Explore more with us')
+        . email_primary_button(email_site_url() . '/contact-us', 'Explore more with us')
         . '</p>'
         . '<p style="margin:0;font-size:15px;line-height:1.6;color:#10162b;">Warm regards,<br><strong>The ' . email_escape(SITE_NAME) . ' Team</strong></p>';
 

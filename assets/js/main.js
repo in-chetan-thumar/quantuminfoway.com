@@ -521,7 +521,7 @@
         if (hp) hp.value = "";
 
         var formData = new FormData(form);
-        var endpoint = form.getAttribute("action") || "form-handler.php";
+        var endpoint = form.getAttribute("action") || '/form-handler';
         var res = await fetch(endpoint, {
           method: "POST",
           body: formData,

@@ -20,7 +20,7 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>These terms govern your access to and use of the Quantum Infoway website and its content.</p>
                 <div class="hero-actions">
                     <a href="#legal-body" class="btn btn-primary btn-lg">Read the terms</a>
-                    <a href="<?php echo $bp; ?>privacy-policy.php" class="btn btn-ghost btn-lg">Privacy Policy</a>
+                    <a href="<?php echo route_attr('privacy-policy'); ?>" class="btn btn-ghost btn-lg">Privacy Policy</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Terms highlights">
                     <span>Site use only</span>
@@ -85,7 +85,7 @@ $phone = htmlspecialchars(SITE_PHONE);
 
                 <h2 id="who">1. Who we are and what these terms cover</h2>
                 <p>This website (the “Site”) is owned and operated by Quantum Infoway (“Quantum Infoway”, “we”, “us”, or “our”), a technology services company with its principal place of business in India.</p>
-                <p>These Terms &amp; Conditions (“Terms”) govern your access to and use of the Site and its content. By accessing or using the Site, you agree to be bound by these Terms and by our <a href="<?php echo $bp; ?>privacy-policy.php">Privacy Policy</a>, which is incorporated into these Terms by reference. If you do not agree, please do not use the Site.</p>
+                <p>These Terms &amp; Conditions (“Terms”) govern your access to and use of the Site and its content. By accessing or using the Site, you agree to be bound by these Terms and by our <a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a>, which is incorporated into these Terms by reference. If you do not agree, please do not use the Site.</p>
                 <p>These Terms govern the Site only. Any services we provide to clients are governed by separate written agreements, such as a master services agreement, statement of work, or proposal, and nothing on this Site forms part of any such agreement unless expressly stated in it. The Site is an informational and marketing website. It does not require you to create or maintain an account, and we do not process payments or financial transactions through it.</p>
 
                 <h2 id="eligibility">2. Eligibility and jurisdiction</h2>
@@ -124,7 +124,7 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>The content on this Site, including blog articles, guides, pricing estimates, calculators, statistics, and case studies, is provided for general information only. It does not constitute professional, technical, legal, financial, or any other advice, and it is not a substitute for advice tailored to your situation. Cost figures and calculator outputs are indicative estimate ranges, not offers or quotations, and any engagement is subject to a separately agreed scope and contract. Case study results describe specific past projects and are not a promise of similar outcomes. No client or professional relationship is created by reading the Site or by contacting us through it.</p>
 
                 <h2 id="submissions">8. Submissions through the Site</h2>
-                <p>When you submit information through our contact form or other channels on the Site, you confirm that the information is accurate and that you are authorised to share it. Our handling of personal information in such submissions is described in our <a href="<?php echo $bp; ?>privacy-policy.php">Privacy Policy</a>. Ideas, feedback, or suggestions you choose to send us about the Site or our services may be used by us without restriction or obligation, except for personal information, which is always handled under the Privacy Policy.</p>
+                <p>When you submit information through our contact form or other channels on the Site, you confirm that the information is accurate and that you are authorised to share it. Our handling of personal information in such submissions is described in our <a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a>. Ideas, feedback, or suggestions you choose to send us about the Site or our services may be used by us without restriction or obligation, except for personal information, which is always handled under the Privacy Policy.</p>
 
                 <h2 id="third-party">9. Third-party sites and services</h2>
                 <p>The Site contains links to third-party websites and services, including review platforms, social networks, messaging apps, and scheduling tools. These are provided for convenience only. We do not control and are not responsible for the content, availability, terms, or privacy practices of any third party. Your use of any third-party site or service is at your own risk and subject to the terms of that third party.</p>
@@ -153,8 +153,8 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>If any provision of these Terms is held invalid or unenforceable, the remaining provisions remain in full force. Our failure to enforce any provision is not a waiver of it. These Terms, together with the Privacy Policy, are the entire agreement between you and Quantum Infoway regarding use of the Site. We are not liable for any failure to perform due to causes beyond our reasonable control.</p>
 
                 <h2 id="contact">17. Contact</h2>
-                <p>Questions about these Terms can be sent to <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, by phone at <a href="tel:+918511108041"><?php echo $phone; ?></a>, or via our <a href="<?php echo $bp; ?>contact-us.php">contact page</a>.</p>
-                <p class="legal-cross">Also see our <a href="<?php echo $bp; ?>privacy-policy.php">Privacy Policy</a>.</p>
+                <p>Questions about these Terms can be sent to <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, by phone at <a href="tel:+918511108041"><?php echo $phone; ?></a>, or via our <a href="<?php echo route_attr('contact-us'); ?>">contact page</a>.</p>
+                <p class="legal-cross">Also see our <a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a>.</p>
             </article>
         </div>
     </section>
@@ -162,10 +162,10 @@ $phone = htmlspecialchars(SITE_PHONE);
     <section class="section dark-band" id="legal-cta">
         <div class="container">
             <div class="service-cta-band has-rays reveal reveal-up">
-                <img class="cta-rays" src="<?php echo $bp; ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
+                <img class="cta-rays" src="<?php echo htmlspecialchars($base_path); ?>assets/images/services/brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Ready to talk about a project?</h2>
                 <p>Share what you are building. We respond within one business day.</p>
-                <a href="<?php echo $bp; ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>

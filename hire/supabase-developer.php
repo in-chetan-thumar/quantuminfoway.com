@@ -45,7 +45,7 @@ $hire_related = [
                 <h1>Hire Supabase Developers for Modern <span class="gradient-text">Backend Development</span></h1>
                 <p>Our Supabase developers build scalable backends with PostgreSQL databases, real-time subscriptions, authentication, and edge functions. The open-source Firebase alternative with the full power of SQL.</p>
                 <div class="hero-actions">
-                    <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                    <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What They Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
@@ -92,7 +92,7 @@ $hire_related = [
             <a href="#pricing">Pricing</a>
             <a href="#work">Work</a>
             <a href="#faq">FAQ</a>
-            <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php">Contact</a>
+            <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
 
@@ -181,7 +181,7 @@ $hire_related = [
                 <img class="cta-rays" src="<?php echo $si; ?>brand__light-rays-effect-bg.webp" alt="" aria-hidden="true">
                 <h2>Your Backend, Powered by PostgreSQL</h2>
                 <p>Quantum Infoway matches you with vetted Supabase developers who care about production quality and clear communication.</p>
-                <a href="<?php echo htmlspecialchars($base_path); ?>contact-us.php" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
             </div>
         </div>
     </section>
