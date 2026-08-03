@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Quantum Infoway">
+  <defs>
+    <linearGradient id="q" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7050ff"/>
+      <stop offset="100%" stop-color="#2f6bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" ry="18" fill="url(#q)"/>
+  <text
+    x="32"
+    y="34"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    fill="#ffffff"
+    font-family="Sora, Inter, Arial, sans-serif"
+    font-size="34"
+    font-weight="800"
+  >Q</text>
+</svg>

@@ -616,6 +616,14 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
     0 8px 22px -6px rgba(80, 90, 255, 0.65) !important;
 }
 
+.nav-cta.active {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.3) inset,
+    0 0 0 2px rgba(196, 181, 253, 0.55),
+    0 8px 22px -6px rgba(80, 90, 255, 0.75) !important;
+  filter: brightness(1.08);
+}
+
 .nav-cta::after {
   display: none;
 }
@@ -881,7 +889,8 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
     }
   }
 
-  .mega-link:hover {
+  .mega-link:hover,
+  .mega-link.active {
     background: rgba(109, 77, 246, 0.12);
     color: #fff;
     transform: translateX(3px);
@@ -907,7 +916,8 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
     display: block;
   }
 
-  .mega-link:hover .mega-ico {
+  .mega-link:hover .mega-ico,
+  .mega-link.active .mega-ico {
     background: rgba(109, 77, 246, 0.2);
     border-color: rgba(139, 92, 246, 0.35);
     color: #c4b5fd;
@@ -2743,9 +2753,14 @@ body.is-loaded .hero-pills            { animation-delay: 0.76s; }
   transition: color 0.25s ease, transform 0.3s var(--ease-out);
 }
 
-.footer-col a:hover {
+.footer-col a:hover,
+.footer-col a.active {
   color: #9db4ff;
   transform: translateX(5px);
+}
+
+.footer-col a.active {
+  font-weight: 600;
 }
 
 .contact-list li {
@@ -2783,8 +2798,13 @@ body.is-loaded .hero-pills            { animation-delay: 0.76s; }
   transition: color 0.25s ease;
 }
 
-.footer-legal a:hover {
+.footer-legal a:hover,
+.footer-legal a.active {
   color: #fff;
+}
+
+.footer-legal a.active {
+  font-weight: 600;
 }
 
 .footer-watermark {
@@ -3458,7 +3478,8 @@ body:not(.is-loaded) .reveal:not(.visible) {
     color: var(--muted-on-dark);
   }
 
-  .mega-link:hover {
+  .mega-link:hover,
+  .mega-link.active {
     color: #fff;
     background: rgba(109, 77, 246, 0.15);
   }
@@ -4303,7 +4324,8 @@ body:not(.is-loaded) .reveal:not(.visible) {
   transition: color 0.2s ease, background 0.2s ease;
 }
 
-.svc-subnav a:hover {
+.svc-subnav a:hover,
+.svc-subnav a.active {
   color: var(--violet);
   background: rgba(109, 77, 246, 0.08);
 }

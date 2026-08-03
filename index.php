@@ -1,5 +1,6 @@
 <?php
 $page_title = 'Quantum Infoway | Your AI-Native Technology Partner';
+$page_description = 'Quantum Infoway builds AI-native products, custom web and mobile apps, and intelligent IT solutions — from concept to production across 13+ countries.';
 require_once __DIR__ . '/includes/header.php';
 ?>
 

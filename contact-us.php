@@ -1,5 +1,6 @@
 <?php
 $page_title = 'Contact Us | Quantum Infoway — Talk to a Technology Partner';
+$page_description = 'Contact Quantum Infoway for a free consultation. Talk to an AI-native technology partner about custom software, web and mobile apps, and product engineering.';
 require_once __DIR__ . '/includes/header.php';
 ?>
 

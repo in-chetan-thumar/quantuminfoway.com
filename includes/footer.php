@@ -8,7 +8,7 @@
                     <h2>Have an idea? <span class="gradient-text">Let's build it together.</span></h2>
                     <p>Free consultation — we respond within 24 hours.</p>
                 </div>
-                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
+                <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg<?php echo nav_active_class('contact-us'); ?>">Talk to an Expert</a>
             </div>
 
             <!-- Link columns -->
@@ -16,7 +16,7 @@
                 <div class="footer-brand">
                     <a href="<?php echo route_attr(''); ?>" class="brand footer-brand-logo">
                         <span class="brand-mark">Q</span>
-                        <span class="brand-text">Quantum<em>Infoway</em></span>
+                        <span class="brand-text">Quantum <em>Infoway</em></span>
                     </a>
                     <p><?php echo htmlspecialchars(SITE_NAME); ?> builds custom software, web and mobile products, AI features, and industry platforms — from concept to scale, with full ownership of the code.</p>
                     <div class="social-links">
@@ -35,52 +35,52 @@
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="<?php echo route_attr('about-us'); ?>">About Us</a></li>
+                        <li><a href="<?php echo route_attr('about-us'); ?>"<?php echo nav_active_class('about-us') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('about-us'); ?>>About Us</a></li>
                         <li><a href="<?php echo route_attr('#portfolio'); ?>">Case Studies</a></li>
                         <li><a href="<?php echo route_attr('#reviews'); ?>">Testimonials</a></li>
-                        <li><a href="<?php echo route_attr('blogs'); ?>">Blogs</a></li>
-                        <li><a href="<?php echo route_attr('contact-us'); ?>">Contact Us</a></li>
+                        <li><a href="<?php echo route_attr('blogs'); ?>"<?php echo nav_active_class('blogs') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('blogs'); ?>>Blogs</a></li>
+                        <li><a href="<?php echo route_attr('contact-us'); ?>"<?php echo nav_active_class('contact-us') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('contact-us'); ?>>Contact Us</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="<?php echo route_attr('services/custom-software-development'); ?>">Custom Software</a></li>
-                        <li><a href="<?php echo route_attr('services/web-app-development'); ?>">Web Apps</a></li>
-                        <li><a href="<?php echo route_attr('services/mobile-app-development'); ?>">Mobile Apps</a></li>
-                        <li><a href="<?php echo route_attr('services/ui-ux-design'); ?>">UI/UX Design</a></li>
-                        <li><a href="<?php echo route_attr('services/enterprise-application-development'); ?>">Enterprise Apps</a></li>
-                        <li><a href="<?php echo route_attr('services/ai-development'); ?>">AI Development</a></li>
-                        <li><a href="<?php echo route_attr('services/cloud-and-devops'); ?>">Cloud &amp; DevOps</a></li>
-                        <li><a href="<?php echo route_attr('services/data-analytics-and-science'); ?>">Data Analytics</a></li>
-                        <li><a href="<?php echo route_attr('services/google-workspace'); ?>">Google Workspace</a></li>
-                        <li><a href="<?php echo route_attr('services/mvp-development'); ?>">MVP Build &amp; Rescue</a></li>
-                        <li><a href="<?php echo route_attr('services'); ?>">View all services →</a></li>
+                        <li><a href="<?php echo route_attr('services/custom-software-development'); ?>"<?php echo nav_active_class('services/custom-software-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/custom-software-development'); ?>>Custom Software</a></li>
+                        <li><a href="<?php echo route_attr('services/web-app-development'); ?>"<?php echo nav_active_class('services/web-app-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/web-app-development'); ?>>Web Apps</a></li>
+                        <li><a href="<?php echo route_attr('services/mobile-app-development'); ?>"<?php echo nav_active_class('services/mobile-app-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/mobile-app-development'); ?>>Mobile Apps</a></li>
+                        <li><a href="<?php echo route_attr('services/ui-ux-design'); ?>"<?php echo nav_active_class('services/ui-ux-design') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/ui-ux-design'); ?>>UI/UX Design</a></li>
+                        <li><a href="<?php echo route_attr('services/enterprise-application-development'); ?>"<?php echo nav_active_class('services/enterprise-application-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/enterprise-application-development'); ?>>Enterprise Apps</a></li>
+                        <li><a href="<?php echo route_attr('services/ai-development'); ?>"<?php echo nav_active_class('services/ai-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/ai-development'); ?>>AI Development</a></li>
+                        <li><a href="<?php echo route_attr('services/cloud-and-devops'); ?>"<?php echo nav_active_class('services/cloud-and-devops') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/cloud-and-devops'); ?>>Cloud &amp; DevOps</a></li>
+                        <li><a href="<?php echo route_attr('services/data-analytics-and-science'); ?>"<?php echo nav_active_class('services/data-analytics-and-science') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/data-analytics-and-science'); ?>>Data Analytics</a></li>
+                        <li><a href="<?php echo route_attr('services/google-workspace'); ?>"<?php echo nav_active_class('services/google-workspace') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/google-workspace'); ?>>Google Workspace</a></li>
+                        <li><a href="<?php echo route_attr('services/mvp-development'); ?>"<?php echo nav_active_class('services/mvp-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/mvp-development'); ?>>MVP Build &amp; Rescue</a></li>
+                        <li><a href="<?php echo route_attr('services'); ?>"<?php echo nav_active_class('services') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services'); ?>>View all services →</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Industries</h4>
                     <ul>
-                        <li><a href="<?php echo route_attr('services/fintech-app-development'); ?>">Fintech</a></li>
-                        <li><a href="<?php echo route_attr('services/healthcare-app-development'); ?>">Healthcare</a></li>
-                        <li><a href="<?php echo route_attr('services/real-estate-app-development'); ?>">Real Estate</a></li>
-                        <li><a href="<?php echo route_attr('services/travel-app-development'); ?>">Travel &amp; Hospitality</a></li>
+                        <li><a href="<?php echo route_attr('services/fintech-app-development'); ?>"<?php echo nav_active_class('services/fintech-app-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/fintech-app-development'); ?>>Fintech</a></li>
+                        <li><a href="<?php echo route_attr('services/healthcare-app-development'); ?>"<?php echo nav_active_class('services/healthcare-app-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/healthcare-app-development'); ?>>Healthcare</a></li>
+                        <li><a href="<?php echo route_attr('services/real-estate-app-development'); ?>"<?php echo nav_active_class('services/real-estate-app-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/real-estate-app-development'); ?>>Real Estate</a></li>
+                        <li><a href="<?php echo route_attr('services/travel-app-development'); ?>"<?php echo nav_active_class('services/travel-app-development') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('services/travel-app-development'); ?>>Travel &amp; Hospitality</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Hire Developers</h4>
                     <ul>
-                        <li><a href="<?php echo route_attr('hire/laravel-developer'); ?>">Laravel</a></li>
-                        <li><a href="<?php echo route_attr('hire/react-developer'); ?>">React</a></li>
-                        <li><a href="<?php echo route_attr('hire/angular-developer'); ?>">Angular</a></li>
-                        <li><a href="<?php echo route_attr('hire/node-js-developer'); ?>">Node.js</a></li>
-                        <li><a href="<?php echo route_attr('hire/python-developer'); ?>">Python</a></li>
-                        <li><a href="<?php echo route_attr('hire/full-stack-developer'); ?>">Full Stack</a></li>
-                        <li><a href="<?php echo route_attr('hire/ai-engineer'); ?>">AI Engineer</a></li>
-                        <li><a href="<?php echo route_attr('hire'); ?>">View all roles →</a></li>
+                        <li><a href="<?php echo route_attr('hire/laravel-developer'); ?>"<?php echo nav_active_class('hire/laravel-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/laravel-developer'); ?>>Laravel</a></li>
+                        <li><a href="<?php echo route_attr('hire/react-developer'); ?>"<?php echo nav_active_class('hire/react-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/react-developer'); ?>>React</a></li>
+                        <li><a href="<?php echo route_attr('hire/angular-developer'); ?>"<?php echo nav_active_class('hire/angular-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/angular-developer'); ?>>Angular</a></li>
+                        <li><a href="<?php echo route_attr('hire/node-js-developer'); ?>"<?php echo nav_active_class('hire/node-js-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/node-js-developer'); ?>>Node.js</a></li>
+                        <li><a href="<?php echo route_attr('hire/python-developer'); ?>"<?php echo nav_active_class('hire/python-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/python-developer'); ?>>Python</a></li>
+                        <li><a href="<?php echo route_attr('hire/full-stack-developer'); ?>"<?php echo nav_active_class('hire/full-stack-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/full-stack-developer'); ?>>Full Stack</a></li>
+                        <li><a href="<?php echo route_attr('hire/ai-engineer'); ?>"<?php echo nav_active_class('hire/ai-engineer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/ai-engineer'); ?>>AI Engineer</a></li>
+                        <li><a href="<?php echo route_attr('hire'); ?>"<?php echo nav_active_class('hire') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire'); ?>>View all roles →</a></li>
                     </ul>
                 </div>
 
@@ -111,9 +111,9 @@
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars(SITE_NAME); ?>. All rights reserved.</p>
                 <ul class="footer-legal">
-                    <li><a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a></li>
-                    <li><a href="<?php echo route_attr('terms-and-conditions'); ?>">Terms &amp; Conditions</a></li>
-                    <li><a href="<?php echo route_attr('sitemap'); ?>">Sitemap</a></li>
+                    <li><a href="<?php echo route_attr('privacy-policy'); ?>"<?php echo nav_active_class('privacy-policy') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('privacy-policy'); ?>>Privacy Policy</a></li>
+                    <li><a href="<?php echo route_attr('terms-and-conditions'); ?>"<?php echo nav_active_class('terms-and-conditions') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('terms-and-conditions'); ?>>Terms &amp; Conditions</a></li>
+                    <li><a href="<?php echo route_attr('sitemap'); ?>"<?php echo nav_active_class('sitemap') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('sitemap'); ?>>Sitemap</a></li>
                 </ul>
             </div>
         </div>

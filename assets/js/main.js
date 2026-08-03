@@ -72,20 +72,35 @@
     });
   }
 
-  /* Active nav by section */
+  /* Active nav by section (hash links only — leave route-based .active alone) */
   var sections = document.querySelectorAll("main section[id]");
+  var subnavLinks = document.querySelectorAll(".svc-subnav a");
+  var subnav = document.querySelector(".svc-subnav");
+
+  function toggleHashActive(links, current) {
+    links.forEach(function (link) {
+      var href = link.getAttribute("href") || "";
+      var hashIdx = href.indexOf("#");
+      if (hashIdx === -1) return;
+      var hash = href.slice(hashIdx);
+      if (hash === "#" || hash.indexOf("#") !== 0) return;
+      link.classList.toggle("active", hash === "#" + current);
+    });
+  }
+
   function updateActiveNav() {
     var current = "";
-    var offset = (header ? header.offsetHeight : 80) + 40;
+    var offset =
+      (header ? header.offsetHeight : 80) +
+      (subnav ? subnav.offsetHeight : 0) +
+      20;
     sections.forEach(function (section) {
       if (window.scrollY >= section.offsetTop - offset) {
         current = section.id;
       }
     });
-    navLinks.forEach(function (link) {
-      var href = link.getAttribute("href") || "";
-      link.classList.toggle("active", href === "#" + current);
-    });
+    toggleHashActive(navLinks, current);
+    toggleHashActive(subnavLinks, current);
   }
   window.addEventListener("scroll", updateActiveNav, { passive: true });
   updateActiveNav();

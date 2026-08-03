@@ -107,3 +107,75 @@ function route_attr(string $path = ''): string
 {
     return htmlspecialchars(route($path), ENT_QUOTES, 'UTF-8');
 }
+
+/**
+ * Normalized current request path (no query string or hash).
+ * Examples: /, /about-us, /services/ai-development
+ */
+function current_path(): string
+{
+    $uri = $_SERVER['REQUEST_URI'] ?? '/';
+    $path = parse_url($uri, PHP_URL_PATH);
+    if (!is_string($path) || $path === '') {
+        $path = '/';
+    }
+
+    $path = str_replace('\\', '/', $path);
+    $path = preg_replace('/\.php$/i', '', $path) ?? $path;
+
+    if ($path !== '/') {
+        $path = rtrim($path, '/');
+    }
+
+    if ($path === '' || strcasecmp($path, '/index') === 0) {
+        return '/';
+    }
+
+    return $path === '' ? '/' : $path;
+}
+
+/**
+ * Whether the current path matches a site route.
+ * When $prefix is true, /services matches /services and /services/...
+ */
+function is_active_route(string $path, bool $prefix = false): bool
+{
+    $current = current_path();
+    $target = route($path);
+
+    if (($hashPos = strpos($target, '#')) !== false) {
+        $target = substr($target, 0, $hashPos);
+    }
+
+    if ($target === '') {
+        $target = '/';
+    }
+
+    if ($prefix) {
+        if ($current === $target) {
+            return true;
+        }
+        if ($target !== '/' && str_starts_with($current, $target . '/')) {
+            return true;
+        }
+        return false;
+    }
+
+    return $current === $target;
+}
+
+/**
+ * Returns ' active' when the route matches, otherwise ''.
+ */
+function nav_active_class(string $path, bool $prefix = false): string
+{
+    return is_active_route($path, $prefix) ? ' active' : '';
+}
+
+/**
+ * Returns aria-current="page" attribute when the route matches.
+ */
+function nav_aria_current(string $path, bool $prefix = false): string
+{
+    return is_active_route($path, $prefix) ? ' aria-current="page"' : '';
+}
