@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS test_quantuminfoway
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE test_quantuminfoway;
+
+CREATE TABLE IF NOT EXISTS inquiries (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(190) NOT NULL,
+  phone VARCHAR(40) NULL,
+  company VARCHAR(120) NULL,
+  country VARCHAR(80) NULL,
+  service VARCHAR(80) NULL,
+  source VARCHAR(80) NULL,
+  message TEXT NOT NULL,
+  page_source VARCHAR(40) NULL,
+  ip VARCHAR(45) NULL,
+  mail_sent TINYINT(1) NOT NULL DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

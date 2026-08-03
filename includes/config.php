@@ -1,0 +1,71 @@
+<?php
+/**
+ * Quantum Infoway — Site Configuration
+ */
+
+$projectRoot = dirname(__DIR__);
+
+if (is_file($projectRoot . '/vendor/autoload.php')) {
+    require_once $projectRoot . '/vendor/autoload.php';
+
+    if (is_file($projectRoot . '/.env')) {
+        Dotenv\Dotenv::createImmutable($projectRoot)->safeLoad();
+    }
+}
+
+/**
+ * Read an environment value with a default.
+ */
+function env_value(string $key, string $default = ''): string
+{
+    $value = $_ENV[$key] ?? $_SERVER[$key] ?? getenv($key);
+    if ($value === false || $value === null || $value === '') {
+        return $default;
+    }
+    return (string) $value;
+}
+
+define('SITE_NAME', 'Quantum Infoway');
+define('SITE_TAGLINE', 'We Are Top IT Solutions');
+define('SITE_EMAIL', 'info@quantuminfoway.com');
+define('SITE_PHONE', '+91 85111 08041');
+define('SITE_HOURS', 'Mon-Fri 10am-7pm');
+define('SITE_URL', env_value('APP_URL', 'https://quantuminfoway.com'));
+
+define('DB_CONNECTION', env_value('DB_CONNECTION', 'mysql'));
+define('DB_HOST', env_value('DB_HOST', '127.0.1.17'));
+define('DB_PORT', env_value('DB_PORT', '3306'));
+define('DB_NAME', env_value('DB_DATABASE', 'test_quantuminfoway'));
+define('DB_USER', env_value('DB_USERNAME', 'root'));
+define('DB_PASS', env_value('DB_PASSWORD', ''));
+define('DB_CHARSET', env_value('DB_CHARSET', 'utf8mb4'));
+
+define('MAIL_HOST', env_value('SMTP_HOST', ''));
+define('MAIL_PORT', (int) env_value('SMTP_PORT', '587'));
+define('MAIL_USERNAME', env_value('SMTP_USER', ''));
+define('MAIL_PASSWORD', env_value('SMTP_PASS', ''));
+define('MAIL_ENCRYPTION', env_value('SMTP_ENCRYPTION', 'tls'));
+define('MAIL_FROM_ADDRESS', env_value('SMTP_FROM', 'noreply@quantuminfoway.com'));
+define('MAIL_FROM_NAME', env_value('SMTP_FROM_NAME', SITE_NAME));
+define('MAIL_TO_ADDRESS', env_value('SMTP_TO', env_value('SMTP_FROM', SITE_EMAIL)));
+
+// Backward-compatible aliases used by older references
+define('INQUIRY_TO_EMAIL', MAIL_TO_ADDRESS);
+define('INQUIRY_FROM_EMAIL', MAIL_FROM_ADDRESS);
+define('INQUIRY_LOG_FILE', __DIR__ . '/../data/inquiries.log');
+
+define('SOCIAL_FACEBOOK', 'https://www.facebook.com/');
+define('SOCIAL_TWITTER', 'https://twitter.com/');
+define('SOCIAL_LINKEDIN', 'https://www.linkedin.com/');
+
+/**
+ * Relative path prefix for assets and root links.
+ * Set $base_path = '../' on pages inside subdirectories (e.g. services/).
+ */
+if (!isset($base_path)) {
+    $base_path = '';
+}
+$base_path = rtrim(str_replace('\\', '/', (string) $base_path), '/');
+if ($base_path !== '') {
+    $base_path .= '/';
+}

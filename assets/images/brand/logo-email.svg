@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Quantum Infoway">
+  <defs>
+    <linearGradient id="qGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7050ff"/>
+      <stop offset="55%" stop-color="#2f6bff"/>
+      <stop offset="100%" stop-color="#0ec2e8"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6d4df6"/>
+      <stop offset="100%" stop-color="#2f6bff"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="4" width="48" height="48" rx="14" fill="url(#qGrad)"/>
+  <text x="24" y="37" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">Q</text>
+  <text x="62" y="36" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#0b0e1c">Quantum</text>
+  <text x="168" y="36" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#textGrad)">Infoway</text>
+</svg>

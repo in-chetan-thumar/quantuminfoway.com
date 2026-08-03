@@ -1,0 +1,32 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor/
+composer.phar
+
+# Runtime / logs
+data/*.log
+*.log
+
+# OSPanel / local temp
+.osp/
+_tmp_*/
+_tmp_*
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Cache
+*.cache
