@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services__mobile-app-development__mobile-1.webp" width="560" height="420" alt="Mobile Apps Built With AI-Native Engineering">
+                <img src="<?php echo $si; ?>services__mobile-app-development__hero.png" 
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__ArrowFatUp.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__xcode.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__android-studio.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__ArrowFatUp.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__xcode.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__android-studio.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__ArrowFatUp.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__xcode.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__android-studio.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__ArrowFatUp.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__xcode.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__android-studio.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mobile-app-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-01.webp" alt="Shipped Deep Meditate, native iOS and Android meditation apps with 500K+ downloa">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-02.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-03.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__deep-meditate.png" alt="Shipped Deep Meditate, native iOS and Android meditation apps with 500K+ downloa">
                     </div>
                     <h3>Shipped Deep Meditate, native iOS and Android meditation apps with 500K+ downloads and a 4.8 star rating</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>500K+</strong><span>Downloads</span></div><div><strong>15%</strong><span>Paid conversion</span></div><div><strong>iOS+Android</strong><span>Unified UX</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__nuos__redesign__solution-mockup.webp" alt="Built native consumer and installer apps for a smart-home product line with real">
-                        <img src="<?php echo $si; ?>case-studies__nuos__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__spectron__mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__nuos.png" alt="Built native consumer and installer apps for a smart-home product line with real">
                     </div>
                     <h3>Built native consumer and installer apps for a smart-home product line with real-time sync</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Native</strong><span>iOS + Android</span></div><div><strong>Dual-role</strong><span>UX</span></div><div><strong>Connected</strong><span>Devices</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt="Built a cross-border remittance app moving money from Europe to Africa across fi">
-                        <img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__solution-mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__digital-wealth.png" alt="Built a cross-border remittance app moving money from Europe to Africa across fi">
                     </div>
                     <h3>Built a cross-border remittance app moving money from Europe to Africa across five corridors</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Secure</strong><span>Access tiers</span></div><div><strong>Mobile</strong><span>Ready</span></div><div><strong>Regulated</strong><span>Flows</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__mockup.webp" alt="Shipped an AI chat platform with text and voice for a consumer wellness brand">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__wellness-chat.png" alt="Shipped an AI chat platform with text and voice for a consumer wellness brand">
                     </div>
                     <h3>Shipped an AI chat platform with text and voice for a consumer wellness brand</h3>
                     <ul class="check-list">

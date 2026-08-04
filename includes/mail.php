@@ -443,8 +443,8 @@ function send_inquiry_emails(array $data): array
     $companyOk = false;
     $userOk = false;
 
-    if (MAIL_HOST === '' || MAIL_TO_ADDRESS === '') {
-        log_mail_error('inquiry', new RuntimeException('Mail host or SMTP_TO is not configured.'));
+    if (MAIL_HOST === '' || MAIL_ENQUIRY_TO === '') {
+        log_mail_error('inquiry', new RuntimeException('Mail host or SMTP_ENQUIRY_TO is not configured.'));
         return ['company' => false, 'user' => false, 'all' => false];
     }
 
@@ -463,7 +463,7 @@ function send_inquiry_emails(array $data): array
         // 1) Company notification
         try {
             $companyMail = build_company_inquiry_email($data, $logoSrc);
-            $mail->addAddress(MAIL_TO_ADDRESS);
+            $mail->addAddress(MAIL_ENQUIRY_TO);
             if ($userEmail !== '' && filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
                 $mail->addReplyTo($userEmail, email_safe_name((string) $data['name']));
             }
@@ -653,10 +653,10 @@ function send_career_emails(array $data): array
 {
     $companyOk = false;
     $userOk = false;
-    $careersTo = MAIL_CAREERS_TO !== '' ? MAIL_CAREERS_TO : MAIL_TO_ADDRESS;
+    $careersTo = MAIL_APPLY_TO !== '' ? MAIL_APPLY_TO : MAIL_ENQUIRY_TO;
 
     if (MAIL_HOST === '' || $careersTo === '') {
-        log_mail_error('career', new RuntimeException('Mail host or SMTP_CAREERS_TO/SMTP_TO is not configured.'));
+        log_mail_error('career', new RuntimeException('Mail host or SMTP_APPLY_TO is not configured.'));
         return ['company' => false, 'user' => false, 'all' => false];
     }
 

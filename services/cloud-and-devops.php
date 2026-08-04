@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services__cloud-and-devops__ArrowsOut.webp" width="560" height="420" alt="Cloud &amp; DevOps With AI-Augmented Operations">
+                <img src="<?php echo $si; ?>services__cloud-and-devops__hero.png" width="560" height="420" alt="Cloud &amp; DevOps With AI-Augmented Operations">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__google-cloud-inline.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__google-cloud-inline.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__google-cloud-inline.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__google-cloud-inline.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__cloud-devops-2.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__cloud-and-devops__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Built cloud-native smart metering infrastructure with SAP-integrated billing">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__nuos__redesign__solution-mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__smart-metering.png" alt="Built cloud-native smart metering infrastructure with SAP-integrated billing">
                     </div>
                     <h3>Built cloud-native smart metering infrastructure with SAP-integrated billing</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>ERP</strong><span>Connected</span></div><div><strong>Cloud</strong><span>Native</span></div><div><strong>Live</strong><span>Ops data</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Built the enterprise data layer connecting an ERP to an e-commerce marketplace">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__nuos__redesign__solution-mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__erp-data-layer.png" alt="Built the enterprise data layer connecting an ERP to an e-commerce marketplace">
                     </div>
                     <h3>Built the enterprise data layer connecting an ERP to an e-commerce marketplace</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>ERP</strong><span>Connected</span></div><div><strong>Cloud</strong><span>Native</span></div><div><strong>Live</strong><span>Ops data</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics opera">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__logistics-ai-cloud.png" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics operator">
                     </div>
                     <h3>Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics operator</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Live</strong><span>Fleet tracking</span></div><div><strong>Less</strong><span>Manual ops</span></div><div><strong>Mobile</strong><span>+ web</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-1.webp" alt="Built a unified AI learning platform serving 15,000+ students across web and mob">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__highlands-brain.png" alt="Built a unified AI learning platform serving 15,000+ students across web and mobile">
                     </div>
                     <h3>Built a unified AI learning platform serving 15,000+ students across web and mobile</h3>
                     <ul class="check-list">

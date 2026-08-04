@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services__ui-ux-design__PenNibStraight.webp" width="560" height="420" alt="AI-Native UX/UI Design That Converts Users Into ">
+                <img src="<?php echo $si; ?>services__ui-ux-design__hero.png" 
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__adobe_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__hotjar_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__midjourney-logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__adobe_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__hotjar_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__midjourney-logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__adobe_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__hotjar_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__midjourney-logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__adobe_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__hotjar_logo.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__midjourney-logo.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ui-ux-design__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt="Rebuilt a hospitality booking platform on React and Next.js with a modern guest ">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__stay-vista.png" alt="Rebuilt a hospitality booking platform on React and Next.js with a modern guest ">
                     </div>
                     <h3>Rebuilt a hospitality booking platform on React and Next.js with a modern guest experience</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>50%</strong><span>Booking capacity</span></div><div><strong>30%</strong><span>Ops cost down</span></div><div><strong>40%</strong><span>Faster booking</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-01.webp" alt="Redesigned a meditation app to drive 500K+ downloads and 15% paid conversion gro">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-02.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-03.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__deep-meditate.png" alt="Redesigned a meditation app to drive 500K+ downloads and 15% paid conversion gro">
                     </div>
                     <h3>Redesigned a meditation app to drive 500K+ downloads and 15% paid conversion growth</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>500K+</strong><span>Downloads</span></div><div><strong>15%</strong><span>Paid conversion</span></div><div><strong>iOS+Android</strong><span>Unified UX</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__abc-carpet-home__redesign__hero-1.webp" alt="Designed a luxury e-commerce experience for 200,000+ SKUs on Shopify">
-                        <img src="<?php echo $si; ?>case-studies__abc-carpet-home__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__abc-carpet-home__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__abc-carpet.png" alt="Designed a luxury e-commerce experience for 200,000+ SKUs on Shopify">
                     </div>
                     <h3>Designed a luxury e-commerce experience for 200,000+ SKUs on Shopify</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>200k+</strong><span>SKUs</span></div><div><strong>PWA</strong><span>Shopify Plus</span></div><div><strong>Luxury</strong><span>UX</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Designed a distributor portal that cut order processing time by 35%">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__manufacturing.png" alt="Designed a distributor portal that cut order processing time by 35%">
                     </div>
                     <h3>Designed a distributor portal that cut order processing time by 35%</h3>
                     <ul class="check-list">
@@ -260,7 +252,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>Do you design for AI-powered products like chatbots and dashboards?</summary><div class="faq-body">Yes. We have specific experience designing interfaces for conversational AI, AI-generated content displays, and dashboards with predictive analytics. These require different UX patterns than traditional applications - managing user trust, explaining AI decisions, and designing for probabilistic outputs.</div></details>
                 <details class="faq-item"><summary>What tools do you use for UX/UI design?</summary><div class="faq-body">Figma is our primary tool for interface design and prototyping. We supplement with Maze and Hotjar for user research and testing, and use AI tools like Midjourney and Figma AI to accelerate concept generation. All designs are built as scalable design systems.</div></details>
                 <details class="faq-item"><summary>How long does a typical UX/UI design project take?</summary><div class="faq-body">A design audit with recommendations typically takes 2-3 weeks. A full product design engagement from discovery through high-fidelity prototypes and design system runs 6-10 weeks depending on scope. Our AI Adoption Discovery program (3 weeks) is a good entry point if you are not sure where to start.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
                 <details class="faq-item"><summary>What does UI/UX design cost for US companies?</summary><div class="faq-body">Our USD rates for UI/UX design run $25 to $50 per hour depending on seniority and stack, a fraction of the $150 to $300 per hour US specialists typically bill for comparable scope. We work on both fixed scope and retainer models. Fixed scope projects get an estimate before work starts, and most clients choose a retainer, which keeps the team building against your current priorities as requirements change.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">

@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__device.webp" width="560" height="420" alt="Build Your MVP">
+                <img src="<?php echo $si; ?>services__mvp-development__hero.png" width="560" height="420" alt="MVP Build and Rescue">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__online-dispute-resolution-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__online-dispute-resolution-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__online-dispute-resolution-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__online-dispute-resolution-platform__device.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__device.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mvp-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mvp-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mvp-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mvp-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mvp-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mvp-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mvp-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mvp-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mvp-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__mvp-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__mvp-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__mvp-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__hero-1.webp" alt="Real Estate Agent SaaS Platform">
-                        <img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__real-estate-saas.png" alt="Real Estate Agent SaaS Platform">
                     </div>
                     <h3>Real Estate Agent SaaS Platform</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>SaaS</strong><span>Agent platform</span></div><div><strong>Multi-role</strong><span>Access</span></div><div><strong>Production</strong><span>Ready</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__online-dispute-resolution-platform__device.webp" alt="Online Dispute Resolution SaaS Platform">
-                        <img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__dispute-resolution.png" alt="Online Dispute Resolution SaaS Platform">
                     </div>
                     <h3>Online Dispute Resolution SaaS Platform</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Multi-party</strong><span>Workflows</span></div><div><strong>Secure</strong><span>Portals</span></div><div><strong>Clear</strong><span>Status</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__online-dispute-resolution-platform__device.webp" alt="Captive Insurance Member Platform">
-                        <img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__captive-insurance.png" alt="Captive Insurance Member Platform">
                     </div>
                     <h3>Captive Insurance Member Platform</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Multi-party</strong><span>Workflows</span></div><div><strong>Secure</strong><span>Portals</span></div><div><strong>Clear</strong><span>Status</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__meeveem__mockup.webp" alt="Beauty &amp; Wellness Services Marketplace">
-                        <img src="<?php echo $si; ?>case-studies__meeveem__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__meeveem__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__meeveem.png" alt="Beauty &amp; Wellness Services Marketplace">
                     </div>
                     <h3>Beauty &amp; Wellness Services Marketplace</h3>
                     <ul class="check-list">

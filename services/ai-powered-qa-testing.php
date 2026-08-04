@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services__ai-powered-qa-testing__qa-stack2-2.webp" width="560" height="420" alt="AI-Powered QA &amp; Testing That Ships Confidence">
+                <img src="<?php echo $si; ?>services__ai-powered-qa-testing__hero.png" width="560" height="420" alt="AI-Powered QA &amp; Testing That Ships Confidence">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__selenium.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__playwright.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__cypress.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__selenium.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__playwright.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__cypress.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__selenium.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__playwright.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__cypress.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__selenium.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__playwright.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__cypress.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-powered-qa-testing__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__spectron__mockup.webp" alt="Achieved zero critical defects in production testing safety-critical workflows f">
-                        <img src="<?php echo $si; ?>case-studies__spectron__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__spectron__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__spectron.png" alt="Achieved zero critical defects in production testing safety-critical workflows f">
                     </div>
                     <h3>Achieved zero critical defects in production testing safety-critical workflows for 15,000+ users</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>0</strong><span>Critical defects</span></div><div><strong>80%</strong><span>Automation</span></div><div><strong>50%</strong><span>Faster regression</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__spectron__mockup.webp" alt="Achieved 80% test automation coverage cutting regression cycles by 50%">
-                        <img src="<?php echo $si; ?>case-studies__spectron__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__spectron__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__spectron.png" alt="Achieved 80% test automation coverage cutting regression cycles by 50%">
                     </div>
                     <h3>Achieved 80% test automation coverage cutting regression cycles by 50%</h3>
                     <ul class="check-list">

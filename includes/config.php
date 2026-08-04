@@ -47,12 +47,22 @@ define('MAIL_PASSWORD', env_value('SMTP_PASS', ''));
 define('MAIL_ENCRYPTION', env_value('SMTP_ENCRYPTION', 'tls'));
 define('MAIL_FROM_ADDRESS', env_value('SMTP_FROM', 'noreply@quantuminfoway.com'));
 define('MAIL_FROM_NAME', env_value('SMTP_FROM_NAME', SITE_NAME));
-define('MAIL_TO_ADDRESS', env_value('SMTP_TO', env_value('SMTP_FROM', SITE_EMAIL)));
-// Careers / Join Our Team notifications (falls back to SMTP_TO)
-define('MAIL_CAREERS_TO', env_value('SMTP_CAREERS_TO', MAIL_TO_ADDRESS));
 
-// Backward-compatible aliases used by older references
-define('INQUIRY_TO_EMAIL', MAIL_TO_ADDRESS);
+// Enquiry / contact form inbox (home, contact-us → form-handler)
+define(
+    'MAIL_ENQUIRY_TO',
+    env_value('SMTP_ENQUIRY_TO', env_value('SMTP_TO', env_value('SMTP_FROM', SITE_EMAIL)))
+);
+// Apply Now / Join Our Team inbox (hire → career-handler)
+define(
+    'MAIL_APPLY_TO',
+    env_value('SMTP_APPLY_TO', env_value('SMTP_CAREERS_TO', MAIL_ENQUIRY_TO))
+);
+
+// Backward-compatible aliases
+define('MAIL_TO_ADDRESS', MAIL_ENQUIRY_TO);
+define('MAIL_CAREERS_TO', MAIL_APPLY_TO);
+define('INQUIRY_TO_EMAIL', MAIL_ENQUIRY_TO);
 define('INQUIRY_FROM_EMAIL', MAIL_FROM_ADDRESS);
 define('INQUIRY_LOG_FILE', __DIR__ . '/../data/inquiries.log');
 

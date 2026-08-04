@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services___shared__69047619273bc50fa2a23d1f_67e95158f6a55bd08e06925a_Frame 2147224693-p-800.webp" width="560" height="420" alt="No-Code &amp; Low-Code Development That Ships in Wee">
+                <img src="<?php echo $si; ?>services__no-code-development__hero.png" width="560" height="420" alt="No-Code &amp; Low-Code Development">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__franchiselab__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__franchiselab__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__franchiselab__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__franchiselab__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__franchiselab__hero-2.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__no-code-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__no-code-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__no-code-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__no-code-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__no-code-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__no-code-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__no-code-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__no-code-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__no-code-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__no-code-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__no-code-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__no-code-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__franchiselab__mockup.webp" alt="Built a data-driven franchise recruitment platform that lifted recruitment succe">
-                        <img src="<?php echo $si; ?>case-studies__franchiselab__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__cornerstone-ventures__hero-1.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__franchiselab.png" alt="Built a data-driven franchise recruitment platform that lifted recruitment success 40%">
                     </div>
                     <h3>Built a data-driven franchise recruitment platform that lifted recruitment success 40%</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Shipped</strong><span>Product</span></div><div><strong>Aligned</strong><span>Stakeholders</span></div><div><strong>Production</strong><span>Ready</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__mappi__mockup.webp" alt="Shipped a map-first property discovery platform on Xano and WeWeb">
-                        <img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__mappi__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__mappi.png" alt="Shipped a map-first property discovery platform on Xano and WeWeb">
                     </div>
                     <h3>Shipped a map-first property discovery platform on Xano and WeWeb</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Map-first</strong><span>Discovery</span></div><div><strong>Xano</strong><span>+ WeWeb</span></div><div><strong>Shipped</strong><span>Production</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__mappi__mockup.webp" alt="Built a no-code property discovery platform on Bubble for student housing">
-                        <img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__mappi__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__student-housing.png" alt="Built a no-code property discovery platform on Bubble for student housing">
                     </div>
                     <h3>Built a no-code property discovery platform on Bubble for student housing</h3>
                     <ul class="check-list">

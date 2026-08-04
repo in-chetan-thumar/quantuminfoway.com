@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__mockup.webp" width="560" height="420" alt="A Generative AI Development Company That Ships t">
+                <img src="<?php echo $si; ?>services__generative-ai__hero.png" width="560" height="420" alt="A Generative AI Development Company That Ships t">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-learning-platform-concept__hero-2.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__generative-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__generative-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__generative-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__generative-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__generative-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__generative-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__generative-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__generative-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__generative-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__generative-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__generative-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__generative-ai__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-1.webp" alt="Built an AI-powered learning platform with a retrieval-augmented tutor">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__highlands-brain.png" alt="Built an AI-powered learning platform with a retrieval-augmented tutor">
                     </div>
                     <h3>Built an AI-powered learning platform with a retrieval-augmented tutor</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>15k+</strong><span>Students served</span></div><div><strong>25%</strong><span>Faster English gains</span></div><div><strong>97%</strong><span>Less compliance effort</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-1.webp" alt="Built an AI-powered digital learning platform for one of California's largest ch">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__highlands-brain.png" alt="Built an AI-powered digital learning platform for one of California's largest ch">
                     </div>
                     <h3>Built an AI-powered digital learning platform for one of California's largest charter schools</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>15k+</strong><span>Students served</span></div><div><strong>25%</strong><span>Faster English gains</span></div><div><strong>97%</strong><span>Less compliance effort</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__mockup.webp" alt="Shipped an AI chat platform with text and voice for a consumer wellness brand">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__wellness-chat.png" alt="Shipped an AI chat platform with text and voice for a consumer wellness brand">
                     </div>
                     <h3>Shipped an AI chat platform with text and voice for a consumer wellness brand</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>4.2/5</strong><span>User rating</span></div><div><strong>Voice+Text</strong><span>Channels</span></div><div><strong>Live</strong><span>In production</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-1.webp" alt="AI-powered e-commerce intelligence platform with generative insights and content">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__ecomm-pulse.png" alt="AI-powered e-commerce intelligence platform with generative insights and content">
                     </div>
                     <h3>AI-powered e-commerce intelligence platform with generative insights and content</h3>
                     <ul class="check-list">

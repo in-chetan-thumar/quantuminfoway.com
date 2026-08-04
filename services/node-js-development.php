@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" width="560" height="420" alt="Node.js Development Company for Backends That Sc">
+                <img src="<?php echo $si; ?>services__node-js-development__hero.png" width="560" height="420" alt="Node.js Development">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__node-js-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__node-js-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__node-js-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__node-js-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__node-js-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__node-js-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__node-js-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__node-js-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__node-js-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__node-js-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__node-js-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__node-js-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt="Replaced manual fleet operations with a real time platform on Node.js, Postgres,">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__fleet.png" alt="Replaced manual fleet operations with a real time platform on Node.js, Postgres, and AWS">
                     </div>
                     <h3>Replaced manual fleet operations with a real time platform on Node.js, Postgres, and AWS</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Live</strong><span>Fleet tracking</span></div><div><strong>Less</strong><span>Manual ops</span></div><div><strong>Mobile</strong><span>+ web</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Unified sales, finance, and inventory for a diversified manufacturer on one Node">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__manufacturing.png" alt="Unified sales, finance, and inventory for a diversified manufacturer on one Node.js data model">
                     </div>
                     <h3>Unified sales, finance, and inventory for a diversified manufacturer on one Node.js data model</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>35%</strong><span>Faster orders</span></div><div><strong>2x</strong><span>Discovery speed</span></div><div><strong>40%</strong><span>Fewer support queries</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt="Scaled StayVista to 1,000+ properties across 80+ destinations on a Laravel and N">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__stay-vista.png" alt="Scaled StayVista to 1,000+ properties across 80+ destinations on a Laravel and Node backend">
                     </div>
                     <h3>Scaled StayVista to 1,000+ properties across 80+ destinations on a Laravel and Node backend</h3>
                     <ul class="check-list">

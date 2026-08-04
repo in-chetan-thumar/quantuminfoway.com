@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services__claude-code-ai-for-teams__Toolbox.webp" width="560" height="420" alt="Claude Code for Engineering Teams">
+                <img src="<?php echo $si; ?>services__claude-code-ai-for-teams__hero.png" width="560" height="420" alt="Claude Code for Engineering Teams">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__ai-automation-3.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__claude-code-ai-for-teams__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__mockup.webp" alt="Achieved ~80% AI-generated code with 30% faster sprint delivery">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__unico-engineering.png" alt="Achieved ~80% AI-generated code with 30% faster sprint delivery">
                     </div>
                     <h3>Achieved ~80% AI-generated code with 30% faster sprint delivery</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>~80%</strong><span>AI-assisted code</span></div><div><strong>30%</strong><span>Faster sprints</span></div><div><strong>60%</strong><span>Less doc time</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-1.webp" alt="Cut call preparation time by 40% with AI-powered sales workflows">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__unico-sales.png" alt="Cut call preparation time by 40% with AI-powered sales workflows">
                     </div>
                     <h3>Cut call preparation time by 40% with AI-powered sales workflows</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>40%</strong><span>Faster prep</span></div><div><strong>Grounded</strong><span>Answers</span></div><div><strong>Internal</strong><span>Knowledge</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__mockup.webp" alt="Reduced documentation time by 60% with AI-powered project operations">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__unico-engineering.png" alt="Reduced documentation time by 60% with AI-powered project operations">
                     </div>
                     <h3>Reduced documentation time by 60% with AI-powered project operations</h3>
                     <ul class="check-list">
@@ -234,7 +228,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>What types of teams benefit most from AI automation?</summary><div class="faq-body">Engineering teams see the most immediate impact through AI-assisted development. Sales teams benefit from AI-powered research, meeting prep, and outreach drafting. Operations teams benefit from document processing, reporting automation, and knowledge management. We assess your specific workflows to prioritize by impact.</div></details>
                 <details class="faq-item"><summary>How long does an AI automation engagement take?</summary><div class="faq-body">Our AI Adoption Discovery (3 weeks) assesses one business area, identifies the highest-impact opportunities, and delivers a working proof-of-concept. The full AI Prototype &amp; Roadmap (6-8 weeks) covers multiple departments with production-scale implementations and a phased rollout plan.</div></details>
                 <details class="faq-item"><summary>How do you measure the impact of AI automation?</summary><div class="faq-body">We establish baseline metrics before implementation - time spent on specific tasks, output volume, error rates - and measure against them post-deployment. Common metrics include time saved per workflow, output quality improvement, cost per unit of work, and team adoption rates.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
                 <details class="faq-item"><summary>What does a Claude Code rollout cost for US companies?</summary><div class="faq-body">Our USD rates for a Claude Code rollout run $25 to $50 per hour depending on seniority and stack, a fraction of the $150 to $300 per hour US specialists typically bill for comparable scope. We work on both fixed scope and retainer models. Fixed scope projects get an estimate before work starts, and most clients choose a retainer, which keeps the team building against your current priorities as requirements change.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">

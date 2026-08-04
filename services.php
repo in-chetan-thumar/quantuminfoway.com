@@ -117,7 +117,7 @@ $faqs = [
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__solution-mockup.webp" width="560" height="420" alt="Quantum Infoway services">
+                <img src="<?php echo $si; ?>services__ai-development__hero.png" width="560" height="420" alt="Quantum Infoway services">
             </div>
         </div>
     </section>
@@ -126,12 +126,12 @@ $faqs = [
         <div class="svc-showcase-track">
             <?php
             $show = [
-                'case-studies__highlands-brain__redesign__solution-mockup.webp',
-                'case-studies__stay-vista__stay-vista.webp',
-                'case-studies__ai-chat-platform-consumer-wellness__mockup.webp',
-                'case-studies__fleet-management-platform__mockup.webp',
-                'case-studies__ai-learning-platform-concept__mockup.webp',
-                'case-studies__digital-wealth-onboarding__mockup.webp',
+                'services__ai-development__marquee-1.png',
+                'services__custom-software-development__marquee-1.png',
+                'services__cloud-and-devops__marquee-1.png',
+                'services__fintech-app-development__marquee-1.png',
+                'services__ui-ux-design__marquee-1.png',
+                'services__no-code-development__marquee-1.png',
             ];
             $colors = ['#E8F5BD', '#FFF6C0', '#BDE8F5'];
             foreach (array_merge($show, $show) as $i => $img):

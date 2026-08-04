@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services___shared__69047619273bc50fa2a23d1f_67e95158f6a55bd08e06925a_Frame 2147224693-p-800.webp" width="560" height="420" alt="Enterprise Application Development Built to Scal">
+                <img src="<?php echo $si; ?>services__enterprise-application-development__hero.png" 
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__solution-mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__solution-mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__solution-mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__solution-mockup.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__enterprise-application-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Replaced three fragmented systems with one sales and finance platform for a dive">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__manufacturing.png" alt="Replaced three fragmented systems with one sales and finance platform for a dive">
                     </div>
                     <h3>Replaced three fragmented systems with one sales and finance platform for a diversified manufacturer</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>35%</strong><span>Faster orders</span></div><div><strong>2x</strong><span>Discovery speed</span></div><div><strong>40%</strong><span>Fewer support queries</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__solution-mockup.webp" alt="Built a digital wealth onboarding platform for high-net-worth clients">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__instant-ex.png" alt="Built a digital wealth onboarding platform for high-net-worth clients">
                     </div>
                     <h3>Built a digital wealth onboarding platform for high-net-worth clients</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Regulated</strong><span>Fintech UX</span></div><div><strong>Secure</strong><span>Flows</span></div><div><strong>Live</strong><span>Ops views</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-1.webp" alt="Built a unified School ERP and learning platform serving 15,000+ students at one">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__highlands-brain.png" alt="Built a unified School ERP and learning platform serving 15,000+ students at one">
                     </div>
                     <h3>Built a unified School ERP and learning platform serving 15,000+ students at one of the largest charter schools in California</h3>
                     <ul class="check-list">

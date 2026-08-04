@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__mockup.webp" width="560" height="420" alt="AI Development That Automates Operations and Acc">
+                <img src="<?php echo $si; ?>services__ai-development__hero.png" width="560" height="420" alt="AI Development That Automates Operations and Acc">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__ai-dev-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__ai-dev-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__ai-dev-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__ai-dev-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__ai-dev-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__ai-dev-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__ai-dev-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__ai-dev-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__ai-dev-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__ai-dev-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__ai-dev-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__ai-dev-3.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-1.webp" alt="Built an AI-powered digital learning platform for one of California's largest ch">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__highlands-brain.png" alt="Built an AI-powered digital learning platform for one of California's largest ch">
                     </div>
                     <h3>Built an AI-powered digital learning platform for one of California's largest charter schools</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>15k+</strong><span>Students served</span></div><div><strong>25%</strong><span>Faster English gains</span></div><div><strong>97%</strong><span>Less compliance effort</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-1.webp" alt="Built an AI platform that redacts PHI from DICOM medical imaging">
-                        <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__dicom-phi.png" alt="Built an AI platform that redacts PHI from DICOM medical imaging">
                     </div>
                     <h3>Built an AI platform that redacts PHI from DICOM medical imaging</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>PHI</strong><span>Auto-redacted</span></div><div><strong>DICOM</strong><span>Pipeline ready</span></div><div><strong>Audit</strong><span>Traceable runs</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__solution-mockup.webp" alt="Built an AI property-operations platform with ticket triaging and computer-visio">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__device.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__sergo.png" alt="Built an AI property-operations platform with ticket triaging and computer-visio">
                     </div>
                     <h3>Built an AI property-operations platform with ticket triaging and computer-vision asset tagging</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Faster</strong><span>Ticket routing</span></div><div><strong>CV</strong><span>Asset tagging</span></div><div><strong>Live</strong><span>In production</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-1.webp" alt="Built AI-powered e-commerce intelligence platform for seller analytics and growt">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__ecomm-pulse.png" alt="Built AI-powered e-commerce intelligence platform for seller analytics and growt">
                     </div>
                     <h3>Built AI-powered e-commerce intelligence platform for seller analytics and growth</h3>
                     <ul class="check-list">
@@ -248,7 +240,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>How long does an AI project take?</summary><div class="faq-body">A proof of concept takes 2-4 weeks. Production deployment typically takes 2-4 months depending on data readiness, model complexity, and integration requirements.</div></details>
                 <details class="faq-item"><summary>Do you provide ongoing support for AI systems?</summary><div class="faq-body">Yes. AI models need continuous monitoring and retraining. We offer maintenance retainers covering model performance monitoring, data pipeline updates, and accuracy improvements.</div></details>
                 <details class="faq-item"><summary>What is your approach to AI ethics and responsible AI?</summary><div class="faq-body">We build AI with guardrails, bias detection, explainability features, and human-in-the-loop controls. Every system includes fallback paths and escalation to human operators when needed.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
                 <details class="faq-item"><summary>What does AI development cost for US companies?</summary><div class="faq-body">Our USD rates for AI development run $25 to $50 per hour depending on seniority and stack, a fraction of the $150 to $300 per hour US specialists typically bill for comparable scope. We work on both fixed scope and retainer models. Fixed scope projects get an estimate before work starts, and most clients choose a retainer, which keeps the team building against your current priorities as requirements change.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">

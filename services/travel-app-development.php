@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" width="560" height="420" alt="Travel App Development Company for Booking Platf">
+                <img src="<?php echo $si; ?>services__travel-app-development__hero.png" width="560" height="420" alt="Travel App Development Company for Booking Platforms">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__travel-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__travel-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__travel-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__travel-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__travel-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__travel-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__travel-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__travel-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__travel-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__travel-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__travel-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__travel-app-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt="Took StayVista from prototype to 1,000+ properties across 80+ destinations">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__stay-vista.png" alt="Took StayVista from prototype to 1,000+ properties across 80+ destinations">
                     </div>
                     <h3>Took StayVista from prototype to 1,000+ properties across 80+ destinations</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>50%</strong><span>Booking capacity</span></div><div><strong>30%</strong><span>Ops cost down</span></div><div><strong>40%</strong><span>Faster booking</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt="Redesigned and rebuilt the Blue Kite hospitality booking platform with an agent ">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__industry-work__blue-kite.png" alt="Redesigned and rebuilt the Blue Kite hospitality booking platform with an agent quotation engine">
                     </div>
                     <h3>Redesigned and rebuilt the Blue Kite hospitality booking platform with an agent quotation engine</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>50%</strong><span>Booking capacity</span></div><div><strong>30%</strong><span>Ops cost down</span></div><div><strong>40%</strong><span>Faster booking</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__white-label-travel-insurance__hero-1.webp" alt="Built a white label travel insurance booking microsite for B2B2C distribution">
-                        <img src="<?php echo $si; ?>case-studies__white-label-travel-insurance__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__white-label-travel-insurance__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__industry-work__travel-insurance.png" alt="Built a white label travel insurance booking microsite for B2B2C distribution">
                     </div>
                     <h3>Built a white label travel insurance booking microsite for B2B2C distribution</h3>
                     <ul class="check-list">

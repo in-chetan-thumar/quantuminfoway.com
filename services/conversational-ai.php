@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services__conversational-ai__WhatsappLogo.webp" width="560" height="420" alt="Conversational AI That Handles Real Conversation">
+                <img src="<?php echo $si; ?>services__conversational-ai__hero.png" width="560" height="420" alt="Conversational AI That Handles Real Conversation">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__dialogflow.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__dialogflow.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__dialogflow.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__dialogflow.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__conversational-ai-2.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__conversational-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__conversational-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__conversational-ai__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__mockup.webp" alt="Shipped an AI chat platform with text and voice for a consumer wellness brand">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__wellness-chat.png" alt="Shipped an AI chat platform with text and voice for a consumer wellness brand">
                     </div>
                     <h3>Shipped an AI chat platform with text and voice for a consumer wellness brand</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>4.2/5</strong><span>User rating</span></div><div><strong>Voice+Text</strong><span>Channels</span></div><div><strong>Live</strong><span>In production</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics opera">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__fleet.png" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics opera">
                     </div>
                     <h3>Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics operator</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Live</strong><span>Fleet tracking</span></div><div><strong>Less</strong><span>Manual ops</span></div><div><strong>Mobile</strong><span>+ web</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-1.webp" alt="Democratized data access with a natural language analytics bot cutting reporting">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__device.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__ecomm-pulse.png" alt="Democratized data access with a natural language analytics bot cutting reporting">
                     </div>
                     <h3>Democratized data access with a natural language analytics bot cutting reporting time by 50%</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>NL</strong><span>Analytics</span></div><div><strong>Faster</strong><span>Decisions</span></div><div><strong>Grounded</strong><span>On your data</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__mockup.webp" alt="Built a conversational AI coach achieving 4.2/5 user satisfaction with 65% retur">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ai-chat-platform-consumer-wellness__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__wellness-chat.png" alt="Built a conversational AI coach achieving 4.2/5 user satisfaction with 65% retur">
                     </div>
                     <h3>Built a conversational AI coach achieving 4.2/5 user satisfaction with 65% return rate</h3>
                     <ul class="check-list">
@@ -260,7 +252,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>Can you build a WhatsApp chatbot for our business?</summary><div class="faq-body">Yes. We build on the official WhatsApp Business API - bots that handle text and voice messages, process media, manage appointments, and trigger transactions. We have built WhatsApp agents that handle voice-based ordering, customer support, and multilingual communication.</div></details>
                 <details class="faq-item"><summary>What channels can conversational AI be deployed on?</summary><div class="faq-body">Web chat, WhatsApp, SMS, voice (phone), Slack, Microsoft Teams, Facebook Messenger, and custom mobile applications. We build channel-agnostic conversational logic deployable across multiple channels from a single system, with platform-specific adaptations.</div></details>
                 <details class="faq-item"><summary>How do you measure the success of a conversational AI deployment?</summary><div class="faq-body">Resolution rate (conversations resolved without human intervention), customer satisfaction scores, average handling time, drop-off rate, and cost per interaction compared to human-only service. We set baseline metrics before launch and track improvement continuously.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
                 <details class="faq-item"><summary>What does conversational AI development cost for US companies?</summary><div class="faq-body">Our USD rates for conversational AI development run $25 to $50 per hour depending on seniority and stack, a fraction of the $150 to $300 per hour US specialists typically bill for comparable scope. We work on both fixed scope and retainer models. Fixed scope projects get an estimate before work starts, and most clients choose a retainer, which keeps the team building against your current priorities as requirements change.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">

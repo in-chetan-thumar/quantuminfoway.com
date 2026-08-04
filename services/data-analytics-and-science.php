@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services___shared__69047619273bc50fa2a23d1f_67e95158f6a55bd08e06925a_Frame 2147224693-p-800.webp" width="560" height="420" alt="Data Analytics That Turns Raw Data Into Business">
+                <img src="<?php echo $si; ?>services__data-analytics-and-science__hero.png" width="560" height="420" alt="Data Analytics That Turns Raw Data Into Business Decisions">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__R.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__snowflake.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__data-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__R.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__snowflake.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__data-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__R.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__snowflake.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__data-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__R.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__snowflake.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__data-1.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__data-analytics-and-science__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-1.webp" alt="Built demand forecasting, dynamic pricing and the QueryAI analytics bot for D2C ">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__ecomm-pulse.png" alt="Built demand forecasting, dynamic pricing and the QueryAI analytics bot for D2C brands">
                     </div>
                     <h3>Built demand forecasting, dynamic pricing and the QueryAI analytics bot for D2C brands</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>50%</strong><span>Faster reporting</span></div><div><strong>30%</strong><span>Fewer stockouts</span></div><div><strong>25%</strong><span>Pricing accuracy</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Built the enterprise data layer connecting an ERP to an e-commerce marketplace">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__nuos__redesign__solution-mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__erp-data-layer.png" alt="Built the enterprise data layer connecting an ERP to an e-commerce marketplace">
                     </div>
                     <h3>Built the enterprise data layer connecting an ERP to an e-commerce marketplace</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>ERP</strong><span>Connected</span></div><div><strong>Cloud</strong><span>Native</span></div><div><strong>Live</strong><span>Ops data</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Built cloud-native smart metering infrastructure with SAP-integrated automated b">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__nuos__redesign__solution-mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__smart-metering.png" alt="Built cloud-native smart metering infrastructure with SAP-integrated automated billing">
                     </div>
                     <h3>Built cloud-native smart metering infrastructure with SAP-integrated automated billing</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>ERP</strong><span>Connected</span></div><div><strong>Cloud</strong><span>Native</span></div><div><strong>Live</strong><span>Ops data</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Unified sales, finance and inventory on one platform with a distributor portal">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__manufacturing.png" alt="Unified sales, finance and inventory on one platform with a distributor portal">
                     </div>
                     <h3>Unified sales, finance and inventory on one platform with a distributor portal</h3>
                     <ul class="check-list">

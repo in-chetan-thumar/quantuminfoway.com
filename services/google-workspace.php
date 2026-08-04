@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>brand__quantum-infoway.png" width="560" height="420" alt="AI Workspace &amp; Google Workspace Consulting">
+                <img src="<?php echo $si; ?>services__google-workspace__hero.png" width="560" height="420" alt="AI Workspace &amp; Google Workspace Consulting">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__gmeet.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__g-calendar.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__g-docs.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__gmeet.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__g-calendar.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__g-docs.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__gmeet.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__g-calendar.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__g-docs.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__gmeet.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__g-calendar.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__g-docs.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__google-workspace__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__google-workspace__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__google-workspace__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-1.webp" alt="Workspace setup and configuration for teams that need Google Workspace done righ">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__workspace-setup.png" alt="Workspace setup and configuration for teams that need Google Workspace done right">
                     </div>
                     <h3>Workspace setup and configuration for teams that need Google Workspace done right</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Governed</strong><span>Setup</span></div><div><strong>Safe</strong><span>Migration</span></div><div><strong>Adoption</strong><span>Ready</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-1.webp" alt="Email and data migration from Microsoft 365 or legacy mail without losing the th">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__workspace-migration.png" alt="Email and data migration from Microsoft 365 or legacy mail without losing the thread">
                     </div>
                     <h3>Email and data migration from Microsoft 365 or legacy mail without losing the thread</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Governed</strong><span>Setup</span></div><div><strong>Safe</strong><span>Migration</span></div><div><strong>Adoption</strong><span>Ready</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-1.webp" alt="AI workspace features teams actually use — with security and governance built in">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__cloud-work__workspace-ai.png" alt="AI workspace features teams actually use — with security and governance built in">
                     </div>
                     <h3>AI workspace features teams actually use — with security and governance built in</h3>
                     <ul class="check-list">

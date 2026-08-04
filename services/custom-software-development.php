@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services___shared__69047619273bc50fa2a23d1f_67e95158f6a55bd08e06925a_Frame 2147224693-p-800.webp" width="560" height="420" alt="Custom Software Development That Ships and Scale">
+                <img src="<?php echo $si; ?>services__custom-software-development__hero.png" 
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__custom-software-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__custom-software-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__custom-software-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__custom-software-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__custom-software-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__custom-software-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__custom-software-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__custom-software-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__custom-software-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__custom-software-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__custom-software-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__custom-software-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Replaced three fragmented systems with one sales and finance platform for a dive">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__manufacturing.png" alt="Replaced three fragmented systems with one sales and finance platform for a dive">
                     </div>
                     <h3>Replaced three fragmented systems with one sales and finance platform for a diversified manufacturer</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>35%</strong><span>Faster orders</span></div><div><strong>2x</strong><span>Discovery speed</span></div><div><strong>40%</strong><span>Fewer support queries</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__solution-mockup.webp" alt="Built a digital wealth onboarding platform for high-net-worth clients">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__instant-ex.png" alt="Built a digital wealth onboarding platform for high-net-worth clients">
                     </div>
                     <h3>Built a digital wealth onboarding platform for high-net-worth clients</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Regulated</strong><span>Fintech UX</span></div><div><strong>Secure</strong><span>Flows</span></div><div><strong>Live</strong><span>Ops views</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt="Built a vacation rental platform from prototype to 1,000+ properties across 80+ ">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__stay-vista.png" alt="Built a vacation rental platform from prototype to 1,000+ properties across 80+ ">
                     </div>
                     <h3>Built a vacation rental platform from prototype to 1,000+ properties across 80+ destinations</h3>
                     <ul class="check-list">
@@ -249,7 +243,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>Do you take over and modernize existing software?</summary><div class="faq-body">Yes. A large share of our work is inheriting systems other teams built: stabilizing them, adding test coverage, untangling legacy integrations, and then modernizing incrementally. We start with a technical audit so you know the real state of the codebase before committing to a roadmap.</div></details>
                 <details class="faq-item"><summary>How do you use AI in the development process?</summary><div class="faq-body">We are an AI native team: roughly 80% of our production code is AI generated and engineer reviewed, verified by our internal team. That changes the economics of custom software: faster delivery on the same quality bar, with senior engineers focused on architecture, review, and the hard problems. We also build AI features into the products themselves, from RAG search to autonomous agents.</div></details>
                 <details class="faq-item"><summary>Who owns the code and intellectual property?</summary><div class="faq-body">You do. Full source code, infrastructure, and documentation are handed over under the engagement contract, and everything runs in accounts you control. No lock in: any competent team can take over what we build, although most clients stay because of delivery speed.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
                 <a class="related-card" href="<?php echo route_attr('services/ai-development'); ?>"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>

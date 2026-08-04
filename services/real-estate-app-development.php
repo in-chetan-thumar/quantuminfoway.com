@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" width="560" height="420" alt="Real Estate App Development Company for Property">
+                <img src="<?php echo $si; ?>services__real-estate-app-development__hero.png" width="560" height="420" alt="Real Estate App Development Company for Property Platforms">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__mappi__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__mappi__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__mappi__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__mappi__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__mappi__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__mappi__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__mappi__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__mappi__hero-3.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__real-estate-app-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__mappi__mockup.webp" alt="Built Mappi, a location first property discovery platform with interactive map s">
-                        <img src="<?php echo $si; ?>case-studies__mappi__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__mappi__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__mappi.png" alt="Built Mappi, a location first property discovery platform with interactive map search">
                     </div>
                     <h3>Built Mappi, a location first property discovery platform with interactive map search</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Map-first</strong><span>Discovery</span></div><div><strong>Xano</strong><span>+ WeWeb</span></div><div><strong>Shipped</strong><span>Production</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__solution-mockup.webp" alt="Built Sergo, a unified property operations platform running 200+ properties">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__device.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__sergo.png" alt="Built Sergo, a unified property operations platform running 200+ properties">
                     </div>
                     <h3>Built Sergo, a unified property operations platform running 200+ properties</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Faster</strong><span>Ticket routing</span></div><div><strong>CV</strong><span>Asset tagging</span></div><div><strong>Live</strong><span>In production</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__hero-1.webp" alt="Built a business intelligence SaaS for real estate agents with a conversational ">
-                        <img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__real-estate-saas-platform__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__real-estate-saas.png" alt="Built a business intelligence SaaS for real estate agents with a conversational AI analyst">
                     </div>
                     <h3>Built a business intelligence SaaS for real estate agents with a conversational AI analyst</h3>
                     <ul class="check-list">
@@ -248,7 +242,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>Can you integrate listing feeds and third party data?</summary><div class="faq-body">Yes. Listing feeds, verification services, maps, payment providers, and CRM systems are most of the real work in property software. We plan and price integrations before work starts, with reconciliation jobs where feed data drifts, so listings stay accurate without manual cleanup.</div></details>
                 <details class="faq-item"><summary>How long does a real estate platform take to build?</summary><div class="faq-body">A discovery MVP ships in 6 to 12 weeks. A full platform with brokerage tools and integrations takes 3 to 6 months, and marketplace or operations scale systems 6 to 12 months. Working software lands on a staging environment from the first sprints, so you can click through real search and listing flows every week.</div></details>
                 <details class="faq-item"><summary>Can you take over or rebuild an existing property platform?</summary><div class="faq-body">Yes. We audit the codebase, the data model, and the listing quality first, so you know the real state before committing. Then we stabilize, clean the data flows, and modernize incrementally while the platform keeps serving users. Takeovers and rescues are a significant share of our work.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system.</div></details>
                 <details class="faq-item"><summary>Why choose Quantum Infoway as your real estate app development company?</summary><div class="faq-body">Published metrics on four shipped property platforms, from discovery through operations. We build the whole product from one accountable team, treat data quality as the foundation rather than an afterthought, publish our estimate ranges, and hand over full source and infrastructure in accounts you own.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">

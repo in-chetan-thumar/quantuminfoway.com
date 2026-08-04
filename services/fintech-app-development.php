@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" width="560" height="420" alt="Fintech App Development Company">
+                <img src="<?php echo $si; ?>services__fintech-app-development__hero.png" width="560" height="420" alt="Fintech App Development Company">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-3.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__fintech-app-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__online-dispute-resolution-platform__device.webp" alt="A captive insurance member platform unifying onboarding, claims, and community">
-                        <img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__captive-insurance-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__captive-insurance.png" alt="A captive insurance member platform unifying onboarding, claims, and community">
                     </div>
                     <h3>A captive insurance member platform unifying onboarding, claims, and community</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Multi-party</strong><span>Workflows</span></div><div><strong>Secure</strong><span>Portals</span></div><div><strong>Clear</strong><span>Status</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__solution-mockup.webp" alt="Digital wealth onboarding cut from days of paperwork to hours">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__instant-ex.png" alt="Digital wealth onboarding cut from days of paperwork to hours">
                     </div>
                     <h3>Digital wealth onboarding cut from days of paperwork to hours</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Regulated</strong><span>Fintech UX</span></div><div><strong>Secure</strong><span>Flows</span></div><div><strong>Live</strong><span>Ops views</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__mockup.webp" alt="An investor portfolio intelligence platform with tiered, closed access">
-                        <img src="<?php echo $si; ?>case-studies__digital-wealth-onboarding__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__instant-ex__redesign__solution-mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__digital-wealth.png" alt="An investor portfolio intelligence platform with tiered, closed access">
                     </div>
                     <h3>An investor portfolio intelligence platform with tiered, closed access</h3>
                     <ul class="check-list">

@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services___shared__69047619273bc50fa2a23d1f_67e95158f6a55bd08e06925a_Frame 2147224693-p-800.webp" width="560" height="420" alt="Web &amp; Mobile Applications Built With AI-Native E">
+                <img src="<?php echo $si; ?>services__web-mobile-applications__hero.png" 
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__web-app-3.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__web-mobile-applications__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-1.webp" alt="Built a vacation rental platform from prototype to 1,000+ properties across 80+ ">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__stay-vista__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__stay-vista.png" alt="Built a vacation rental platform from prototype to 1,000+ properties across 80+ ">
                     </div>
                     <h3>Built a vacation rental platform from prototype to 1,000+ properties across 80+ destinations</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>50%</strong><span>Booking capacity</span></div><div><strong>30%</strong><span>Ops cost down</span></div><div><strong>40%</strong><span>Faster booking</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-1.webp" alt="Built a unified AI learning platform serving 15,000+ students across web and mob">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__highlands-brain.png" alt="Built a unified AI learning platform serving 15,000+ students across web and mob">
                     </div>
                     <h3>Built a unified AI learning platform serving 15,000+ students across web and mobile</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>15k+</strong><span>Students served</span></div><div><strong>25%</strong><span>Faster English gains</span></div><div><strong>97%</strong><span>Less compliance effort</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt="Replaced manual fleet operations with a centralised tracking platform">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__fleet.png" alt="Replaced manual fleet operations with a centralised tracking platform">
                     </div>
                     <h3>Replaced manual fleet operations with a centralised tracking platform</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Live</strong><span>Fleet tracking</span></div><div><strong>Less</strong><span>Manual ops</span></div><div><strong>Mobile</strong><span>+ web</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__solution-mockup.webp" alt="Built an AI property-operations platform with ticket triaging and computer-visio">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__device.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__sergo.png" alt="Built an AI property-operations platform with ticket triaging and computer-visio">
                     </div>
                     <h3>Built an AI property-operations platform with ticket triaging and computer-vision asset tagging</h3>
                     <ul class="check-list">

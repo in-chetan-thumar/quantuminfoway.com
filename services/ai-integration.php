@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services__ai-integration__OpenAiLogo.webp" width="560" height="420" alt="AI Integration That Works With Your Existing Sys">
+                <img src="<?php echo $si; ?>services__ai-integration__hero.png" width="560" height="420" alt="AI Integration That Works With Your Existing Sys">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__ai-integration-3.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-integration__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-integration__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-integration__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__healthcare-wellness-platform__hero-1.webp" alt="Built an AI-matched healthtech jobs marketplace with HRFlow.ai">
-                        <img src="<?php echo $si; ?>case-studies__healthcare-wellness-platform__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__docmed__mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__healthcare-wellness.png" alt="Built an AI-matched healthtech jobs marketplace with HRFlow.ai">
                     </div>
                     <h3>Built an AI-matched healthtech jobs marketplace with HRFlow.ai</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>AI</strong><span>Job matching</span></div><div><strong>Integrated</strong><span>HR data</span></div><div><strong>Niche</strong><span>Healthtech</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-1.webp" alt="Integrated three AI features that reduced compliance effort by 97% for 15,000+ l">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__highlands-brain__redesign__device.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__highlands-brain.png" alt="Integrated three AI features that reduced compliance effort by 97% for 15,000+ l">
                     </div>
                     <h3>Integrated three AI features that reduced compliance effort by 97% for 15,000+ learners</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>97%</strong><span>Less compliance effort</span></div><div><strong>3</strong><span>AI features shipped</span></div><div><strong>Live</strong><span>In schools</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics opera">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__fleet.png" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics opera">
                     </div>
                     <h3>Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics operator</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Live</strong><span>Fleet tracking</span></div><div><strong>Less</strong><span>Manual ops</span></div><div><strong>Mobile</strong><span>+ web</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__mockup.webp" alt="Built the enterprise data layer connecting an ERP to an e-commerce marketplace">
-                        <img src="<?php echo $si; ?>case-studies__manufacturing-sales-operations__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__nuos__redesign__solution-mockup.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__manufacturing.png" alt="Built the enterprise data layer connecting an ERP to an e-commerce marketplace">
                     </div>
                     <h3>Built the enterprise data layer connecting an ERP to an e-commerce marketplace</h3>
                     <ul class="check-list">
@@ -252,7 +244,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>What if our data is messy or incomplete?</summary><div class="faq-body">Data quality is the foundation of useful AI. We build data pipelines that clean, transform, and enrich your data before it reaches AI models. We are also candid about when data quality is insufficient for a proposed use case - assessing data readiness is part of our AI Adoption Discovery.</div></details>
                 <details class="faq-item"><summary>Which AI models and providers do you work with?</summary><div class="faq-body">We integrate with all major providers: OpenAI, Anthropic Claude, and Google Gemini/Vertex AI. We also build custom ML models using TensorFlow, PyTorch, and scikit-learn when off-the-shelf solutions do not meet accuracy or performance requirements. Provider selection is based on your specific needs - latency, cost, accuracy, data residency - not our preference.</div></details>
                 <details class="faq-item"><summary>How long does a typical AI integration project take?</summary><div class="faq-body">A single-feature integration, such as adding semantic search to an existing application, takes 4-6 weeks. Multi-feature AI augmentation of an existing platform runs 8-16 weeks. Our AI Adoption Discovery program (3 weeks) helps scope the right integration points before committing to a full build.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
                 <details class="faq-item"><summary>What does AI integration cost for US companies?</summary><div class="faq-body">Our USD rates for AI integration run $25 to $50 per hour depending on seniority and stack, a fraction of the $150 to $300 per hour US specialists typically bill for comparable scope. We work on both fixed scope and retainer models. Fixed scope projects get an estimate before work starts, and most clients choose a retainer, which keeps the team building against your current priorities as requirements change.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">

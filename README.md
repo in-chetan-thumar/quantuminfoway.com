@@ -28,11 +28,7 @@ Built as a PHP site with Composer dependencies (PHPMailer + phpdotenv), MySQL fo
 
 3. **Configure environment**
 
-   ```bash
-   cp .env.example .env
-   ```
-
-   Edit `.env` with your database and SMTP credentials. Never commit `.env`.
+   Create a `.env` file in the project root (never commit it) with database and SMTP settings. See the table below for required keys.
 
 4. **Create the database**
 
@@ -63,9 +59,10 @@ Built as a PHP site with Composer dependencies (PHPMailer + phpdotenv), MySQL fo
 | `SMTP_ENCRYPTION` | Encryption (`tls` or `ssl`) |
 | `SMTP_USER` | SMTP username / email |
 | `SMTP_PASS` | SMTP password (use a Gmail **App Password**, not your login password) |
-| `SMTP_FROM` | From address for inquiry emails |
+| `SMTP_FROM` | From address for outbound emails |
 | `SMTP_FROM_NAME` | From display name |
-| `SMTP_TO` | Inbox that receives inquiry notifications |
+| `SMTP_ENQUIRY_TO` | Inbox for enquiry / contact forms (`form-handler`) |
+| `SMTP_APPLY_TO` | Inbox for Apply Now / Join Our Team (`career-handler`) |
 
 Configuration is loaded in `includes/config.php` via `vlucas/phpdotenv`.
 
@@ -99,7 +96,6 @@ Apache (OSPanel) uses [`.htaccess`](.htaccess) so pages are served without `.php
 ├── hire/                # Individual hire-developer landing pages
 ├── includes/            # Shared PHP (config, DB, mail, header/footer, hire sections)
 ├── services/            # Individual service pages
-├── .env.example         # Environment template (copy to .env)
 ├── .htaccess            # Clean URL rewrites (Apache)
 ├── composer.json        # PHP dependencies
 ├── form-handler.php     # Contact/inquiry POST endpoint (JSON)

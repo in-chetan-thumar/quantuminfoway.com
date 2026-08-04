@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-1.webp" width="560" height="420" alt="AI Automation Company">
+                <img src="<?php echo $si; ?>services__ai-automation__hero.png" width="560" height="420" alt="AI Automation Company">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-3.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-automation__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-automation__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-automation__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-automation__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-automation__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-automation__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-automation__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-automation__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-automation__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__ai-automation__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__ai-automation__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__ai-automation__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-1.webp" alt="Automated about 75 percent of inbound ticket classification and routing">
-                        <img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ai-ticket-classification__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__ticket-classification.png" alt="Automated about 75 percent of inbound ticket classification and routing">
                     </div>
                     <h3>Automated about 75 percent of inbound ticket classification and routing</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>75%</strong><span>Auto-routed</span></div><div><strong>Faster</strong><span>First response</span></div><div><strong>Human</strong><span>On exceptions</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ai-document-intelligence__hero-1.webp" alt="Turned documents that could not be used at scale into grounded, structured data">
-                        <img src="<?php echo $si; ?>case-studies__ai-document-intelligence__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ai-document-intelligence__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__document-intelligence.png" alt="Turned documents that could not be used at scale into grounded, structured data">
                     </div>
                     <h3>Turned documents that could not be used at scale into grounded, structured data</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Structured</strong><span>From documents</span></div><div><strong>Validated</strong><span>Human-in-loop</span></div><div><strong>Integrated</strong><span>Into systems</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-1.webp" alt="Cut sales call preparation time 40 percent with a grounded internal assistant">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-sales-enablement__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__unico-sales.png" alt="Cut sales call preparation time 40 percent with a grounded internal assistant">
                     </div>
                     <h3>Cut sales call preparation time 40 percent with a grounded internal assistant</h3>
                     <ul class="check-list">

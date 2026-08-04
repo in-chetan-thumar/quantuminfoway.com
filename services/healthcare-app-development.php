@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-1.webp" width="560" height="420" alt="Healthcare App Development Company">
+                <img src="<?php echo $si; ?>services__healthcare-app-development__hero.png" width="560" height="420" alt="Healthcare App Development Company">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-3.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-1.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-2.webp" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-3.webp" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__healthcare-app-development__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-1.webp" alt="Built a PHI redaction pipeline for medical imaging that preserved diagnostic qua">
-                        <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__dicom-imaging-phi-detection__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__dicom-phi.png" alt="Built a PHI redaction pipeline for medical imaging that preserved diagnostic quality">
                     </div>
                     <h3>Built a PHI redaction pipeline for medical imaging that preserved diagnostic quality</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>PHI</strong><span>Auto-redacted</span></div><div><strong>DICOM</strong><span>Pipeline ready</span></div><div><strong>Audit</strong><span>Traceable runs</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-01.webp" alt="Shipped Deep Meditate, native iOS and Android health apps with 500K+ downloads">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-02.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__deep-meditate__redesign__app-03.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__web-work__deep-meditate.png" alt="Shipped Deep Meditate, native iOS and Android health apps with 500K+ downloads">
                     </div>
                     <h3>Shipped Deep Meditate, native iOS and Android health apps with 500K+ downloads</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>500K+</strong><span>Downloads</span></div><div><strong>15%</strong><span>Paid conversion</span></div><div><strong>iOS+Android</strong><span>Unified UX</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__meeveem__mockup.webp" alt="Built a three portal beauty and wellness booking marketplace as an MVP">
-                        <img src="<?php echo $si; ?>case-studies__meeveem__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__meeveem__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__nocode-work__meeveem.png" alt="Built a three portal beauty and wellness booking marketplace as an MVP">
                     </div>
                     <h3>Built a three portal beauty and wellness booking marketplace as an MVP</h3>
                     <ul class="check-list">

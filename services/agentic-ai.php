@@ -36,25 +36,25 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
             </div>
             <div class="svc-hero-media reveal reveal-up" aria-hidden="true">
-                <img src="<?php echo $si; ?>services___shared__69047619273bc50fa2a23d1f_67e95158f6a55bd08e06925a_Frame 2147224693-p-800.webp" width="560" height="420" alt="AI Agents That Work in Production">
+                <img src="<?php echo $si; ?>services__agentic-ai__hero.png" width="560" height="420" alt="AI Agents That Work in Production">
             </div>
         </div>
     </section>
 
     <div class="svc-showcase" aria-hidden="true">
         <div class="svc-showcase-track">
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-3.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-1.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-2.svg" alt=""></div>
-            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__ai-agents-3.svg" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__marquee-3.png" alt=""></div>
+            <div class="svc-show-card" style="background:#E8F5BD"><img src="<?php echo $si; ?>services__agentic-ai__marquee-1.png" alt=""></div>
+            <div class="svc-show-card" style="background:#FFF6C0"><img src="<?php echo $si; ?>services__agentic-ai__marquee-2.png" alt=""></div>
+            <div class="svc-show-card" style="background:#BDE8F5"><img src="<?php echo $si; ?>services__agentic-ai__marquee-3.png" alt=""></div>
             
         </div>
     </div>
@@ -149,10 +149,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             </div>
             <div class="work-grid reveal-stagger">
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__mockup.webp" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics opera">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__fleet-management-platform__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__fleet.png" alt="Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics opera">
                     </div>
                     <h3>Built two WhatsApp AI agents and optimised cloud costs for a B2B logistics operator</h3>
                     <ul class="check-list">
@@ -163,10 +161,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Live</strong><span>Fleet tracking</span></div><div><strong>Less</strong><span>Manual ops</span></div><div><strong>Mobile</strong><span>+ web</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__solution-mockup.webp" alt="Built an AI property-operations platform with ticket triaging and computer-visio">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__sergo__redesign__device.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__sergo.png" alt="Built an AI property-operations platform with ticket triaging and computer-visio">
                     </div>
                     <h3>Built an AI property-operations platform with ticket triaging and computer-vision asset tagging</h3>
                     <ul class="check-list">
@@ -177,10 +173,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>Faster</strong><span>Ticket routing</span></div><div><strong>CV</strong><span>Asset tagging</span></div><div><strong>Live</strong><span>In production</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-1.webp" alt="Built demand forecasting, dynamic pricing and the QueryAI analytics bot for D2C ">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-2.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__ecomm-pulse__redesign__hero-3.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__ecomm-pulse.png" alt="Built demand forecasting, dynamic pricing and the QueryAI analytics bot for D2C ">
                     </div>
                     <h3>Built demand forecasting, dynamic pricing and the QueryAI analytics bot for D2C brands</h3>
                     <ul class="check-list">
@@ -191,10 +185,8 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                     <div class="case-metrics"><div><strong>50%</strong><span>Faster reporting</span></div><div><strong>30%</strong><span>Fewer stockouts</span></div><div><strong>25%</strong><span>Pricing accuracy</span></div></div>
                 </article>
                 <article class="work-card reveal reveal-up">
-                    <div class="work-media">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__mockup.webp" alt="Built the AI-led engineering platform Quantum Infoway runs on internally">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-1.webp" alt="">
-                        <img src="<?php echo $si; ?>case-studies__unico-engineering-enablement__hero-2.webp" alt="">
+                    <div class="work-media work-media-single">
+                        <img src="<?php echo $si; ?>services__ai-work__unico-engineering.png" alt="Built the AI-led engineering platform Quantum Infoway runs on internally">
                     </div>
                     <h3>Built the AI-led engineering platform Quantum Infoway runs on internally</h3>
                     <ul class="check-list">
@@ -262,7 +254,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>How long does it take to build and deploy an AI agent?</summary><div class="faq-body">A focused proof-of-concept for a single use case takes 3-4 weeks. A production-grade agent with full integration, testing, and monitoring runs 8-12 weeks. Multi-agent systems are phased over 3-6 months. Our AI Adoption programs provide structured entry points for assessment and prototyping.</div></details>
                 <details class="faq-item"><summary>What happens when the AI agent cannot handle something?</summary><div class="faq-body">Every agent we build includes human-in-the-loop escalation paths. When the agent encounters uncertainty, ambiguous input, or a scenario outside its defined scope, it routes to a human with full context of the conversation and every action attempted. No dead ends for users, no silent failures for your team.</div></details>
                 <details class="faq-item"><summary>Why do so many agentic AI projects fail - and how do you prevent it?</summary><div class="faq-body">Gartner predicts more than 40% of agentic AI projects will be cancelled by the end of 2027 - mostly from unclear business value, runaway cost, and weak governance. We prevent that with a 3-week AI Adoption Discovery that proves business value on a working proof-of-concept before a full build, then ship with guardrails, cost controls, human-in-the-loop escalation, and continuous monitoring. That is the difference between a demo and a production agent.</div></details>
-                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Mumbai hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
+                <details class="faq-item"><summary>Do you work with US companies?</summary><div class="faq-body">Yes. Most of our clients are in the USA, and we maintain a US presence for contracts and billing. Engineering is delivered from our Ahmedabad hub with a guaranteed overlap of up to 4 hours with your US business hours, and full US hours coverage is available as an add on. Invoicing is in USD, with euro and INR invoicing also available, and every engagement includes full IP assignment, NDAs before discovery, and delivery under our ISO/IEC 27001:2022 certified information security management system. US clients include Highlands Community Charter in California, ABC Carpet and Home in New York, Deep Meditate, and Choice Digital.</div></details>
                 <details class="faq-item"><summary>What does agentic AI development cost for US companies?</summary><div class="faq-body">Our USD rates for agentic AI development run $25 to $50 per hour depending on seniority and stack, a fraction of the $150 to $300 per hour US specialists typically bill for comparable scope. We work on both fixed scope and retainer models. Fixed scope projects get an estimate before work starts, and most clients choose a retainer, which keeps the team building against your current priorities as requirements change.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">

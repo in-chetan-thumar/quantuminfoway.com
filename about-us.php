@@ -49,7 +49,7 @@ $proof = [
 ];
 
 $journey = [
-    ['2014', 'Founded in Mumbai', 'Quantum Infoway was founded in Mumbai in January 2014 to build software that scales, combining production-grade engineering with modern tooling.'],
+    ['2014', 'Founded in Ahmedabad', 'Quantum Infoway was founded in Ahmedabad in January 2014 to build software that scales, combining production-grade engineering with modern tooling.'],
     ['2023', 'Best NoCode Agency of the year', 'The NoCode Alliance named Quantum Infoway the Best NoCode Agency of 2023, recognizing our no-code delivery practice.'],
     ['2025', 'Ranked #13 on the Clutch 100', 'Clutch placed Quantum Infoway at #13 on its 100 fastest-growing companies list, built on verified client reviews and revenue growth.'],
     ['2025', 'Certified Google Cloud and Workspace Partner', 'Recognized as a Certified Google Cloud and Workspace Partner, delivering Google Workspace consulting and cloud services in India.'],
@@ -67,34 +67,40 @@ $process = [
 
 $leaders = [
     [
-        'img' => 'author-malay-parekh.jpg',
-        'name' => 'Malay Parekh',
+        'img' => 'team-avatar.png',
+        'name' => 'Chetan Thumar',
         'role' => 'CEO & Director',
-        'bio' => 'Malay leads Quantum Infoway as a global engineering partner, working closely with founders and engineering leaders across 13+ countries. He combines deep product thinking with the latest in AI, no-code, and cloud-native development.',
+        'bio' => 'Chetan leads Quantum Infoway as CEO & Director, setting product direction and partnering with founders and engineering leaders to ship AI-native software that scales across markets.',
     ],
     [
-        'img' => 'author-vasim-gujrati-2026.jpg',
-        'name' => 'Vasim Gujrati',
-        'role' => 'Solutions Architect, AI & Platforms',
-        'bio' => 'Vasim owns the full lifecycle of AI and platform engineering, building production systems with LLMs, RAG, and multi-agent orchestration across healthcare, telecom, and SaaS.',
+        'img' => 'team-avatar.png',
+        'name' => 'Abhishek Rajput',
+        'role' => 'Senior Full Stack Developer & AI Expert',
+        'bio' => 'Abhishek builds end-to-end web products and AI features, from architecture through launch, with a focus on clean APIs, modern frontends, and production-ready LLM integrations.',
     ],
     [
-        'img' => 'author-saurav-jagdale.jpg',
-        'name' => 'Saurav Jagdale',
-        'role' => 'Technical Lead',
-        'bio' => 'Saurav is a GCP Professional Cloud Architect who built our DevOps practice and the certifications behind our Google Cloud partnership, and now drives AI enablement across engineering.',
+        'img' => 'team-avatar.png',
+        'name' => 'Vishal Chauhan',
+        'role' => 'Senior Full Stack Developer & AI Expert',
+        'bio' => 'Vishal designs and ships full stack applications with AI capabilities, owning delivery across the stack so teams get reliable, maintainable products on aggressive timelines.',
     ],
     [
-        'img' => 'author-zubin-gala.jpg',
-        'name' => 'Zubin Gala',
-        'role' => 'Principal Mobile App Engineer',
-        'bio' => 'Zubin has spent 11 years building and scaling mobile platforms, with deep iOS and Flutter expertise and 99.8% crash free sessions sustained across production apps.',
+        'img' => 'team-avatar.png',
+        'name' => 'Hardik Thanki',
+        'role' => 'QA & AI Expert',
+        'bio' => 'Hardik owns quality across releases, combining rigorous test strategy with AI-assisted validation so products ship stable, secure, and ready for real users.',
     ],
     [
-        'img' => 'author-anurag-kurmi.jpg',
-        'name' => 'Anurag Kurmi',
-        'role' => 'Senior Full Stack Engineer',
-        'bio' => 'Anurag is a frontend technical lead in React, TypeScript, and Next.js who has led high traffic SaaS builds including EcommPulse and Choice Digital.',
+        'img' => 'team-avatar.png',
+        'name' => 'Nihar Savaliya',
+        'role' => 'Senior Full Stack Developer & AI Expert',
+        'bio' => 'Nihar delivers senior full stack engineering with AI expertise, building scalable backends and polished interfaces that turn complex requirements into shipped software.',
+    ],
+    [
+        'img' => 'team-avatar.png',
+        'name' => 'Amit Vadgama',
+        'role' => 'Mobile App Developer',
+        'bio' => 'Amit builds native and cross-platform mobile apps focused on performance, smooth UX, and reliable release pipelines from prototype through store launch.',
     ],
 ];
 
@@ -110,14 +116,14 @@ $certs = [
 ?>
 
 <main class="page-service page-hire page-directory page-about">
-    <section class="hero service-hero has-media" id="about-hero">
+    <section class="hero service-hero" id="about-hero">
         <div class="hero-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
         <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
         <div class="container hero-inner">
             <div class="hero-content reveal reveal-scale">
                 <span class="eyebrow">About Quantum Infoway</span>
                 <h1>We build and scale custom <span class="gradient-text">digital products</span></h1>
-                <p>Quantum Infoway is an AI-native software development company headquartered in Mumbai, founded in 2014, serving clients in 13+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
+                <p>Quantum Infoway is an AI-native software development company headquartered in Ahmedabad, founded in 2014, serving clients in 13+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
                 <div class="hero-actions">
                     <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#proof" class="btn btn-ghost btn-lg">See proof</a>
@@ -127,9 +133,6 @@ $certs = [
                     <span>250+ products delivered</span>
                     <span>13+ countries served</span>
                 </div>
-            </div>
-            <div class="svc-hero-media about-hero-photo reveal reveal-up">
-                <img src="<?php echo $ai; ?>team.webp" width="560" height="420" alt="Quantum Infoway team">
             </div>
         </div>
     </section>
@@ -222,7 +225,7 @@ $certs = [
                         <span class="eyebrow">Vision</span>
                         <ul class="about-check-list">
                             <li>Make AI-native development the default for ambitious teams, so every product ships with intelligence built in.</li>
-                            <li>Prove that a Mumbai engineering hub can be the best product partner for companies anywhere in the world.</li>
+                            <li>Prove that an Ahmedabad engineering hub can be the best product partner for companies anywhere in the world.</li>
                         </ul>
                     </article>
                     <article class="about-vm-card reveal reveal-up">
@@ -265,12 +268,12 @@ $certs = [
         <div class="container">
             <div class="section-head reveal reveal-up">
                 <span class="eyebrow">Life at Quantum Infoway</span>
-                <h2>Built in Mumbai, shipping <span class="gradient-text">worldwide</span></h2>
+                <h2>Built in Ahmedabad, shipping <span class="gradient-text">worldwide</span></h2>
             </div>
             <div class="about-life-grid reveal reveal-up">
-                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-reception.webp" alt="Office reception" loading="lazy"></div>
-                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-together.webp" alt="Engineering floor" loading="lazy"></div>
-                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-floor.webp" alt="Team at work" loading="lazy"></div>
+                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-workstations.png" alt="Office workstations" loading="lazy"></div>
+                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-meeting.png" alt="Meeting room" loading="lazy"></div>
+                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-lounge.png" alt="Office lounge" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -282,14 +285,16 @@ $certs = [
                 <h2>The people accountable to <span class="gradient-text">you</span></h2>
             </div>
             <div class="about-leaders-grid">
-                <?php foreach ($leaders as $person): ?>
-                <article class="about-leader-card reveal reveal-up">
+                <?php foreach ($leaders as $i => $person): ?>
+                <article class="about-leader-card<?php echo $i === 0 ? ' about-leader-card--lead' : ''; ?> reveal reveal-up">
                     <div class="about-leader-photo">
-                        <img src="<?php echo $ai . htmlspecialchars($person['img']); ?>" alt="<?php echo htmlspecialchars($person['name']); ?>" loading="lazy">
+                        <img src="<?php echo $ai . htmlspecialchars($person['img']); ?>" alt="<?php echo htmlspecialchars($person['name']); ?>" loading="lazy" width="112" height="112">
                     </div>
-                    <h3><?php echo htmlspecialchars($person['name']); ?></h3>
-                    <span class="about-leader-role"><?php echo htmlspecialchars($person['role']); ?></span>
-                    <p><?php echo htmlspecialchars($person['bio']); ?></p>
+                    <div class="about-leader-body">
+                        <h3><?php echo htmlspecialchars($person['name']); ?></h3>
+                        <span class="about-leader-role"><?php echo htmlspecialchars($person['role']); ?></span>
+                        <p><?php echo htmlspecialchars($person['bio']); ?></p>
+                    </div>
                 </article>
                 <?php endforeach; ?>
             </div>
@@ -315,11 +320,11 @@ $certs = [
     <section class="section services-alt" id="quote">
         <div class="container">
             <div class="about-quote reveal reveal-up">
-                <img class="about-quote-avatar" src="<?php echo $ai; ?>author-malay-parekh.jpg" alt="Malay Parekh" loading="lazy">
+                <img class="about-quote-avatar" src="<?php echo $ai; ?>team-avatar.png" alt="Chetan Thumar" loading="lazy">
                 <blockquote>
                     <p>At Quantum Infoway, we build fast, intelligent, and scalable digital products that make a real impact. Whether you are looking to accelerate your roadmap, unlock new capabilities with AI, or deploy at scale, we are here to help.</p>
                     <footer>
-                        <strong>Malay Parekh</strong>
+                        <strong>Chetan Thumar</strong>
                         <span>CEO &amp; Director, Quantum Infoway</span>
                     </footer>
                 </blockquote>
