@@ -201,6 +201,7 @@ $faqs = [
             <a href="#pricing">Pricing</a>
             <a href="#timezones">Time Zones</a>
             <a href="#faq">FAQ</a>
+            <a href="#join-our-team">Join Our Team</a>
             <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>
@@ -383,6 +384,57 @@ $faqs = [
                     <div class="faq-body"><?php echo htmlspecialchars($f[1]); ?></div>
                 </details>
                 <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <section class="section join-team-section" id="join-our-team">
+        <div class="container">
+            <div class="join-team-layout">
+                <div class="join-team-copy reveal reveal-left">
+                    <div class="section-head">
+                        <span class="eyebrow">Careers</span>
+                        <h2>Join Our <span class="gradient-text">Team</span></h2>
+                        <p>We hire builders who care about craft, ownership, and shipping real products. If that sounds like you, apply below — we read every application.</p>
+                    </div>
+                    <ul class="join-team-points">
+                        <li>
+                            <strong>Real production work</strong>
+                            <span>Ship features for startups and enterprises — not throwaway demos or internal-only tasks.</span>
+                        </li>
+                        <li>
+                            <strong>Remote-friendly culture</strong>
+                            <span>Flexible schedules with clear overlap windows for US, UK/Europe, and APAC clients.</span>
+                        </li>
+                        <li>
+                            <strong>Growth that compounds</strong>
+                            <span>Mentorship, code reviews, and paths across engineering, AI, and product roles.</span>
+                        </li>
+                        <li>
+                            <strong>AI-native toolkit</strong>
+                            <span>Work with modern stacks and AI-assisted delivery — Claude, agents, and automation as day-to-day tools.</span>
+                        </li>
+                        <li>
+                            <strong>Ownership &amp; trust</strong>
+                            <span>Own features end-to-end: design trade-offs, implementation, testing, and production handoff.</span>
+                        </li>
+                        <li>
+                            <strong>Competitive pay &amp; stability</strong>
+                            <span>Fair compensation, long-running client engagements, and a team that values craft over crunch.</span>
+                        </li>
+                        <li>
+                            <strong>Learning budget</strong>
+                            <span>Support for courses, certifications, and conferences that sharpen your craft.</span>
+                        </li>
+                        <li>
+                            <strong>Healthy delivery pace</strong>
+                            <span>Sustainable sprints, clear priorities, and respect for deep-work time.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="join-team-form-wrap reveal reveal-right">
+                    <?php require __DIR__ . '/includes/join-team-form.php'; ?>
+                </div>
             </div>
         </div>
     </section>

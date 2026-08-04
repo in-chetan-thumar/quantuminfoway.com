@@ -285,17 +285,17 @@ require_once __DIR__ . '/includes/header.php';
             <div class="section-head reveal reveal-up">
                 <span class="eyebrow">See Our Work</span>
                 <h2>Customer <span class="gradient-text">Success Stories</span></h2>
-                <p>Real products, real outcomes — from classic digital builds to AI-powered platforms.</p>
+                <p>Real products, real outcomes — from digital builds to enterprise platforms.</p>
             </div>
 
             <div class="cases-stack" id="casesStack">
             <div class="cases-stack-item" style="--i: 0">
             <article class="case-card">
                 <div class="case-media">
-                    <img src="assets/images/portfolio5.jpg" alt="E-commerce platform case study" loading="lazy">
+                    <img src="assets/images/portfolio5.jpg" alt="Full-Scale E-Commerce Platform" loading="lazy">
                 </div>
                 <div class="case-body">
-                    <div class="case-tags"><span class="tag">E-Commerce</span><span class="tag">India</span></div>
+                    <div class="case-tags"><span class="tag">E-Commerce</span><span class="tag">India</span><span class="tag">Web</span></div>
                     <h3>Full-Scale E-Commerce Platform</h3>
                     <p>A growing retail brand needed a fast, conversion-focused online store. We delivered a complete storefront with custom checkout, inventory sync, and marketing integrations.</p>
                     <ul class="check-list">
@@ -308,6 +308,7 @@ require_once __DIR__ . '/includes/header.php';
                         <div><strong>2x</strong><span>Faster page loads</span></div>
                         <div><strong>99.9%</strong><span>Uptime</span></div>
                     </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/ecommerce-platform'); ?>">View case study →</a>
                 </div>
             </article>
             </div>
@@ -315,10 +316,10 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 1">
             <article class="case-card case-card-flip">
                 <div class="case-media">
-                    <img src="assets/images/portfolio6.jpg" alt="Business web application case study" loading="lazy">
+                    <img src="assets/images/portfolio6.jpg" alt="Operations Management Web App" loading="lazy">
                 </div>
                 <div class="case-body">
-                    <div class="case-tags"><span class="tag">Web Application</span><span class="tag">Canada</span></div>
+                    <div class="case-tags"><span class="tag">Web Application</span><span class="tag">Canada</span><span class="tag">Web</span></div>
                     <h3>Operations Management Web App</h3>
                     <p>A services company was drowning in spreadsheets. We built a unified operations platform that put scheduling, invoicing, and reporting in one place.</p>
                     <ul class="check-list">
@@ -331,6 +332,7 @@ require_once __DIR__ . '/includes/header.php';
                         <div><strong>30%</strong><span>Cost reduction</span></div>
                         <div><strong>4.9/5</strong><span>User rating</span></div>
                     </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/operations-management-web-app'); ?>">View case study →</a>
                 </div>
             </article>
             </div>
@@ -338,10 +340,10 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 2">
             <article class="case-card">
                 <div class="case-media">
-                    <img src="assets/images/portfolio8.jpg" alt="Mobile app case study" loading="lazy">
+                    <img src="assets/images/portfolio8.jpg" alt="Customer-Facing Mobile App" loading="lazy">
                 </div>
                 <div class="case-body">
-                    <div class="case-tags"><span class="tag">Mobile App</span><span class="tag">United States</span></div>
+                    <div class="case-tags"><span class="tag">Mobile App</span><span class="tag">United States</span><span class="tag">Mobile</span></div>
                     <h3>Customer-Facing Mobile App</h3>
                     <p>From prototype to app-store launch — a booking and loyalty app for a consumer brand, shipped for both iOS and Android from a single codebase.</p>
                     <ul class="check-list">
@@ -354,6 +356,7 @@ require_once __DIR__ . '/includes/header.php';
                         <div><strong>40%</strong><span>Repeat bookings</span></div>
                         <div><strong>4.8★</strong><span>Store rating</span></div>
                     </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/customer-facing-mobile-app'); ?>">View case study →</a>
                 </div>
             </article>
             </div>
@@ -361,22 +364,23 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 3">
             <article class="case-card case-card-flip">
                 <div class="case-media">
-                    <img src="assets/images/home/case-card-highlands.webp" alt="AI-Powered Student Management Platform" loading="lazy">
+                    <img src="assets/images/case-studies/ev-charger-installation-web-hero.png" alt="EV Charger Installation Management Platform" loading="lazy">
                 </div>
                 <div class="case-body">
-                    <div class="case-tags"><span class="tag">Education</span><span class="tag">USA</span><span class="tag">AI</span></div>
-                    <h3>AI-Powered Student Management Platform</h3>
-                    <p>A charter school serving diverse populations across age groups and language backgrounds. We built a unified platform with multiple AI capabilities driving student outcomes and staff productivity.</p>
+                    <div class="case-tags"><span class="tag">EV Infrastructure</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
+                    <h3>EV Charger Installation Management</h3>
+                    <p>A cloud command center for dealers, vendors, kit inventory, multi-level approvals, and installation analytics across the full EV charger lifecycle.</p>
                     <ul class="check-list">
-                        <li>Accelerated English learning program for non-native speakers</li>
-                        <li>AI tutor that adapts to each student's learning pace and answers questions in real time</li>
-                        <li>Compliance agents that autonomously review attendance, generate PDFs, and route documents for signature</li>
+                        <li>Dealer and vendor onboarding with SLA monitoring</li>
+                        <li>Kit warehouse allocation and inspection review desks</li>
+                        <li>Executive dashboards for cycle time and CSAT</li>
                     </ul>
                     <div class="case-metrics">
-                        <div><strong>15k+</strong><span>Students served</span></div>
-                        <div><strong>25%</strong><span>Faster English acquisition</span></div>
-                        <div><strong>97%</strong><span>Reduction in compliance effort</span></div>
+                        <div><strong>70%</strong><span>Faster cycle</span></div>
+                        <div><strong>100%</strong><span>Digital order trail</span></div>
+                        <div><strong>40%</strong><span>Less coordination overhead</span></div>
                     </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/ev-charger-installation'); ?>">View case study →</a>
                 </div>
             </article>
             </div>
@@ -384,22 +388,23 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 4">
             <article class="case-card">
                 <div class="case-media">
-                    <img src="assets/images/home/case-card-stay-vista.webp" alt="AI-Enhanced Premium Vacation Rental Platform" loading="lazy">
+                    <img src="assets/images/case-studies/dealer-management-system-hero.png" alt="Enterprise Dealer Management System" loading="lazy">
                 </div>
                 <div class="case-body">
-                    <div class="case-tags"><span class="tag">Hospitality</span><span class="tag">India</span><span class="tag">AI</span></div>
-                    <h3>AI-Enhanced Premium Vacation Rental Platform</h3>
-                    <p>A leading premium holiday home rental platform across 1,000+ properties in 80+ destinations. From prototype to full-scale platform with AI powering operations and guest experience.</p>
+                    <div class="case-tags"><span class="tag">Automotive</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
+                    <h3>Dealer Management System</h3>
+                    <p>Dealer lifecycle on one portal — onboarding, digital agreements, FY planning, inventory allocation, compliance, and exit workflows.</p>
                     <ul class="check-list">
-                        <li>AI-powered recommendations that match guests with the right properties</li>
-                        <li>Intelligent revenue and occupancy analysis for pricing optimization</li>
-                        <li>Operational insights that help teams make faster, data-backed decisions</li>
+                        <li>Paperless KYC, agreements, and e-signature</li>
+                        <li>Full financial year and monthly business planning</li>
+                        <li>Network scorecards and compliance analytics</li>
                     </ul>
                     <div class="case-metrics">
-                        <div><strong>50%</strong><span>Booking capacity increase</span></div>
-                        <div><strong>30%</strong><span>Operational cost reduction</span></div>
-                        <div><strong>40%</strong><span>Faster booking process</span></div>
+                        <div><strong>60%</strong><span>Faster activation</span></div>
+                        <div><strong>100%</strong><span>Paperless agreements</span></div>
+                        <div><strong>3×</strong><span>Planning accuracy</span></div>
                     </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/dealer-management-system'); ?>">View case study →</a>
                 </div>
             </article>
             </div>
@@ -407,22 +412,95 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 5">
             <article class="case-card case-card-flip">
                 <div class="case-media">
-                    <img src="assets/images/home/case-card-ecommpulse.webp" alt="AI-Powered E-Commerce Analytics for Sellers" loading="lazy">
+                    <img src="assets/images/case-studies/travel-expense-management-hero.png" alt="Corporate Travel and Expense Management" loading="lazy">
                 </div>
                 <div class="case-body">
-                    <div class="case-tags"><span class="tag">E-Commerce SaaS</span><span class="tag">India</span><span class="tag">AI</span></div>
-                    <h3>AI-Powered E-Commerce Analytics for Sellers</h3>
-                    <p>A SaaS platform for market analytics, inventory management, and sales intelligence. Real-time data unification across marketplaces with an AI layer that goes beyond static dashboards.</p>
+                    <div class="case-tags"><span class="tag">HR &amp; Finance</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
+                    <h3>Travel &amp; Expense Management</h3>
+                    <p>Digital travel requests, advances, receipt-backed claims, department approvals, and finance-ready reimbursement with a complete audit trail.</p>
                     <ul class="check-list">
-                        <li>AI assistant for sellers to ask questions about their data in natural language</li>
-                        <li>Automated pricing recommendations based on market trends and competitor analysis</li>
-                        <li>Intelligent correlation discovery that surfaces hidden patterns across metrics</li>
+                        <li>Policy-aware multi-level e-decision workflows</li>
+                        <li>Receipt vaults and OCR-ready attachments</li>
+                        <li>Finance settlement dashboards and exports</li>
                     </ul>
                     <div class="case-metrics">
-                        <div><strong>50%</strong><span>Faster reporting &amp; analysis</span></div>
-                        <div><strong>30%</strong><span>Reduction in stockouts</span></div>
-                        <div><strong>25%</strong><span>Pricing accuracy improvement</span></div>
+                        <div><strong>55%</strong><span>Faster settlement</span></div>
+                        <div><strong>80%</strong><span>Less paperwork</span></div>
+                        <div><strong>100%</strong><span>Digital audit</span></div>
                     </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/travel-expense-management'); ?>">View case study →</a>
+                </div>
+            </article>
+            </div>
+
+            <div class="cases-stack-item" style="--i: 6">
+            <article class="case-card">
+                <div class="case-media">
+                    <img src="assets/images/case-studies/invoice-management-system-hero.png" alt="Enterprise Invoice Management System" loading="lazy">
+                </div>
+                <div class="case-body">
+                    <div class="case-tags"><span class="tag">Finance</span><span class="tag">Procurement</span><span class="tag">Web</span></div>
+                    <h3>Invoice Management System</h3>
+                    <p>Vendor invoice intake, OCR-ready validation, multi-level approval, payment tracking, and immutable audit history in one AP workspace.</p>
+                    <ul class="check-list">
+                        <li>Vendor portal submission and status</li>
+                        <li>Role-based approval and payment schedules</li>
+                        <li>Aging analytics and complete audit packs</li>
+                    </ul>
+                    <div class="case-metrics">
+                        <div><strong>50%</strong><span>Faster cycle</span></div>
+                        <div><strong>95%</strong><span>Straight-through accuracy</span></div>
+                        <div><strong>100%</strong><span>Audit coverage</span></div>
+                    </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/invoice-management-system'); ?>">View case study →</a>
+                </div>
+            </article>
+            </div>
+
+            <div class="cases-stack-item" style="--i: 7">
+            <article class="case-card case-card-flip">
+                <div class="case-media">
+                    <img src="assets/images/case-studies/vehicle-exchange-platform-web-hero.png" alt="Vehicle Exchange Management Platform" loading="lazy">
+                </div>
+                <div class="case-body">
+                    <div class="case-tags"><span class="tag">Automotive Retail</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
+                    <h3>Vehicle Exchange Platform</h3>
+                    <p>Trade-in desk for valuation, approvals, inventory aging, and resale — unified across dealership networks with inspection packs from the field.</p>
+                    <ul class="check-list">
+                        <li>Pricing engine with market comps and offer approvals</li>
+                        <li>Multi-location inventory and aging alerts</li>
+                        <li>Resale pipeline and margin analytics</li>
+                    </ul>
+                    <div class="case-metrics">
+                        <div><strong>45%</strong><span>Faster trade-in cycle</span></div>
+                        <div><strong>25%</strong><span>Better valuation accuracy</span></div>
+                        <div><strong>Real-time</strong><span>Stock visibility</span></div>
+                    </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/vehicle-exchange-platform'); ?>">View case study →</a>
+                </div>
+            </article>
+            </div>
+
+            <div class="cases-stack-item" style="--i: 8">
+            <article class="case-card">
+                <div class="case-media">
+                    <img src="assets/images/case-studies/vehicle-auction-management-web-hero.png" alt="Vehicle Auction Management Platform" loading="lazy">
+                </div>
+                <div class="case-body">
+                    <div class="case-tags"><span class="tag">Automotive Auction</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
+                    <h3>Vehicle Auction Management</h3>
+                    <p>Single and bulk lot auctions with scheduling, live bid ops, KYC-gated bidders, payments, allocation, and post-auction analytics.</p>
+                    <ul class="check-list">
+                        <li>Live bid control room with reserve rules</li>
+                        <li>Bidder KYC, deposits, and settlement tracking</li>
+                        <li>Price discovery and lot performance reports</li>
+                    </ul>
+                    <div class="case-metrics">
+                        <div><strong>2×</strong><span>Faster disposal</span></div>
+                        <div><strong>Higher</strong><span>Price discovery</span></div>
+                        <div><strong>100%</strong><span>Digital audit trail</span></div>
+                    </div>
+                    <a class="case-link" href="<?php echo route_attr('case-studies/vehicle-auction-management'); ?>">View case study →</a>
                 </div>
             </article>
             </div>

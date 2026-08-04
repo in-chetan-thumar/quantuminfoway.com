@@ -89,6 +89,7 @@ $hire_related = [
             <a href="#pricing">Pricing</a>
             <a href="#work">Work</a>
             <a href="#faq">FAQ</a>
+            <a href="<?php echo route_attr('hire#join-our-team'); ?>">Join Our Team</a>
             <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
     </nav>

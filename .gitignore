@@ -9,6 +9,9 @@ composer.phar
 
 # Runtime / logs
 data/*.log
+data/cvs/*
+!data/cvs/.gitkeep
+!data/cvs/.htaccess
 *.log
 
 # OSPanel / local temp

@@ -36,9 +36,10 @@
                     <h4>Company</h4>
                     <ul>
                         <li><a href="<?php echo route_attr('about-us'); ?>"<?php echo nav_active_class('about-us') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('about-us'); ?>>About Us</a></li>
-                        <li><a href="<?php echo route_attr('#portfolio'); ?>">Case Studies</a></li>
+                        <li><a href="<?php echo route_attr('case-studies'); ?>"<?php echo nav_active_class('case-studies', true) !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('case-studies', true); ?>>Case Studies</a></li>
                         <li><a href="<?php echo route_attr('#reviews'); ?>">Testimonials</a></li>
                         <li><a href="<?php echo route_attr('blogs'); ?>"<?php echo nav_active_class('blogs') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('blogs'); ?>>Blogs</a></li>
+                        <li><a href="<?php echo route_attr('hire#join-our-team'); ?>">Join Our Team</a></li>
                         <li><a href="<?php echo route_attr('contact-us'); ?>"<?php echo nav_active_class('contact-us') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('contact-us'); ?>>Contact Us</a></li>
                     </ul>
                 </div>

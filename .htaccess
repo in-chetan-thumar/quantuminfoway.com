@@ -1,9 +1,19 @@
 # Quantum Infoway — clean URL routing (Apache)
 # /about-us → about-us.php, /services/ai-development → services/ai-development.php
 
+# Prevent directory listings (hire/ and services/ collide with hire.php / services.php)
+Options -Indexes
+
+# Stop /hire ↔ /hire/ redirect loops (directory hire/ exists alongside hire.php)
+DirectorySlash Off
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
+
+    # Prefer root .php pages over same-named directories (internal only — no 301)
+    # [END] prevents further rewrite passes that could re-trigger DirectorySlash
+    RewriteRule ^(hire|services)/?$ $1.php [END]
 
     # Keep real files and directories as-is
     RewriteCond %{REQUEST_FILENAME} -f [OR]

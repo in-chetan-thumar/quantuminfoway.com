@@ -167,7 +167,7 @@ $mailResult = send_inquiry_emails([
     'ip'          => $ip,
 ]);
 
-$mailSent = !empty($mailResult['all']);
+$mailSent = !empty($mailResult['company']) || !empty($mailResult['user']);
 
 if ($mailSent && $inquiryId > 0) {
     try {
@@ -179,7 +179,9 @@ if ($mailSent && $inquiryId > 0) {
 }
 
 $responseMessage = 'Thank you! Your inquiry has been received. We will contact you shortly.';
-if (!$mailSent) {
+if (empty($mailResult['user']) && !empty($mailResult['company'])) {
+    $responseMessage = 'Thank you! Your inquiry has been received. We will contact you shortly.';
+} elseif (!$mailSent) {
     $responseMessage = 'Thank you! Your inquiry has been saved. We will contact you shortly.';
 }
 

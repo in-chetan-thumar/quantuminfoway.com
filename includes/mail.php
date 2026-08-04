@@ -50,9 +50,11 @@ function create_mailer(): PHPMailer
 
     $mail = new PHPMailer(true);
     $mail->isSMTP();
-    $mail->Host     = MAIL_HOST;
-    $mail->Port     = MAIL_PORT;
-    $mail->SMTPAuth = MAIL_USERNAME !== '' || MAIL_PASSWORD !== '';
+    $mail->Host       = MAIL_HOST;
+    $mail->Port       = MAIL_PORT;
+    $mail->SMTPAuth   = MAIL_USERNAME !== '' || MAIL_PASSWORD !== '';
+    $mail->Timeout    = 30;
+    $mail->SMTPKeepAlive = false;
 
     if ($mail->SMTPAuth) {
         $mail->Username = MAIL_USERNAME;
@@ -69,10 +71,50 @@ function create_mailer(): PHPMailer
         $mail->SMTPAutoTLS = false;
     }
 
-    $mail->CharSet = 'UTF-8';
+    $mail->CharSet  = 'UTF-8';
+    $mail->Encoding = 'base64';
     $mail->setFrom(MAIL_FROM_ADDRESS, MAIL_FROM_NAME);
+    $mail->Sender = MAIL_FROM_ADDRESS;
 
     return $mail;
+}
+
+/**
+ * Safe display name for PHPMailer addAddress / addReplyTo.
+ */
+function email_safe_name(string $name): string
+{
+    $name = trim(preg_replace('/[\r\n\t]+/', ' ', $name) ?? '');
+    return mb_substr($name, 0, 120);
+}
+
+/**
+ * Append mail failure details for debugging.
+ */
+function log_mail_error(string $context, Throwable $e, ?PHPMailer $mail = null): void
+{
+    $detail = $e->getMessage();
+    if ($mail instanceof PHPMailer && $mail->ErrorInfo !== '') {
+        $detail .= ' | PHPMailer: ' . $mail->ErrorInfo;
+    }
+    @file_put_contents(
+        dirname(__DIR__) . '/data/mail-errors.log',
+        date('c') . ' [' . $context . '] ' . $detail . PHP_EOL,
+        FILE_APPEND | LOCK_EX
+    );
+}
+
+/**
+ * Reset recipients/attachments between two sends on a keep-alive connection.
+ */
+function reset_mailer_recipients(PHPMailer $mail): void
+{
+    $mail->clearAddresses();
+    $mail->clearCCs();
+    $mail->clearBCCs();
+    $mail->clearReplyTos();
+    $mail->clearAttachments();
+    $mail->clearCustomHeaders();
 }
 
 /**
@@ -402,44 +444,291 @@ function send_inquiry_emails(array $data): array
     $userOk = false;
 
     if (MAIL_HOST === '' || MAIL_TO_ADDRESS === '') {
+        log_mail_error('inquiry', new RuntimeException('Mail host or SMTP_TO is not configured.'));
         return ['company' => false, 'user' => false, 'all' => false];
     }
 
+    $userEmail = trim((string) ($data['email'] ?? ''));
+    if ($userEmail === '' || !filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+        log_mail_error('inquiry.user', new RuntimeException('Invalid applicant email: ' . $userEmail));
+        // Still try company notification below
+    }
+
+    $mail = null;
     try {
         $mail = create_mailer();
+        $mail->SMTPKeepAlive = true;
         $logoSrc = attach_email_logo($mail);
-        $companyMail = build_company_inquiry_email($data, $logoSrc);
-        $mail->addAddress(MAIL_TO_ADDRESS);
-        $mail->addReplyTo($data['email'], $data['name']);
-        $mail->Subject = $companyMail['subject'];
-        $mail->isHTML(true);
-        $mail->Body    = $companyMail['html'];
-        $mail->AltBody = $companyMail['text'];
-        $mail->send();
-        $companyOk = true;
+
+        // 1) Company notification
+        try {
+            $companyMail = build_company_inquiry_email($data, $logoSrc);
+            $mail->addAddress(MAIL_TO_ADDRESS);
+            if ($userEmail !== '' && filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+                $mail->addReplyTo($userEmail, email_safe_name((string) $data['name']));
+            }
+            $mail->Subject = $companyMail['subject'];
+            $mail->isHTML(true);
+            $mail->Body    = $companyMail['html'];
+            $mail->AltBody = $companyMail['text'];
+            $mail->send();
+            $companyOk = true;
+        } catch (Throwable $e) {
+            log_mail_error('inquiry.company', $e, $mail);
+            $companyOk = false;
+        }
+
+        // 2) User thank-you
+        if ($userEmail !== '' && filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+            try {
+                reset_mailer_recipients($mail);
+                // Re-attach logo after clearAttachments()
+                $logoSrc = attach_email_logo($mail);
+                $thanksMail = build_thank_you_email([
+                    'id'      => $data['id'],
+                    'name'    => $data['name'],
+                    'service' => $data['service'],
+                    'message' => $data['message'],
+                ], $logoSrc);
+                $mail->addAddress($userEmail, email_safe_name((string) $data['name']));
+                // Reply-To must match authenticated From for reliable Gmail delivery
+                $mail->addReplyTo(MAIL_FROM_ADDRESS, MAIL_FROM_NAME);
+                $mail->Subject = $thanksMail['subject'];
+                $mail->isHTML(true);
+                $mail->Body    = $thanksMail['html'];
+                $mail->AltBody = $thanksMail['text'];
+                $mail->send();
+                $userOk = true;
+            } catch (Throwable $e) {
+                log_mail_error('inquiry.user', $e, $mail);
+                $userOk = false;
+            }
+        }
     } catch (Throwable $e) {
-        $companyOk = false;
+        log_mail_error('inquiry.setup', $e, $mail);
     }
+
+    if ($mail instanceof PHPMailer) {
+        try {
+            $mail->smtpClose();
+        } catch (Throwable $e) {
+            // ignore close errors
+        }
+    }
+
+    return [
+        'company' => $companyOk,
+        'user'    => $userOk,
+        'all'     => $companyOk && $userOk,
+    ];
+}
+
+/**
+ * @param array{
+ *   id:int,name:string,email:string,phone:string,position:string,experience:string,
+ *   linkedin:string,portfolio:string,city:string,message:string,ip:string,
+ *   cv_original_name:string
+ * } $data
+ * @return array{subject:string,html:string,text:string}
+ */
+function build_company_career_email(array $data, string $logoSrc = ''): array
+{
+    $name = $data['name'];
+    $subject = 'New career application from ' . $name . ' — ' . SITE_NAME;
+
+    $rows = [
+        'Name'       => $data['name'],
+        'Email'      => $data['email'],
+        'Phone'      => $data['phone'],
+        'Position'   => $data['position'],
+        'Experience' => $data['experience'],
+        'LinkedIn'   => $data['linkedin'],
+        'Portfolio'  => $data['portfolio'],
+        'City'       => $data['city'],
+        'CV file'    => $data['cv_original_name'],
+        'IP'         => $data['ip'],
+        'Ref #'      => '#' . $data['id'],
+    ];
+
+    $body = '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 22px;">'
+        . '<tr>'
+        . '<td style="padding:14px 16px;background:#f3f0ff;border:1px solid #ddd6fe;border-radius:12px;">'
+        . '<p style="margin:0;font-size:13px;color:#5b21b6;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;">Careers alert</p>'
+        . '<p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#4c1d95;">' . email_escape($name) . ' applied for <strong>' . email_escape($data['position']) . '</strong>. CV is attached.</p>'
+        . '</td>'
+        . '</tr>'
+        . '</table>'
+        . email_detail_rows($rows)
+        . '<p style="margin:24px 0 10px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#6b7490;font-weight:700;">Cover letter</p>'
+        . '<div style="padding:18px 18px;background:#f7f9fd;border-left:4px solid #6d4df6;border-radius:0 14px 14px 0;font-size:15px;line-height:1.7;color:#10162b;">'
+        . nl2br(email_escape($data['message']))
+        . '</div>'
+        . '<p style="margin:28px 0 8px;">'
+        . email_primary_button(
+            'mailto:' . $data['email'] . '?subject=' . rawurlencode('Re: Your application to ' . SITE_NAME),
+            'Reply to ' . $name
+        )
+        . '</p>';
+
+    $html = email_layout(
+        'New career application from ' . $name . ' — review CV.',
+        'Careers notification',
+        'New team application',
+        $body,
+        'Internal alert · Reference #' . $data['id'] . ' · CV attached.',
+        $logoSrc,
+        'company'
+    );
+
+    $text = "New career application (#{$data['id']}):\n\n"
+        . "Name: {$data['name']}\n"
+        . "Email: {$data['email']}\n"
+        . "Phone: {$data['phone']}\n"
+        . "Position: {$data['position']}\n"
+        . "Experience: {$data['experience']}\n"
+        . "LinkedIn: {$data['linkedin']}\n"
+        . "Portfolio: {$data['portfolio']}\n"
+        . "City: {$data['city']}\n"
+        . "CV: {$data['cv_original_name']}\n"
+        . "Cover letter:\n{$data['message']}\n\n"
+        . "IP: {$data['ip']}\n"
+        . 'Time: ' . date('c') . "\n";
+
+    return ['subject' => $subject, 'html' => $html, 'text' => $text];
+}
+
+/**
+ * @param array{name:string,position:string,message:string,id:int} $data
+ * @return array{subject:string,html:string,text:string}
+ */
+function build_career_thank_you_email(array $data, string $logoSrc = ''): array
+{
+    $name = $data['name'];
+    $first = trim(explode(' ', $name)[0] ?: $name);
+    $subject = 'We received your application — ' . SITE_NAME;
+
+    $body = '<p style="margin:0 0 8px;font-size:18px;line-height:1.4;color:#10162b;font-weight:700;">Hi ' . email_escape($first) . ',</p>'
+        . '<p style="margin:0 0 20px;font-size:15px;line-height:1.7;color:#5d6780;">Thank you for applying to join <strong style="color:#10162b;">' . email_escape(SITE_NAME) . '</strong>. We have received your application for <strong style="color:#10162b;">' . email_escape($data['position']) . '</strong> and our hiring team will review it shortly.</p>'
+        . '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 22px;background:#f7f9fd;border:1px solid #e4e9f5;border-radius:14px;">'
+        . '<tr><td style="padding:18px 18px 8px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#6b7490;font-weight:700;">Your cover letter</td></tr>'
+        . '<tr><td style="padding:0 18px 18px;font-size:14px;line-height:1.7;color:#10162b;">' . nl2br(email_escape($data['message'])) . '</td></tr>'
+        . '</table>'
+        . '<p style="margin:0 0 22px;font-size:14px;line-height:1.65;color:#5d6780;">If your profile is a strong match, we will reach out with next steps. No need to resend your CV unless we ask.</p>'
+        . '<p style="margin:0 0 24px;">'
+        . email_primary_button(email_site_url() . '/hire#join-our-team', 'View open roles')
+        . '</p>'
+        . '<p style="margin:0;font-size:15px;line-height:1.6;color:#10162b;">Warm regards,<br><strong>The ' . email_escape(SITE_NAME) . ' Team</strong></p>';
+
+    $html = email_layout(
+        'We received your application — thank you for your interest in ' . SITE_NAME . '.',
+        'Confirmation',
+        'Application received',
+        $body,
+        'Reference #' . $data['id'] . ' · Our hiring team reviews applications regularly.',
+        $logoSrc,
+        'thanks'
+    );
+
+    $text = "Hi {$first},\n\n"
+        . 'Thank you for applying to ' . SITE_NAME . ". We have received your application for {$data['position']} and will review it shortly.\n\n"
+        . "Your cover letter:\n{$data['message']}\n\n"
+        . 'Reference #' . $data['id'] . "\n\n"
+        . '— The ' . SITE_NAME . " Team\n"
+        . SITE_PHONE . ' · ' . MAIL_TO_ADDRESS . "\n";
+
+    return ['subject' => $subject, 'html' => $html, 'text' => $text];
+}
+
+/**
+ * Send company career notification (with CV) + applicant thank-you.
+ *
+ * @param array{
+ *   id:int,name:string,email:string,phone:string,position:string,experience:string,
+ *   linkedin:string,portfolio:string,city:string,message:string,
+ *   cv_path:string,cv_original_name:string,ip:string
+ * } $data
+ * @return array{company:bool,user:bool,all:bool}
+ */
+function send_career_emails(array $data): array
+{
+    $companyOk = false;
+    $userOk = false;
+    $careersTo = MAIL_CAREERS_TO !== '' ? MAIL_CAREERS_TO : MAIL_TO_ADDRESS;
+
+    if (MAIL_HOST === '' || $careersTo === '') {
+        log_mail_error('career', new RuntimeException('Mail host or SMTP_CAREERS_TO/SMTP_TO is not configured.'));
+        return ['company' => false, 'user' => false, 'all' => false];
+    }
+
+    $userEmail = trim((string) ($data['email'] ?? ''));
+    $mail = null;
 
     try {
         $mail = create_mailer();
+        $mail->SMTPKeepAlive = true;
         $logoSrc = attach_email_logo($mail);
-        $thanksMail = build_thank_you_email([
-            'id'      => $data['id'],
-            'name'    => $data['name'],
-            'service' => $data['service'],
-            'message' => $data['message'],
-        ], $logoSrc);
-        $mail->addAddress($data['email'], $data['name']);
-        $mail->addReplyTo(MAIL_TO_ADDRESS, SITE_NAME);
-        $mail->Subject = $thanksMail['subject'];
-        $mail->isHTML(true);
-        $mail->Body    = $thanksMail['html'];
-        $mail->AltBody = $thanksMail['text'];
-        $mail->send();
-        $userOk = true;
+
+        // 1) Company / HR notification (+ CV)
+        try {
+            $companyMail = build_company_career_email($data, $logoSrc);
+            $mail->addAddress($careersTo);
+            if ($userEmail !== '' && filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+                $mail->addReplyTo($userEmail, email_safe_name((string) $data['name']));
+            }
+            $mail->Subject = $companyMail['subject'];
+            $mail->isHTML(true);
+            $mail->Body    = $companyMail['html'];
+            $mail->AltBody = $companyMail['text'];
+
+            $cvPath = (string) ($data['cv_path'] ?? '');
+            $cvName = (string) ($data['cv_original_name'] ?? 'cv.pdf');
+            if ($cvPath !== '' && is_file($cvPath) && is_readable($cvPath)) {
+                $mail->addAttachment($cvPath, $cvName);
+            }
+
+            $mail->send();
+            $companyOk = true;
+        } catch (Throwable $e) {
+            log_mail_error('career.company', $e, $mail);
+            $companyOk = false;
+        }
+
+        // 2) Applicant thank-you
+        if ($userEmail !== '' && filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
+            try {
+                reset_mailer_recipients($mail);
+                $logoSrc = attach_email_logo($mail);
+                $thanksMail = build_career_thank_you_email([
+                    'id'       => $data['id'],
+                    'name'     => $data['name'],
+                    'position' => $data['position'],
+                    'message'  => $data['message'],
+                ], $logoSrc);
+                $mail->addAddress($userEmail, email_safe_name((string) $data['name']));
+                $mail->addReplyTo(MAIL_FROM_ADDRESS, MAIL_FROM_NAME);
+                $mail->Subject = $thanksMail['subject'];
+                $mail->isHTML(true);
+                $mail->Body    = $thanksMail['html'];
+                $mail->AltBody = $thanksMail['text'];
+                $mail->send();
+                $userOk = true;
+            } catch (Throwable $e) {
+                log_mail_error('career.user', $e, $mail);
+                $userOk = false;
+            }
+        } else {
+            log_mail_error('career.user', new RuntimeException('Invalid applicant email: ' . $userEmail));
+        }
     } catch (Throwable $e) {
-        $userOk = false;
+        log_mail_error('career.setup', $e, $mail);
+    }
+
+    if ($mail instanceof PHPMailer) {
+        try {
+            $mail->smtpClose();
+        } catch (Throwable $e) {
+            // ignore close errors
+        }
     }
 
     return [

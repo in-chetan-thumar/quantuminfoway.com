@@ -362,9 +362,9 @@ $page_og_image = isset($page_og_image) && $page_og_image !== ''
                     </div>
                 </div>
 
-                <!-- Case Studies -->
+                <!-- Case Studies / Enterprise Solutions -->
                 <div class="nav-item" data-dropdown>
-                    <button type="button" class="nav-link drop-trigger" aria-expanded="false" aria-haspopup="true">
+                    <button type="button" class="nav-link drop-trigger<?php echo nav_active_class('case-studies', true); ?>" aria-expanded="false" aria-haspopup="true">
                         Case Studies
                         <svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg>
                     </button>
@@ -372,52 +372,61 @@ $page_og_image = isset($page_og_image) && $page_og_image !== ''
                         <div class="mega-body">
                             <div class="mega-col">
                                 <span class="mega-title">Web &amp; E-Commerce</span>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
+                                <a href="<?php echo route_attr('case-studies/ecommerce-platform'); ?>" class="mega-link<?php echo nav_active_class('case-studies/ecommerce-platform'); ?>"<?php echo nav_aria_current('case-studies/ecommerce-platform'); ?>>
                                     <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></span>
-                                    Full-Scale E-Commerce Platform
+                                    E-Commerce Platform
                                 </a>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
-                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
-                                    Brand Platform CMS
-                                </a>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
-                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8"/></svg></span>
-                                    Product Marketing Site
-                                </a>
-                            </div>
-                            <div class="mega-col">
-                                <span class="mega-title">AI &amp; Platforms</span>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
+                                <a href="<?php echo route_attr('case-studies/operations-management-web-app'); ?>" class="mega-link<?php echo nav_active_class('case-studies/operations-management-web-app'); ?>"<?php echo nav_aria_current('case-studies/operations-management-web-app'); ?>>
                                     <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span>
                                     Operations Management Web App
                                 </a>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
-                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 0 6h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1 0-6h1V6a4 4 0 0 1 4-4z"/></svg></span>
-                                    AI Student Management Platform
+                                <a href="<?php echo route_attr('case-studies/ev-charger-installation'); ?>" class="mega-link<?php echo nav_active_class('case-studies/ev-charger-installation'); ?>"<?php echo nav_aria_current('case-studies/ev-charger-installation'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"/></svg></span>
+                                    EV Installation
                                 </a>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
-                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 3 5-6"/></svg></span>
-                                    AI E-Commerce Analytics
+                                <a href="<?php echo route_attr('case-studies/dealer-management-system'); ?>" class="mega-link<?php echo nav_active_class('case-studies/dealer-management-system'); ?>"<?php echo nav_aria_current('case-studies/dealer-management-system'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></span>
+                                    Dealer Management System
+                                </a>
+                                <a href="<?php echo route_attr('case-studies/travel-expense-management'); ?>" class="mega-link<?php echo nav_active_class('case-studies/travel-expense-management'); ?>"<?php echo nav_aria_current('case-studies/travel-expense-management'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 16V8a2 2 0 0 0-1.2-1.8l-7-3.2a2 2 0 0 0-1.6 0l-7 3.2A2 2 0 0 0 3 8v8a2 2 0 0 0 1.2 1.8l7 3.2a2 2 0 0 0 1.6 0l7-3.2A2 2 0 0 0 21 16z"/><path d="M12 22V12"/><path d="m3.3 7.5 8.7 4 8.7-4"/></svg></span>
+                                    Travel &amp; Expense Management
+                                </a>
+                                <a href="<?php echo route_attr('case-studies/invoice-management-system'); ?>" class="mega-link<?php echo nav_active_class('case-studies/invoice-management-system'); ?>"<?php echo nav_aria_current('case-studies/invoice-management-system'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h6"/></svg></span>
+                                    Invoice Management System
+                                </a>
+                                <a href="<?php echo route_attr('case-studies/vehicle-exchange-platform'); ?>" class="mega-link<?php echo nav_active_class('case-studies/vehicle-exchange-platform'); ?>"<?php echo nav_aria_current('case-studies/vehicle-exchange-platform'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17h10l2-6H5l2 6z"/><circle cx="8.5" cy="17.5" r="1.5"/><circle cx="15.5" cy="17.5" r="1.5"/><path d="M5 11 7 6h5l2 5"/></svg></span>
+                                    Vehicle Exchange
+                                </a>
+                                <a href="<?php echo route_attr('case-studies/vehicle-auction-management'); ?>" class="mega-link<?php echo nav_active_class('case-studies/vehicle-auction-management'); ?>"<?php echo nav_aria_current('case-studies/vehicle-auction-management'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m14 12-8.5 8.5a2.12 2.12 0 1 1-3-3L11 9"/><path d="M15 13 9 7"/><path d="m16 6 3.5-3.5"/><path d="M18 8h4"/><path d="M18 4v4"/></svg></span>
+                                    Vehicle Auction
                                 </a>
                             </div>
                             <div class="mega-col">
                                 <span class="mega-title">Mobile Apps</span>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
+                                <a href="<?php echo route_attr('case-studies/customer-facing-mobile-app'); ?>" class="mega-link<?php echo nav_active_class('case-studies/customer-facing-mobile-app'); ?>"<?php echo nav_aria_current('case-studies/customer-facing-mobile-app'); ?>>
                                     <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
                                     Customer-Facing Mobile App
                                 </a>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
-                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
-                                    Loyalty &amp; Booking App
+                                <a href="<?php echo route_attr('case-studies/ev-charger-installation-mobile'); ?>" class="mega-link<?php echo nav_active_class('case-studies/ev-charger-installation-mobile'); ?>"<?php echo nav_aria_current('case-studies/ev-charger-installation-mobile'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+                                    EV Installation
                                 </a>
-                                <a href="<?php echo route_attr('#portfolio'); ?>" class="mega-link">
-                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
-                                    Push Notification Platform
+                                <a href="<?php echo route_attr('case-studies/vehicle-exchange-platform-mobile'); ?>" class="mega-link<?php echo nav_active_class('case-studies/vehicle-exchange-platform-mobile'); ?>"<?php echo nav_aria_current('case-studies/vehicle-exchange-platform-mobile'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+                                    Vehicle Exchange
+                                </a>
+                                <a href="<?php echo route_attr('case-studies/vehicle-auction-management-mobile'); ?>" class="mega-link<?php echo nav_active_class('case-studies/vehicle-auction-management-mobile'); ?>"<?php echo nav_aria_current('case-studies/vehicle-auction-management-mobile'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+                                    Vehicle Auction
                                 </a>
                             </div>
                         </div>
                         <div class="mega-foot">
-                            <a href="<?php echo route_attr('#portfolio'); ?>">View all case studies →</a>
+                            <a href="<?php echo route_attr('case-studies'); ?>">View all enterprise solutions →</a>
                         </div>
                     </div>
                 </div>

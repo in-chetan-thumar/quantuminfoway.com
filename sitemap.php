@@ -13,12 +13,32 @@ $sitemap = [
         'links' => [
             ['index.php', 'Home'],
             ['about-us.php', 'About Us'],
-            ['index.php#portfolio', 'Case Studies'],
+            ['case-studies.php', 'Case Studies'],
             ['index.php#reviews', 'Testimonials'],
             ['blogs.php', 'Blogs & Insights'],
             ['contact-us.php', 'Contact Us'],
             ['services.php', 'All Services'],
             ['hire.php', 'Hire Developers'],
+        ],
+    ],
+    [
+        'id' => 'case-studies',
+        'eyebrow' => 'Enterprise',
+        'title' => 'Case Studies',
+        'links' => [
+            ['case-studies.php', 'All Enterprise Solutions'],
+            ['case-studies/ecommerce-platform.php', 'Full-Scale E-Commerce Platform'],
+            ['case-studies/operations-management-web-app.php', 'Operations Management Web App'],
+            ['case-studies/customer-facing-mobile-app.php', 'Customer-Facing Mobile App'],
+            ['case-studies/ev-charger-installation.php', 'EV Charger Installation — Web'],
+            ['case-studies/ev-charger-installation-mobile.php', 'EV Charger Installation — Mobile'],
+            ['case-studies/dealer-management-system.php', 'Dealer Management System'],
+            ['case-studies/travel-expense-management.php', 'Travel & Expense Management'],
+            ['case-studies/invoice-management-system.php', 'Invoice Management System'],
+            ['case-studies/vehicle-exchange-platform.php', 'Vehicle Exchange — Web'],
+            ['case-studies/vehicle-exchange-platform-mobile.php', 'Vehicle Exchange — Mobile'],
+            ['case-studies/vehicle-auction-management.php', 'Vehicle Auction — Web'],
+            ['case-studies/vehicle-auction-management-mobile.php', 'Vehicle Auction — Mobile'],
         ],
     ],
     [
@@ -169,6 +189,7 @@ foreach ($sitemap as $g) {
                     <span class="legal-hero-card-label">Jump to</span>
                     <ul>
                         <li><a href="#company">Company</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
                         <li><a href="#services-ai">Services</a></li>
                         <li><a href="#hire-ai">Hire roles</a></li>
                         <li><a href="#legal">Legal</a></li>
@@ -182,6 +203,7 @@ foreach ($sitemap as $g) {
     <nav class="svc-subnav" aria-label="Sitemap sections">
         <div class="container svc-subnav-inner">
             <a href="#company">Company</a>
+            <a href="#case-studies">Case Studies</a>
             <a href="#services-ai">Services</a>
             <a href="#hire-ai">Hire</a>
             <a href="#legal">Legal</a>

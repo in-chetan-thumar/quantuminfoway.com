@@ -48,6 +48,8 @@ define('MAIL_ENCRYPTION', env_value('SMTP_ENCRYPTION', 'tls'));
 define('MAIL_FROM_ADDRESS', env_value('SMTP_FROM', 'noreply@quantuminfoway.com'));
 define('MAIL_FROM_NAME', env_value('SMTP_FROM_NAME', SITE_NAME));
 define('MAIL_TO_ADDRESS', env_value('SMTP_TO', env_value('SMTP_FROM', SITE_EMAIL)));
+// Careers / Join Our Team notifications (falls back to SMTP_TO)
+define('MAIL_CAREERS_TO', env_value('SMTP_CAREERS_TO', MAIL_TO_ADDRESS));
 
 // Backward-compatible aliases used by older references
 define('INQUIRY_TO_EMAIL', MAIL_TO_ADDRESS);
@@ -59,14 +61,18 @@ define('SOCIAL_TWITTER', 'https://twitter.com/');
 define('SOCIAL_LINKEDIN', 'https://www.linkedin.com/');
 
 /**
- * Relative path prefix for assets and root links.
+ * Path prefix for assets and root links.
  * Set $base_path = '../' on pages inside subdirectories (e.g. services/).
+ * Root pages use '/' so assets still load when the URL has a trailing slash
+ * (e.g. /hire/ — relative "assets/..." would otherwise resolve to /hire/assets/...).
  */
 if (!isset($base_path)) {
     $base_path = '';
 }
 $base_path = rtrim(str_replace('\\', '/', (string) $base_path), '/');
-if ($base_path !== '') {
+if ($base_path === '' || $base_path === '.') {
+    $base_path = '/';
+} else {
     $base_path .= '/';
 }
 

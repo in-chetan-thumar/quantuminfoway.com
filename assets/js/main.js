@@ -567,6 +567,332 @@
     });
   }
 
+  /* Join Our Team — career application form */
+  var joinForm = document.getElementById("joinTeamForm");
+  var joinStatusEl = document.getElementById("joinTeamFormStatus");
+  var joinSubmitBtn = document.getElementById("joinTeamSubmitBtn");
+  var joinMaxCvBytes = 5 * 1024 * 1024;
+
+  function setJoinButtonLoading(isLoading) {
+    if (!joinSubmitBtn) return;
+    joinSubmitBtn.disabled = !!isLoading;
+    joinSubmitBtn.classList.toggle("is-loading", !!isLoading);
+    joinSubmitBtn.setAttribute("aria-busy", isLoading ? "true" : "false");
+    var loadingEl = joinSubmitBtn.querySelector(".btn-loading");
+    if (loadingEl) {
+      if (isLoading) loadingEl.removeAttribute("hidden");
+      else loadingEl.setAttribute("hidden", "");
+    }
+  }
+
+  function showJoinStatus(msg, ok) {
+    if (!joinStatusEl) return;
+    joinStatusEl.textContent = msg;
+    joinStatusEl.className = "form-status " + (ok ? "success" : "error");
+  }
+
+  function validateJoinTeamForm(targetForm) {
+    clearFieldErrors(targetForm);
+
+    var nameField = fieldOf(targetForm, "name");
+    var emailField = fieldOf(targetForm, "email");
+    var phoneField = fieldOf(targetForm, "phone");
+    var positionField = fieldOf(targetForm, "position");
+    var experienceField = fieldOf(targetForm, "experience");
+    var linkedinField = fieldOf(targetForm, "linkedin");
+    var portfolioField = fieldOf(targetForm, "portfolio");
+    var cityField = fieldOf(targetForm, "city");
+    var messageField = fieldOf(targetForm, "message");
+    var cvField = fieldOf(targetForm, "cv");
+
+    var name = nameField ? nameField.value.trim() : "";
+    var email = emailField ? emailField.value.trim() : "";
+    var phone = phoneField ? phoneField.value.trim() : "";
+    var position = positionField ? positionField.value.trim() : "";
+    var experience = experienceField ? experienceField.value.trim() : "";
+    var linkedin = linkedinField ? linkedinField.value.trim() : "";
+    var portfolio = portfolioField ? portfolioField.value.trim() : "";
+    var city = cityField ? cityField.value.trim() : "";
+    var message = messageField ? messageField.value.trim() : "";
+
+    var firstInvalid = null;
+    var summary = "";
+
+    function fail(field, msg) {
+      markFieldError(field, msg);
+      if (!firstInvalid) {
+        firstInvalid = field;
+        summary = msg;
+      }
+    }
+
+    if (name.length < 2) {
+      fail(nameField, "Please enter your name (at least 2 characters).");
+    } else if (name.length > 120) {
+      fail(nameField, "Name must be 120 characters or fewer.");
+    }
+
+    if (!email) {
+      fail(emailField, "Please enter your email address.");
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      fail(emailField, "Please enter a valid email address.");
+    } else if (email.length > 190) {
+      fail(emailField, "Email must be 190 characters or fewer.");
+    }
+
+    if (!phone || !/^[\d\s+\-()]{7,20}$/.test(phone)) {
+      fail(phoneField, "Please enter a valid phone number.");
+    }
+
+    if (!position) {
+      fail(positionField, "Please select a position.");
+    }
+
+    if (!experience) {
+      fail(experienceField, "Please select your years of experience.");
+    }
+
+    if (linkedin) {
+      try {
+        new URL(linkedin);
+      } catch (e) {
+        fail(linkedinField, "Please enter a valid LinkedIn URL.");
+      }
+    }
+
+    if (portfolio) {
+      try {
+        new URL(portfolio);
+      } catch (e) {
+        fail(portfolioField, "Please enter a valid portfolio or GitHub URL.");
+      }
+    }
+
+    if (city.length > 80) {
+      fail(cityField, "City must be 80 characters or fewer.");
+    }
+
+    if (!cvField || !cvField.files || !cvField.files.length) {
+      fail(cvField, "Please upload your CV / resume.");
+    } else {
+      var file = cvField.files[0];
+      var fileName = (file.name || "").toLowerCase();
+      var okExt = /\.(pdf|doc|docx)$/.test(fileName);
+      if (!okExt) {
+        fail(cvField, "CV must be a PDF, DOC, or DOCX file.");
+      } else if (file.size > joinMaxCvBytes) {
+        fail(cvField, "CV must be a file up to 5 MB.");
+      }
+    }
+
+    if (message.length < 10) {
+      fail(messageField, "Please enter a cover letter (at least 10 characters).");
+    } else if (message.length > 5000) {
+      fail(messageField, "Cover letter must be 5000 characters or fewer.");
+    }
+
+    if (firstInvalid && typeof firstInvalid.focus === "function") {
+      firstInvalid.focus();
+      if (typeof firstInvalid.scrollIntoView === "function") {
+        firstInvalid.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+      }
+    }
+
+    return summary;
+  }
+
+  function showJoinFormSuccess(targetForm, message) {
+    var safeMessage = String(
+      message || "Your application has been received. We will be in touch soon."
+    )
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+
+    targetForm.classList.add("is-submitted");
+    targetForm.setAttribute("aria-live", "polite");
+    targetForm.innerHTML =
+      '<div class="form-success-card">' +
+        '<div class="form-success-icon" aria-hidden="true"></div>' +
+        '<span class="form-success-badge">Application received</span>' +
+        "<h3>Thank you!</h3>" +
+        "<p>" + safeMessage + "</p>" +
+        '<p class="form-success-meta">A confirmation email is on its way. Our hiring team reviews applications regularly.</p>' +
+      "</div>";
+  }
+
+  if (joinForm) {
+    var joinFileWrap = document.getElementById("joinTeamFileDrop");
+    var joinFileInput = document.getElementById("jt_cv");
+    var joinFileMeta = document.getElementById("joinTeamFileMeta");
+    var joinFileTitle = joinFileWrap
+      ? joinFileWrap.querySelector(".join-team-file-title")
+      : null;
+    var joinFileBtn = joinFileWrap
+      ? joinFileWrap.querySelector(".join-team-file-btn")
+      : null;
+    var joinFileDefaultMeta = "PDF, DOC, or DOCX up to 5 MB";
+    var joinFileDefaultTitle = "Drop your CV here, or browse";
+
+    function formatJoinFileSize(bytes) {
+      if (bytes < 1024) return bytes + " B";
+      if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + " KB";
+      return (bytes / (1024 * 1024)).toFixed(2) + " MB";
+    }
+
+    function updateJoinFileUI() {
+      if (!joinFileWrap || !joinFileInput) return;
+      var file = joinFileInput.files && joinFileInput.files[0];
+      if (file) {
+        joinFileWrap.classList.add("has-file");
+        if (joinFileTitle) joinFileTitle.textContent = file.name;
+        if (joinFileMeta) joinFileMeta.textContent = formatJoinFileSize(file.size) + " · ready to upload";
+        if (joinFileBtn) joinFileBtn.textContent = "Change file";
+      } else {
+        joinFileWrap.classList.remove("has-file");
+        if (joinFileTitle) joinFileTitle.textContent = joinFileDefaultTitle;
+        if (joinFileMeta) joinFileMeta.textContent = joinFileDefaultMeta;
+        if (joinFileBtn) joinFileBtn.textContent = "Browse files";
+      }
+    }
+
+    if (joinFileInput) {
+      joinFileInput.addEventListener("change", updateJoinFileUI);
+    }
+
+    if (joinFileWrap && joinFileInput) {
+      ["dragenter", "dragover"].forEach(function (evt) {
+        joinFileWrap.addEventListener(evt, function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          joinFileWrap.classList.add("is-dragover");
+        });
+      });
+      ["dragleave", "drop"].forEach(function (evt) {
+        joinFileWrap.addEventListener(evt, function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          joinFileWrap.classList.remove("is-dragover");
+        });
+      });
+      joinFileWrap.addEventListener("drop", function (e) {
+        var files = e.dataTransfer && e.dataTransfer.files;
+        if (!files || !files.length) return;
+        var file = files[0];
+        try {
+          var dt = new DataTransfer();
+          dt.items.add(file);
+          joinFileInput.files = dt.files;
+        } catch (err) {
+          // Fallback: assignment may fail in older browsers
+          try {
+            joinFileInput.files = files;
+          } catch (err2) {}
+        }
+        updateJoinFileUI();
+        joinFileInput.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+    }
+
+    joinForm.addEventListener("input", function (e) {
+      var t = e.target;
+      if (!t || !t.name) return;
+      if (!t.classList.contains("is-invalid")) return;
+      t.classList.remove("is-invalid");
+      t.removeAttribute("aria-invalid");
+      var host = fieldHost(t);
+      var err = null;
+      if (host) {
+        var kids = host.children;
+        for (var i = 0; i < kids.length; i++) {
+          if (kids[i].classList && kids[i].classList.contains("field-error")) {
+            err = kids[i];
+            break;
+          }
+        }
+      }
+      if (err) {
+        err.textContent = "";
+        err.hidden = true;
+      }
+      if (joinStatusEl && joinStatusEl.classList.contains("error")) {
+        joinStatusEl.textContent = "";
+        joinStatusEl.className = "form-status";
+      }
+    });
+
+    joinForm.addEventListener("change", function (e) {
+      var t = e.target;
+      if (!t || t.name !== "cv") return;
+      if (!t.classList.contains("is-invalid")) return;
+      t.classList.remove("is-invalid");
+      t.removeAttribute("aria-invalid");
+      var host = fieldHost(t);
+      if (!host) return;
+      var kids = host.children;
+      for (var i = 0; i < kids.length; i++) {
+        if (kids[i].classList && kids[i].classList.contains("field-error")) {
+          kids[i].textContent = "";
+          kids[i].hidden = true;
+          break;
+        }
+      }
+    });
+
+    joinForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      if (joinForm.classList.contains("is-submitted")) return;
+
+      if (joinStatusEl) {
+        joinStatusEl.textContent = "";
+        joinStatusEl.className = "form-status";
+      }
+
+      var clientError = validateJoinTeamForm(joinForm);
+      if (clientError) {
+        showJoinStatus(clientError, false);
+        return;
+      }
+
+      setJoinButtonLoading(true);
+
+      try {
+        var hp = joinForm.querySelector('[name="qx_hp_field"]');
+        if (hp) hp.value = "";
+
+        var formData = new FormData(joinForm);
+        var endpoint = joinForm.getAttribute("action") || "/career-handler";
+        var res = await fetch(endpoint, {
+          method: "POST",
+          body: formData,
+          headers: { Accept: "application/json" },
+        });
+        var raw = await res.text();
+        var data;
+        try {
+          data = JSON.parse(raw);
+        } catch (parseErr) {
+          data = { success: false, message: "Unexpected server response. Please try again." };
+        }
+
+        if (data.success && !data.ignored) {
+          showJoinFormSuccess(
+            joinForm,
+            data.message || "Your application has been received. We will be in touch soon."
+          );
+        } else {
+          applyServerFieldErrors(joinForm, data.errors);
+          showJoinStatus(data.message || "Something went wrong. Please try again.", false);
+          setJoinButtonLoading(false);
+        }
+      } catch (err) {
+        showJoinStatus("Network error. Please try again later.", false);
+        setJoinButtonLoading(false);
+      }
+    });
+  }
+
   /* Scroll progress bar */
   var progressBar = document.getElementById("scrollProgress");
   if (progressBar) {
@@ -596,7 +922,12 @@
   }
 
   /* Hero orbs mouse parallax */
-  var heroSection = document.getElementById("home");
+  var heroSection =
+    document.getElementById("home") ||
+    document.getElementById("case-hero") ||
+    document.getElementById("case-hub-hero") ||
+    document.getElementById("service-hero") ||
+    document.querySelector(".hero");
   var orbs = document.querySelectorAll(".hero-orbs .orb");
   if (heroSection && orbs.length && !reducedMotion) {
     heroSection.addEventListener("mousemove", function (e) {
