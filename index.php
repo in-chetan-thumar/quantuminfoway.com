@@ -1,6 +1,8 @@
 <?php
-$page_title = 'Quantum Infoway | Your AI-Native Technology Partner';
-$page_description = 'Quantum Infoway builds AI-native products, custom web and mobile apps, and intelligent IT solutions — from concept to production across 13+ countries.';
+$page_title = 'Quantum Infoway | Technology That Powers Business Growth';
+$page_description = 'Have an idea? We’ll help you shape it, build it, and launch it with the right mix of AI, web, and mobile technology.';
+require_once __DIR__ . '/includes/config.php';
+$page_og_image = rtrim(SITE_URL, '/') . '/assets/images/home/quantum-social-preview-final.png';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
