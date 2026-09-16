@@ -4,6 +4,9 @@
 # Prevent directory listings (hire/ and services/ collide with hire.php / services.php)
 Options -Indexes
 
+# Render missing URLs without redirecting or changing their 404 status.
+ErrorDocument 404 /404.php
+
 # Stop /hire ↔ /hire/ redirect loops (directory hire/ exists alongside hire.php)
 DirectorySlash Off
 
