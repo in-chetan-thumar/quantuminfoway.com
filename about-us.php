@@ -1,7 +1,7 @@
 <?php
 $base_path = '';
 $page_title = 'About Us | Quantum Infoway — AI-Native Software Partner';
-$page_description = 'Meet the team behind 250+ products shipped across 13+ countries. Quantum Infoway is an AI-native software partner building web, mobile, and AI systems since 2014.';
+$page_description = 'Meet the team behind 250+ products shipped across 10+ countries. Quantum Infoway is an AI-native software partner building web, mobile, and AI systems since 2014.';
 require_once __DIR__ . '/includes/header.php';
 $bp = htmlspecialchars($base_path);
 $ai = $bp . 'assets/images/about/';
@@ -55,7 +55,7 @@ $journey = [
     ['2025', 'Certified Google Cloud and Workspace Partner', 'Recognized as a Certified Google Cloud and Workspace Partner, delivering Google Workspace consulting and cloud services in India.'],
     ['2025', 'DesignRush Best Mobile App Design', 'The Highlands Brain learning platform won Best Mobile App Design in the DesignRush Best Design Awards 2025.'],
     ['2025', 'Xano Enterprise Partner', 'Xano placed Quantum Infoway in its Enterprise tier, the highest level in its global partner program.'],
-    ['2026', 'AI-native delivery on every engagement', 'After a multi-year team transformation, our AI-native delivery model became standard on every project, with 250+ products shipped across 13+ countries.'],
+    ['2026', 'AI-native delivery on every engagement', 'After a multi-year team transformation, our AI-native delivery model became standard on every project, with 250+ products shipped across 10+ countries.'],
 ];
 
 $process = [
@@ -123,7 +123,7 @@ $certs = [
             <div class="hero-content reveal reveal-scale">
                 <span class="eyebrow">About Quantum Infoway</span>
                 <h1>We build and scale custom <span class="gradient-text">digital products</span></h1>
-                <p>Quantum Infoway is an AI-native software development company headquartered in Ahmedabad, founded in 2014, serving clients in 13+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
+                <p>Quantum Infoway is an AI-native software development company headquartered in Ahmedabad, founded in 2014, serving clients in 10+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
                 <div class="hero-actions">
                     <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#proof" class="btn btn-ghost btn-lg">See proof</a>
@@ -131,7 +131,7 @@ $certs = [
                 <div class="hero-trust-pills" aria-label="Company highlights">
                     <span>Trusted by customers</span>
                     <span>250+ products delivered</span>
-                    <span>13+ countries served</span>
+                    <span>10+ countries served</span>
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@ $certs = [
             <div class="about-stats reveal reveal-up">
                 <div class="about-stat"><strong>12+</strong><span>Years of Experience</span></div>
                 <div class="about-stat"><strong>250+</strong><span>Products Delivered</span></div>
-                <div class="about-stat"><strong>13+</strong><span>Countries Served</span></div>
+                <div class="about-stat"><strong>10+</strong><span>Countries Served</span></div>
                 <div class="about-stat"><strong>150+</strong><span>Happy Clients</span></div>
             </div>
         </div>

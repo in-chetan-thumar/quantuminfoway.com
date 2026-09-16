@@ -27,7 +27,7 @@ function env_value(string $key, string $default = ''): string
 
 define('SITE_NAME', 'Quantum Infoway');
 define('SITE_TAGLINE', 'We Are Top IT Solutions');
-define('SITE_EMAIL', 'info@quantuminfoway.com');
+define('SITE_EMAIL', 'hello@quantuminfoway.com');
 define('SITE_PHONE', '+91 85111 08041');
 define('SITE_HOURS', 'Mon-Fri 10am-7pm');
 define('SITE_URL', env_value('APP_URL', 'https://quantuminfoway.com'));
@@ -51,8 +51,9 @@ define('MAIL_FROM_NAME', env_value('SMTP_FROM_NAME', SITE_NAME));
 // Enquiry / contact form inbox (home, contact-us → form-handler)
 define(
     'MAIL_ENQUIRY_TO',
-    env_value('SMTP_ENQUIRY_TO', env_value('SMTP_TO', env_value('SMTP_FROM', SITE_EMAIL)))
+    env_value('SMTP_ENQUIRY_TO', SITE_EMAIL)
 );
+define('MAIL_ENQUIRY_CC', env_value('SMTP_ENQUIRY_CC', 'chetan.thumar@quantuminfoway.com'));
 // Apply Now / Join Our Team inbox (hire → career-handler)
 define(
     'MAIL_APPLY_TO',

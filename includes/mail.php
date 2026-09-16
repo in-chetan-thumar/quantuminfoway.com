@@ -464,6 +464,9 @@ function send_inquiry_emails(array $data): array
         try {
             $companyMail = build_company_inquiry_email($data, $logoSrc);
             $mail->addAddress(MAIL_ENQUIRY_TO);
+            if (MAIL_ENQUIRY_CC !== '' && strcasecmp(MAIL_ENQUIRY_CC, MAIL_ENQUIRY_TO) !== 0) {
+                $mail->addCC(MAIL_ENQUIRY_CC);
+            }
             if ($userEmail !== '' && filter_var($userEmail, FILTER_VALIDATE_EMAIL)) {
                 $mail->addReplyTo($userEmail, email_safe_name((string) $data['name']));
             }
@@ -491,8 +494,8 @@ function send_inquiry_emails(array $data): array
                     'message' => $data['message'],
                 ], $logoSrc);
                 $mail->addAddress($userEmail, email_safe_name((string) $data['name']));
-                // Reply-To must match authenticated From for reliable Gmail delivery
-                $mail->addReplyTo(MAIL_FROM_ADDRESS, MAIL_FROM_NAME);
+                // Visitor replies go to the public business inbox; From stays SMTP-configured.
+                $mail->addReplyTo(SITE_EMAIL, MAIL_FROM_NAME);
                 $mail->Subject = $thanksMail['subject'];
                 $mail->isHTML(true);
                 $mail->Body    = $thanksMail['html'];

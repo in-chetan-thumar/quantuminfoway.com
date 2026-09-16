@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'Web App Development, React, Next.js, Node | Quantum Infoway';
-$page_description = 'Custom web app development with React, Next.js, Node.js, and PostgreSQL. From MVP to enterprise-scale SaaS — 250+ products across 13+ countries.';
+$page_description = 'Custom web app development with React, Next.js, Node.js, and PostgreSQL. From MVP to enterprise-scale SaaS — 250+ products across 10+ countries.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -31,7 +31,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
                     <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
-                    <div class="chs-item"><strong>13+</strong><span>Countries Served</span></div>
+                    <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
             </div>

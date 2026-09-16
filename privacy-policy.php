@@ -140,6 +140,7 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>For visitors in India, we process the data you give us when you submit a form on the basis of your voluntary provision of it for the stated purpose, and other data as permitted by applicable law.</p>
 
                 <h2 id="cookies">3. Cookies and similar technologies</h2>
+                <p><strong>Microsoft Clarity.</strong> If you accept analytics, we load Microsoft Clarity to understand site usage through session recordings and heatmaps. Our integration masks enquiry forms and keeps advertising storage consent denied. We store your analytics choice in localStorage for 180 days. Use <strong>Cookie preferences</strong> in the footer to change your choice. Rejecting on your first visit prevents Clarity from loading. If you withdraw consent after it has loaded, we send a denied consent signal; Clarity may continue limited cookieless measurement on that page, and will not load on subsequent pages while your choice remains rejected. See <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft’s Privacy Statement</a>.</p>
                 <p>The Site may use the following:</p>
                 <div class="legal-table-wrap">
                     <table class="legal-table">

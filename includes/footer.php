@@ -112,6 +112,7 @@
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars(SITE_NAME); ?>. All rights reserved.</p>
                 <ul class="footer-legal">
+                    <li><button type="button" id="cookie-preferences" class="cookie-preferences">Cookie preferences</button></li>
                     <li><a href="<?php echo route_attr('privacy-policy'); ?>"<?php echo nav_active_class('privacy-policy') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('privacy-policy'); ?>>Privacy Policy</a></li>
                     <li><a href="<?php echo route_attr('terms-and-conditions'); ?>"<?php echo nav_active_class('terms-and-conditions') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('terms-and-conditions'); ?>>Terms &amp; Conditions</a></li>
                     <li><a href="<?php echo route_attr('sitemap'); ?>"<?php echo nav_active_class('sitemap') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('sitemap'); ?>>Sitemap</a></li>
@@ -126,6 +127,16 @@
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </button>
 
+    <section id="analytics-consent" class="analytics-consent" aria-labelledby="consent-title" hidden>
+        <h2 id="consent-title">Help us improve your experience</h2>
+        <p>With your permission, Microsoft Clarity uses analytics cookies, session recordings, and heatmaps to help us understand how this website is used. Advertising storage stays off. You can change your choice in Cookie preferences.</p>
+        <a href="/privacy-policy#cookies">Read our privacy policy</a>
+        <div class="consent-actions">
+            <button type="button" data-consent="granted">Accept analytics</button>
+            <button type="button" data-consent="denied">Reject analytics</button>
+        </div>
+    </section>
+    <span id="consent-status" role="status" class="consent-status"></span>
     <script src="<?php echo htmlspecialchars($base_path); ?>assets/js/main.js"></script>
 </body>
 </html>

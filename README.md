@@ -61,7 +61,8 @@ Built as a PHP site with Composer dependencies (PHPMailer + phpdotenv), MySQL fo
 | `SMTP_PASS` | SMTP password (use a Gmail **App Password**, not your login password) |
 | `SMTP_FROM` | From address for outbound emails |
 | `SMTP_FROM_NAME` | From display name |
-| `SMTP_ENQUIRY_TO` | Inbox for enquiry / contact forms (`form-handler`) |
+| `SMTP_ENQUIRY_TO` | Enquiry inbox; set to `hello@quantuminfoway.com` (also the default) |
+| `SMTP_ENQUIRY_CC` | Enquiry notification CC; defaults to `chetan.thumar@quantuminfoway.com` |
 | `SMTP_APPLY_TO` | Inbox for Apply Now / Join Our Team (`career-handler`) |
 
 Configuration is loaded in `includes/config.php` via `vlucas/phpdotenv`.
@@ -139,6 +140,6 @@ Response format is JSON (`success` / `message`).
 ## Contact
 
 - **Site:** [quantuminfoway.com](https://quantuminfoway.com)
-- **Email:** info@quantuminfoway.com
+- **Email:** hello@quantuminfoway.com
 - **Phone:** +91 85111 08041
 - **Hours:** Mon–Fri 10am–7pm

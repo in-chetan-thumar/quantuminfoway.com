@@ -32,7 +32,7 @@ require_once __DIR__ . '/includes/header.php';
                         <span>Years Delivery</span>
                     </div>
                     <div class="chs-item">
-                        <strong>13+</strong>
+                        <strong>10+</strong>
                         <span>Countries Served</span>
                     </div>
                     <div class="chs-item">
@@ -73,7 +73,7 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="contact-consult-grid">
                 <div class="contact-consult-copy reveal reveal-left">
-                    <p><?php echo htmlspecialchars(SITE_NAME); ?> has delivered for <strong>150+ clients</strong> across <strong>13+ countries</strong>, with <strong>12+ years</strong> of shipping websites, web apps, mobile products, and AI-powered platforms for startups, mid-market companies, and enterprises.</p>
+                    <p><?php echo htmlspecialchars(SITE_NAME); ?> has delivered for <strong>150+ clients</strong> across <strong>10+ countries</strong>, with <strong>12+ years</strong> of shipping websites, web apps, mobile products, and AI-powered platforms for startups, mid-market companies, and enterprises.</p>
                     <p>We build with modern stacks such as <strong>Laravel, PHP, React, Angular, Node.js, WordPress, iOS, and Android</strong> — plus AI integrations, agents, and conversational experiences.</p>
                     <div class="contact-consult-links">
                         <a href="/#services" class="pill-link">Product Development →</a>
@@ -162,7 +162,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <form class="inquiry-form contact-page-form reveal reveal-right" id="contactPageForm" action="/form-handler" method="post" novalidate>
+            <form data-clarity-mask="True" class="inquiry-form contact-page-form reveal reveal-right" id="contactPageForm" action="/form-handler" method="post" novalidate>
                 <div class="contact-form-head">
                     <span class="contact-form-badge">Free consultation</span>
                     <h3>Talk to an Expert</h3>

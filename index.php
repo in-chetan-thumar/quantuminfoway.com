@@ -40,7 +40,7 @@ require_once __DIR__ . '/includes/header.php';
     <!-- Trust / Social proof bento -->
     <section class="section trust" id="trust">
         <div class="container">
-            <p class="trust-line reveal reveal-up">Trusted by customers across <strong>13+ countries</strong> to take products from concept to scale. We combine deep industry expertise with AI-native engineering to deliver faster, iterate more, and ship products that work in production.</p>
+            <p class="trust-line reveal reveal-up">Trusted by customers across <strong>10+ countries</strong> to take products from concept to scale. We combine deep industry expertise with AI-native engineering to deliver faster, iterate more, and ship products that work in production.</p>
 
             <div class="proof-bento reveal reveal-up" aria-label="Delivery highlights">
                 <div class="proof-bento-img proof-bento-main">
@@ -78,7 +78,7 @@ require_once __DIR__ . '/includes/header.php';
                         <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
                     </div>
                     <div>
-                        <div class="proof-stat-value">13+</div>
+                        <div class="proof-stat-value">10+</div>
                         <p>Countries Served</p>
                     </div>
                 </article>
@@ -292,78 +292,6 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="cases-stack" id="casesStack">
             <div class="cases-stack-item" style="--i: 0">
-            <article class="case-card">
-                <div class="case-media">
-                    <img src="assets/images/portfolio5.jpg" alt="Full-Scale E-Commerce Platform" loading="lazy">
-                </div>
-                <div class="case-body">
-                    <div class="case-tags"><span class="tag">E-Commerce</span><span class="tag">India</span><span class="tag">Web</span></div>
-                    <h3>Full-Scale E-Commerce Platform</h3>
-                    <p>A growing retail brand needed a fast, conversion-focused online store. We delivered a complete storefront with custom checkout, inventory sync, and marketing integrations.</p>
-                    <ul class="check-list">
-                        <li>Custom WooCommerce build with optimized checkout flow</li>
-                        <li>Real-time inventory and order management</li>
-                        <li>SEO-ready architecture and fast page loads</li>
-                    </ul>
-                    <div class="case-metrics">
-                        <div><strong>45%</strong><span>More conversions</span></div>
-                        <div><strong>2x</strong><span>Faster page loads</span></div>
-                        <div><strong>99.9%</strong><span>Uptime</span></div>
-                    </div>
-                    <a class="case-link" href="<?php echo route_attr('case-studies/ecommerce-platform'); ?>">View case study →</a>
-                </div>
-            </article>
-            </div>
-
-            <div class="cases-stack-item" style="--i: 1">
-            <article class="case-card case-card-flip">
-                <div class="case-media">
-                    <img src="assets/images/portfolio6.jpg" alt="Operations Management Web App" loading="lazy">
-                </div>
-                <div class="case-body">
-                    <div class="case-tags"><span class="tag">Web Application</span><span class="tag">Canada</span><span class="tag">Web</span></div>
-                    <h3>Operations Management Web App</h3>
-                    <p>A services company was drowning in spreadsheets. We built a unified operations platform that put scheduling, invoicing, and reporting in one place.</p>
-                    <ul class="check-list">
-                        <li>Role-based dashboards for staff and management</li>
-                        <li>Automated invoicing and payment tracking</li>
-                        <li>Reporting suite with exportable insights</li>
-                    </ul>
-                    <div class="case-metrics">
-                        <div><strong>60%</strong><span>Less manual work</span></div>
-                        <div><strong>30%</strong><span>Cost reduction</span></div>
-                        <div><strong>4.9/5</strong><span>User rating</span></div>
-                    </div>
-                    <a class="case-link" href="<?php echo route_attr('case-studies/operations-management-web-app'); ?>">View case study →</a>
-                </div>
-            </article>
-            </div>
-
-            <div class="cases-stack-item" style="--i: 2">
-            <article class="case-card">
-                <div class="case-media">
-                    <img src="assets/images/portfolio8.jpg" alt="Customer-Facing Mobile App" loading="lazy">
-                </div>
-                <div class="case-body">
-                    <div class="case-tags"><span class="tag">Mobile App</span><span class="tag">United States</span><span class="tag">Mobile</span></div>
-                    <h3>Customer-Facing Mobile App</h3>
-                    <p>From prototype to app-store launch — a booking and loyalty app for a consumer brand, shipped for both iOS and Android from a single codebase.</p>
-                    <ul class="check-list">
-                        <li>React Native app for iOS &amp; Android</li>
-                        <li>Push notifications and loyalty rewards</li>
-                        <li>Seamless booking with payment integration</li>
-                    </ul>
-                    <div class="case-metrics">
-                        <div><strong>25k+</strong><span>Downloads</span></div>
-                        <div><strong>40%</strong><span>Repeat bookings</span></div>
-                        <div><strong>4.8★</strong><span>Store rating</span></div>
-                    </div>
-                    <a class="case-link" href="<?php echo route_attr('case-studies/customer-facing-mobile-app'); ?>">View case study →</a>
-                </div>
-            </article>
-            </div>
-
-            <div class="cases-stack-item" style="--i: 3">
             <article class="case-card case-card-flip">
                 <div class="case-media">
                     <img src="assets/images/case-studies/ev-charger-installation-web-hero.png" alt="EV Charger Installation Management Platform" loading="lazy">
@@ -387,7 +315,7 @@ require_once __DIR__ . '/includes/header.php';
             </article>
             </div>
 
-            <div class="cases-stack-item" style="--i: 4">
+            <div class="cases-stack-item" style="--i: 1">
             <article class="case-card">
                 <div class="case-media">
                     <img src="assets/images/case-studies/dealer-management-system-hero.png" alt="Enterprise Dealer Management System" loading="lazy">
@@ -411,7 +339,7 @@ require_once __DIR__ . '/includes/header.php';
             </article>
             </div>
 
-            <div class="cases-stack-item" style="--i: 5">
+            <div class="cases-stack-item" style="--i: 2">
             <article class="case-card case-card-flip">
                 <div class="case-media">
                     <img src="assets/images/case-studies/travel-expense-management-hero.png" alt="Corporate Travel and Expense Management" loading="lazy">
@@ -435,7 +363,7 @@ require_once __DIR__ . '/includes/header.php';
             </article>
             </div>
 
-            <div class="cases-stack-item" style="--i: 6">
+            <div class="cases-stack-item" style="--i: 3">
             <article class="case-card">
                 <div class="case-media">
                     <img src="assets/images/case-studies/invoice-management-system-hero.png" alt="Enterprise Invoice Management System" loading="lazy">
@@ -459,7 +387,7 @@ require_once __DIR__ . '/includes/header.php';
             </article>
             </div>
 
-            <div class="cases-stack-item" style="--i: 7">
+            <div class="cases-stack-item" style="--i: 4">
             <article class="case-card case-card-flip">
                 <div class="case-media">
                     <img src="assets/images/case-studies/vehicle-exchange-platform-web-hero.png" alt="Vehicle Exchange Management Platform" loading="lazy">
@@ -483,7 +411,7 @@ require_once __DIR__ . '/includes/header.php';
             </article>
             </div>
 
-            <div class="cases-stack-item" style="--i: 8">
+            <div class="cases-stack-item" style="--i: 5">
             <article class="case-card">
                 <div class="case-media">
                     <img src="assets/images/case-studies/vehicle-auction-management-web-hero.png" alt="Vehicle Auction Management Platform" loading="lazy">
@@ -894,7 +822,7 @@ require_once __DIR__ . '/includes/header.php';
                 </ul>
             </div>
 
-            <form class="inquiry-form reveal reveal-right" id="inquiryForm" action="/form-handler" method="post" novalidate>
+            <form data-clarity-mask="True" class="inquiry-form reveal reveal-right" id="inquiryForm" action="/form-handler" method="post" novalidate>
                 <h3>Talk to an Expert</h3>
                 <p class="home-form-note">Or open the <a href="/contact-us">full contact page</a> for more details.</p>
                 <input type="hidden" name="page_source" value="home">

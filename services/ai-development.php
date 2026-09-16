@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'Custom AI Development, RAG, ML, NLP | Quantum Infoway';
-$page_description = 'End-to-end custom AI development — from discovery to production. RAG, agents, computer vision, NLP, fine-tuning, and on-device ML. 13+ countries.';
+$page_description = 'End-to-end custom AI development — from discovery to production. RAG, agents, computer vision, NLP, fine-tuning, and on-device ML. 10+ countries.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -31,7 +31,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
                     <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
-                    <div class="chs-item"><strong>13+</strong><span>Countries Served</span></div>
+                    <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
             </div>
