@@ -2566,6 +2566,11 @@ body.is-loaded .hero-pills            { animation-delay: 0.76s; }
   padding-right: 2.2rem;
 }
 
+.turnstile-field {
+  min-height: 68px;
+  margin-bottom: 0.85rem;
+}
+
 .hp-field {
   position: absolute !important;
   left: -9999px !important;

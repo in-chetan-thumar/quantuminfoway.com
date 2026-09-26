@@ -529,6 +529,13 @@
         return;
       }
 
+      var turnstileWidget = form.querySelector(".cf-turnstile");
+      var turnstileToken = form.querySelector('[name="cf-turnstile-response"]');
+      if (turnstileWidget && (!turnstileToken || !turnstileToken.value)) {
+        showStatus("Please complete the security check and try again.", false);
+        return;
+      }
+
       setButtonLoading(true);
 
       try {
@@ -556,11 +563,17 @@
             data.message || "Your inquiry has been received. We will contact you shortly."
           );
         } else {
+          if (!data.errors && window.turnstile) {
+            window.turnstile.reset();
+          }
           applyServerFieldErrors(form, data.errors);
           showStatus(data.message || "Something went wrong. Please try again.", false);
           setButtonLoading(false);
         }
       } catch (err) {
+        if (window.turnstile) {
+          window.turnstile.reset();
+        }
         showStatus("Network error. Please try again later.", false);
         setButtonLoading(false);
       }

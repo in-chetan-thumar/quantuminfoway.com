@@ -25,6 +25,46 @@ function env_value(string $key, string $default = ''): string
     return (string) $value;
 }
 
+/**
+ * Read one key from the project .env file.
+ * Used when Composer (vlucas/phpdotenv) is not installed, so Turnstile
+ * keys still load on this OSPanel site.
+ */
+function env_file_value(string $key): string
+{
+    $path = dirname(__DIR__) . '/.env';
+    if (!is_file($path) || !is_readable($path)) {
+        return '';
+    }
+
+    $lines = file($path, FILE_IGNORE_NEW_LINES);
+    if (!is_array($lines)) {
+        return '';
+    }
+
+    $prefix = $key . '=';
+    foreach ($lines as $line) {
+        $line = trim($line);
+        if ($line === '' || $line[0] === '#') {
+            continue;
+        }
+        if (!str_starts_with($line, $prefix)) {
+            continue;
+        }
+
+        $value = trim(substr($line, strlen($prefix)));
+        if (strlen($value) >= 2) {
+            $quote = $value[0];
+            if (($quote === '"' || $quote === "'") && str_ends_with($value, $quote)) {
+                $value = substr($value, 1, -1);
+            }
+        }
+        return $value;
+    }
+
+    return '';
+}
+
 define('SITE_NAME', 'Quantum Infoway');
 define('SITE_TAGLINE', 'We Are Top IT Solutions');
 define('SITE_EMAIL', 'hello@quantuminfoway.com');
@@ -54,6 +94,10 @@ define(
     env_value('SMTP_ENQUIRY_TO', SITE_EMAIL)
 );
 define('MAIL_ENQUIRY_CC', env_value('SMTP_ENQUIRY_CC', 'chetan.thumar@quantuminfoway.com'));
+
+// Cloudflare Turnstile — inquiry forms (home, contact-us → form-handler)
+define('TURNSTILE_SITE_KEY', env_value('TURNSTILE_SITE_KEY', env_file_value('TURNSTILE_SITE_KEY')));
+define('TURNSTILE_SECRET_KEY', env_value('TURNSTILE_SECRET_KEY', env_file_value('TURNSTILE_SECRET_KEY')));
 // Apply Now / Join Our Team inbox (hire → career-handler)
 define(
     'MAIL_APPLY_TO',

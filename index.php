@@ -862,6 +862,7 @@ require_once __DIR__ . '/includes/header.php';
                     <label for="qx_hp_field">Leave blank</label>
                     <input type="text" id="qx_hp_field" name="qx_hp_field" value="" tabindex="-1" autocomplete="new-password" inputmode="none">
                 </div>
+                <?php require __DIR__ . '/includes/turnstile-widget.php'; ?>
                 <p class="form-privacy">By submitting, you agree to our <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms-and-conditions">Terms &amp; Conditions</a>.</p>
                 <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
                     <span class="btn-text">Send Inquiry</span>

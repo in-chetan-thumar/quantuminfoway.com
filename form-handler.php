@@ -9,6 +9,7 @@ ob_start();
 require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/mail.php';
+require_once __DIR__ . '/includes/turnstile.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -114,6 +115,17 @@ if ($errors) {
         'success' => false,
         'message' => implode(' ', array_values($errors)),
         'errors'  => $errors,
+    ]);
+    exit;
+}
+
+$turnstileToken = trim((string) ($_POST['cf-turnstile-response'] ?? ''));
+if (!verify_turnstile($turnstileToken, $ip)) {
+    http_response_code(403);
+    echo json_encode([
+        'success'   => false,
+        'message'   => 'We could not verify this submission. Please refresh the page and try again.',
+        'turnstile' => false,
     ]);
     exit;
 }
