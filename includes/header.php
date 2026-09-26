@@ -9,7 +9,7 @@ $canonical_path = current_path();
 $canonical_url = rtrim(SITE_URL, '/') . ($canonical_path === '/' ? '/' : $canonical_path);
 $page_og_image = isset($page_og_image) && $page_og_image !== ''
     ? $page_og_image
-    : rtrim(SITE_URL, '/') . '/assets/images/hero.png';
+    : rtrim(SITE_URL, '/') . '/assets/images/home/quantum-social-preview-final.png';
 ?>
 <!DOCTYPE html>
 <html lang="en">
