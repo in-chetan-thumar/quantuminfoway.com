@@ -10,6 +10,7 @@ require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/mail.php';
 require_once __DIR__ . '/includes/turnstile.php';
+require_once __DIR__ . '/includes/inquiry-limit.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -40,7 +41,7 @@ $service     = trim((string) ($_POST['service'] ?? ''));
 $source      = trim((string) ($_POST['source'] ?? ''));
 $message     = trim((string) ($_POST['message'] ?? ''));
 $pageSource  = trim((string) ($_POST['page_source'] ?? ''));
-$ip          = $_SERVER['REMOTE_ADDR'] ?? '';
+$ip          = client_ip();
 
 $allowedPageSources = ['home', 'contact', ''];
 if (!in_array($pageSource, $allowedPageSources, true)) {
@@ -126,6 +127,29 @@ if (!verify_turnstile($turnstileToken, $ip)) {
         'success'   => false,
         'message'   => 'We could not verify this submission. Please refresh the page and try again.',
         'turnstile' => false,
+    ]);
+    exit;
+}
+
+try {
+    if (inquiry_is_rate_limited($ip, $email)) {
+        http_response_code(429);
+        echo json_encode([
+            'success' => false,
+            'message' => 'Please wait a while before sending another inquiry.',
+        ]);
+        exit;
+    }
+} catch (Throwable $e) {
+    @file_put_contents(
+        __DIR__ . '/data/inquiry-errors.log',
+        date('c') . ' RATE: ' . $e->getMessage() . PHP_EOL,
+        FILE_APPEND | LOCK_EX
+    );
+    http_response_code(500);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Unable to save your inquiry. Please try again later.',
     ]);
     exit;
 }
