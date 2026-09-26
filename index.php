@@ -706,13 +706,13 @@ require_once __DIR__ . '/includes/header.php';
                         <img src="assets/images/client-fountains.png" alt="Fountains">
                         <img src="assets/images/client-kallony.jpg" alt="Kallony">
                         <img src="assets/images/client-rudrablessings.png" alt="Rudra Blessings">
-                        <img src="assets/images/client-shah.png" alt="Shah">
+                        <a class="client-wordmark" href="https://ooltool.com" target="_blank" rel="noopener noreferrer" aria-label="OolTool website">OolTool</a>
                         <img src="assets/images/client1.jpg" alt="Client">
                         <img src="assets/images/client-canadian-wood.png" alt="">
                         <img src="assets/images/client-fountains.png" alt="">
                         <img src="assets/images/client-kallony.jpg" alt="">
                         <img src="assets/images/client-rudrablessings.png" alt="">
-                        <img src="assets/images/client-shah.png" alt="">
+                        <a class="client-wordmark" href="https://ooltool.com" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">OolTool</a>
                         <img src="assets/images/client1.jpg" alt="">
                     </div>
                 </div>
