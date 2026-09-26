@@ -79,6 +79,7 @@
                         <li><a href="<?php echo route_attr('hire/angular-developer'); ?>"<?php echo nav_active_class('hire/angular-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/angular-developer'); ?>>Angular</a></li>
                         <li><a href="<?php echo route_attr('hire/node-js-developer'); ?>"<?php echo nav_active_class('hire/node-js-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/node-js-developer'); ?>>Node.js</a></li>
                         <li><a href="<?php echo route_attr('hire/python-developer'); ?>"<?php echo nav_active_class('hire/python-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/python-developer'); ?>>Python</a></li>
+                        <li><a href="<?php echo route_attr('hire/dotnet-developer'); ?>"<?php echo nav_active_class('hire/dotnet-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/dotnet-developer'); ?>>.NET</a></li>
                         <li><a href="<?php echo route_attr('hire/full-stack-developer'); ?>"<?php echo nav_active_class('hire/full-stack-developer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/full-stack-developer'); ?>>Full Stack</a></li>
                         <li><a href="<?php echo route_attr('hire/ai-engineer'); ?>"<?php echo nav_active_class('hire/ai-engineer') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire/ai-engineer'); ?>>AI Engineer</a></li>
                         <li><a href="<?php echo route_attr('hire'); ?>"<?php echo nav_active_class('hire') !== '' ? ' class="active"' : ''; ?><?php echo nav_aria_current('hire'); ?>>View all roles →</a></li>
@@ -94,7 +95,7 @@
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
-                            <a href="tel:+918511108041"><?php echo htmlspecialchars(SITE_PHONE); ?></a>
+                            <a href="tel:<?php echo htmlspecialchars(SITE_PHONE_TEL); ?>"><?php echo htmlspecialchars(SITE_PHONE); ?></a>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>

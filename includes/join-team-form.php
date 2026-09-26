@@ -42,6 +42,7 @@
                 <option>React</option>
                 <option>Angular</option>
                 <option>Node.js</option>
+                <option>.NET</option>
                 <option>Python</option>
                 <option>Full Stack</option>
                 <option>AI Engineer</option>

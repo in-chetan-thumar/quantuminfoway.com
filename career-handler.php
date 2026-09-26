@@ -46,6 +46,7 @@ $allowedPositions = [
     'React',
     'Angular',
     'Node.js',
+    '.NET',
     'Python',
     'Full Stack',
     'AI Engineer',

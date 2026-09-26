@@ -206,7 +206,7 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>To exercise any right, email <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a> with the subject line “Privacy Request”. We will verify your identity and respond within the time required by applicable law.</p>
 
                 <h2 id="grievance">8. Grievance redressal</h2>
-                <p>In accordance with Indian law, you may raise any grievance regarding the processing of your personal data with our Grievance Officer at Quantum Infoway, India. Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a> (subject line “Grievance”). Phone: <a href="tel:+918511108041"><?php echo $phone; ?></a>.</p>
+                <p>In accordance with Indian law, you may raise any grievance regarding the processing of your personal data with our Grievance Officer at Quantum Infoway, India. Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a> (subject line “Grievance”). Phone: <a href="tel:<?php echo htmlspecialchars(SITE_PHONE_TEL); ?>"><?php echo $phone; ?></a>.</p>
                 <p>We acknowledge grievances promptly and aim to resolve them within one month, and in any case within the period required by applicable law.</p>
 
                 <h2 id="security">9. Security</h2>
@@ -219,7 +219,7 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>We may update this Privacy Policy from time to time. Material changes will be posted on this page with a new effective date. Please review this page periodically. Continued use of the Site after an update constitutes acknowledgement of the updated policy.</p>
 
                 <h2 id="contact">12. Contact</h2>
-                <p>For any question about this Privacy Policy or our data practices, contact <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, call <a href="tel:+918511108041"><?php echo $phone; ?></a>, or use our <a href="<?php echo route_attr('contact-us'); ?>">contact page</a>.</p>
+                <p>For any question about this Privacy Policy or our data practices, contact <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, call <a href="tel:<?php echo htmlspecialchars(SITE_PHONE_TEL); ?>"><?php echo $phone; ?></a>, or use our <a href="<?php echo route_attr('contact-us'); ?>">contact page</a>.</p>
                 <p class="legal-cross">Also see our <a href="<?php echo route_attr('terms-and-conditions'); ?>">Terms &amp; Conditions</a>.</p>
             </article>
         </div>

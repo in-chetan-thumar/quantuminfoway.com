@@ -82,6 +82,7 @@ if (mb_strlen($country) > 80) {
 
 $allowed_services = [
     'Web App Development',
+    '.NET Development',
     'Mobile App Development',
     'CMS & E-Commerce',
     'UX/UI Design',

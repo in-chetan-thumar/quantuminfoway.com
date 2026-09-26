@@ -153,7 +153,7 @@ $phone = htmlspecialchars(SITE_PHONE);
                 <p>If any provision of these Terms is held invalid or unenforceable, the remaining provisions remain in full force. Our failure to enforce any provision is not a waiver of it. These Terms, together with the Privacy Policy, are the entire agreement between you and Quantum Infoway regarding use of the Site. We are not liable for any failure to perform due to causes beyond our reasonable control.</p>
 
                 <h2 id="contact">17. Contact</h2>
-                <p>Questions about these Terms can be sent to <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, by phone at <a href="tel:+918511108041"><?php echo $phone; ?></a>, or via our <a href="<?php echo route_attr('contact-us'); ?>">contact page</a>.</p>
+                <p>Questions about these Terms can be sent to <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>, by phone at <a href="tel:<?php echo htmlspecialchars(SITE_PHONE_TEL); ?>"><?php echo $phone; ?></a>, or via our <a href="<?php echo route_attr('contact-us'); ?>">contact page</a>.</p>
                 <p class="legal-cross">Also see our <a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a>.</p>
             </article>
         </div>

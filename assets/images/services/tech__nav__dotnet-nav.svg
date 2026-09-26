@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label=".NET">
+  <rect width="64" height="64" rx="14" fill="#512BD4"/>
+  <circle cx="8.2" cy="32" r="3.5" fill="#fff"/>
+  <path fill="#fff" d="M13.2 50V14h4.5l6.6 19.4V14H29v36h-4.5L17.8 30.4V50h-4.6z"/>
+  <path fill="#fff" d="M31.4 14H45v5.2h-8.8v6h7.8v4.8h-7.8v6.6H45V50H31.4V14z"/>
+  <path fill="#fff" d="M47.2 14H60v5.2h-4.1V50h-4.8V19.2h-3.9V14z"/>
+</svg>

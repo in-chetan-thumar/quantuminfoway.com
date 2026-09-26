@@ -18,7 +18,7 @@
 <label>Name<input id="person" value="Chetan Thumar" placeholder="Your name" autocomplete="name"></label>
 <label>Role<input id="role" value="Founder &amp; Technology Director" placeholder="Your role" autocomplete="organization-title"></label>
 <label>Email<input id="email" type="email" value="hello@quantuminfoway.com" autocomplete="email"></label>
-<label>Phone<input id="phone" type="tel" value="+91 85111 08041" autocomplete="tel"></label>
+<label>Phone<input id="phone" type="tel" value="+91 81608 08041" autocomplete="tel"></label>
 </section>
 <p class="help">Enter your details, then use <strong>Copy signature</strong> and paste into your email app’s signature settings. Assign the full version to new messages and the compact version to replies and forwards. Details stay in this page and are not saved. Preview your signature in a test email; email apps may adjust formatting.</p>
 <div id="styles"></div>

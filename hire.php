@@ -1,7 +1,7 @@
 <?php
 $base_path = '';
 $page_title = 'Hire Developers | Quantum Infoway — AI-Native Talent Across 30 Stacks';
-$page_description = 'Hire top AI-native developers across 30 stacks. Pre-vetted engineers at $25–$50/hour all-in, with a 30-day replacement guarantee.';
+$page_description = 'Hire top AI-native developers across 31 stacks. Pre-vetted engineers at $25–$50/hour all-in, with a 30-day replacement guarantee.';
 require_once __DIR__ . '/includes/header.php';
 $bp = htmlspecialchars($base_path);
 $si = $bp . 'assets/images/services/';
@@ -48,6 +48,7 @@ $hire_groups = [
             ['hire/python-developer.php', 'Python Developers', 'Backend, AI, and data engineers: FastAPI, Django, Pandas, and AI/ML stacks. Production-grade Python at scale.'],
             ['hire/laravel-developer.php', 'Laravel Developers', 'Reliable PHP applications on Laravel: queues, jobs, broadcasting, and Filament admin panels.'],
             ['hire/java-spring-boot-developer.php', 'Java Spring Boot Developers', 'Enterprise-grade Java engineers: Spring Boot, microservices, Kafka, and JPA. Built for scale.'],
+            ['hire/dotnet-developer.php', '.NET Developers', 'C# and ASP.NET Core for business applications, APIs, Entity Framework, and Azure.'],
             ['hire/full-stack-developer.php', 'Full Stack Developers', 'End-to-end engineers: frontend, backend, database, infra. One engineer, the whole product.'],
             ['hire/flutter-developer.php', 'Flutter Developers', 'Cross-platform mobile and web apps from a single codebase: Dart, Riverpod, and pixel-perfect UI.'],
             ['hire/kotlin-android-developer.php', 'Kotlin Android Developers', 'Native Android engineers: Kotlin, Jetpack Compose, Coroutines, and Material 3 design.'],
@@ -150,7 +151,7 @@ $faqs = [
         <div class="container hero-inner">
             <div class="hero-content reveal reveal-scale">
                 <span class="eyebrow">Hire AI-Native Developers</span>
-                <h1>Hire top 1% AI-native developers across <span class="gradient-text">30 stacks</span></h1>
+                <h1>Hire top 1% AI-native developers across <span class="gradient-text">31 stacks</span></h1>
                 <p>Skip the recruiting funnel. Pre-vetted developers and engineers fluent in AI-native workflows (Claude Code, agentic systems, RAG), across web, mobile, no-code, and cloud. Less than 1% of applicants make our team. $25–$50/hour all-in, with a 30-day replacement guarantee.</p>
                 <div class="hero-actions">
                     <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>

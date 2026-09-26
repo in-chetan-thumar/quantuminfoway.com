@@ -7,16 +7,6 @@ $bp = htmlspecialchars($base_path);
 $ai = $bp . 'assets/images/about/';
 $si = $bp . 'assets/images/services/';
 
-$client_logos = [
-    'client-logo-1.webp',
-    'client-logo-2.webp',
-    'client-logo-3.webp',
-    'client-logo-4.webp',
-    'client-logo-5.webp',
-    'client-logo-6.webp',
-    'client-logo-7.webp',
-];
-
 $proof = [
     [
         'img' => 'case-studies__highlands-brain__redesign__solution-mockup.webp',
@@ -68,37 +58,43 @@ $process = [
 $leaders = [
     [
         'img' => 'team-avatar.png',
-        'name' => 'Chetan Thumar',
+        'name' => 'Chetan',
         'role' => 'CEO & Director',
         'bio' => 'Chetan leads Quantum Infoway as CEO & Director, setting product direction and partnering with founders and engineering leaders to ship AI-native software that scales across markets.',
     ],
     [
         'img' => 'team-avatar.png',
-        'name' => 'Abhishek Rajput',
+        'name' => 'Bipin',
+        'role' => 'Sales',
+        'bio' => 'Bipin speaks with new clients about the project, the timeline, and the right way to start, then connects them with the people who will build it.',
+    ],
+    [
+        'img' => 'team-avatar.png',
+        'name' => 'Abhishek',
         'role' => 'Senior Full Stack Developer & AI Expert',
         'bio' => 'Abhishek builds end-to-end web products and AI features, from architecture through launch, with a focus on clean APIs, modern frontends, and production-ready LLM integrations.',
     ],
     [
         'img' => 'team-avatar.png',
-        'name' => 'Vishal Chauhan',
+        'name' => 'Vishal',
         'role' => 'Senior Full Stack Developer & AI Expert',
         'bio' => 'Vishal designs and ships full stack applications with AI capabilities, owning delivery across the stack so teams get reliable, maintainable products on aggressive timelines.',
     ],
     [
         'img' => 'team-avatar.png',
-        'name' => 'Hardik Thanki',
+        'name' => 'Hardik',
         'role' => 'QA & AI Expert',
         'bio' => 'Hardik owns quality across releases, combining rigorous test strategy with AI-assisted validation so products ship stable, secure, and ready for real users.',
     ],
     [
         'img' => 'team-avatar.png',
-        'name' => 'Nihar Savaliya',
+        'name' => 'Nihar',
         'role' => 'Senior Full Stack Developer & AI Expert',
         'bio' => 'Nihar delivers senior full stack engineering with AI expertise, building scalable backends and polished interfaces that turn complex requirements into shipped software.',
     ],
     [
         'img' => 'team-avatar.png',
-        'name' => 'Amit Vadgama',
+        'name' => 'Amit',
         'role' => 'Mobile App Developer',
         'bio' => 'Amit builds native and cross-platform mobile apps focused on performance, smooth UX, and reliable release pipelines from prototype through store launch.',
     ],
@@ -137,12 +133,11 @@ $certs = [
         </div>
     </section>
 
-    <div class="about-logo-strip" aria-label="Trusted by customers">
-        <div class="about-logo-track">
-            <?php foreach (array_merge($client_logos, $client_logos) as $logo): ?>
-            <div class="about-logo-item"><img src="<?php echo $ai . htmlspecialchars($logo); ?>" alt=""></div>
-            <?php endforeach; ?>
-        </div>
+    <div class="about-clients">
+        <?php
+        require_once __DIR__ . '/includes/client-logos.php';
+        render_client_logo_marquee();
+        ?>
     </div>
 
     <section class="section about-stats-band" id="about-stats">
@@ -162,7 +157,6 @@ $certs = [
             <a href="#journey">Journey</a>
             <a href="#vision">Vision</a>
             <a href="#how-we-work">How we work</a>
-            <a href="#life">Life</a>
             <a href="#leadership">Leadership</a>
             <a href="<?php echo route_attr('contact-us'); ?>">Contact</a>
         </div>
@@ -219,29 +213,21 @@ $certs = [
                 <span class="eyebrow">Valued by clients worldwide</span>
                 <h2>Vision &amp; <span class="gradient-text">mission</span></h2>
             </div>
-            <div class="about-vm-split">
-                <div class="about-vm-grid">
-                    <article class="about-vm-card reveal reveal-up">
-                        <span class="eyebrow">Vision</span>
-                        <ul class="about-check-list">
-                            <li>Make AI-native development the default for ambitious teams, so every product ships with intelligence built in.</li>
-                            <li>Prove that an Ahmedabad engineering hub can be the best product partner for companies anywhere in the world.</li>
-                        </ul>
-                    </article>
-                    <article class="about-vm-card reveal reveal-up">
-                        <span class="eyebrow">Mission</span>
-                        <ul class="about-check-list">
-                            <li>Design, build, and scale digital products that deliver measurable outcomes for the businesses that run on them.</li>
-                            <li>Give every client senior engineers, honest scoped estimates, and delivery measured in weeks, not quarters.</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="about-vm-media reveal reveal-up">
-                    <img src="<?php echo $ai; ?>mission-image.webp" alt="Quantum Infoway mission" loading="lazy">
-                </div>
-            </div>
-            <div class="about-side-media reveal reveal-up">
-                <img src="<?php echo $ai; ?>day-office-travel-agency.webp" alt="Quantum Infoway office" loading="lazy">
+            <div class="about-vm-grid">
+                <article class="about-vm-card reveal reveal-up">
+                    <span class="eyebrow">Vision</span>
+                    <ul class="about-check-list">
+                        <li>Make AI-native development the default for ambitious teams, so every product ships with intelligence built in.</li>
+                        <li>Prove that an Ahmedabad engineering hub can be the best product partner for companies anywhere in the world.</li>
+                    </ul>
+                </article>
+                <article class="about-vm-card reveal reveal-up">
+                    <span class="eyebrow">Mission</span>
+                    <ul class="about-check-list">
+                        <li>Design, build, and scale digital products that deliver measurable outcomes for the businesses that run on them.</li>
+                        <li>Give every client senior engineers, honest scoped estimates, and delivery measured in weeks, not quarters.</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -260,20 +246,6 @@ $certs = [
                     <p><?php echo htmlspecialchars($step[2]); ?></p>
                 </article>
                 <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="life">
-        <div class="container">
-            <div class="section-head reveal reveal-up">
-                <span class="eyebrow">Life at Quantum Infoway</span>
-                <h2>Built in Ahmedabad, shipping <span class="gradient-text">worldwide</span></h2>
-            </div>
-            <div class="about-life-grid reveal reveal-up">
-                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-workstations.png" alt="Office workstations" loading="lazy"></div>
-                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-meeting.png" alt="Meeting room" loading="lazy"></div>
-                <div class="about-life-cell"><img src="<?php echo $ai; ?>office-lounge.png" alt="Office lounge" loading="lazy"></div>
             </div>
         </div>
     </section>

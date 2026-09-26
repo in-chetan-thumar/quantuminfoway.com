@@ -141,5 +141,5 @@ Response format is JSON (`success` / `message`).
 
 - **Site:** [quantuminfoway.com](https://quantuminfoway.com)
 - **Email:** hello@quantuminfoway.com
-- **Phone:** +91 85111 08041
+- **Phone:** +91 81608 08041
 - **Hours:** Mon–Fri 10am–7pm

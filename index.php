@@ -452,6 +452,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="tech-chip">Angular</span>
                 <span class="tech-chip">Node.js</span>
                 <span class="tech-chip">Python</span>
+                <span class="tech-chip">.NET</span>
                 <span class="tech-chip">WordPress</span>
                 <span class="tech-chip">WooCommerce</span>
                 <span class="tech-chip">iOS</span>
@@ -700,22 +701,10 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="clients-block reveal reveal-up">
                 <p class="clients-caption">Valued by clients worldwide</p>
-                <div class="clients-marquee" aria-label="Client logos">
-                    <div class="marquee-track">
-                        <img src="assets/images/client-canadian-wood.png" alt="Canadian Wood">
-                        <img src="assets/images/client-fountains.png" alt="Fountains">
-                        <img src="assets/images/client-kallony.jpg" alt="Kallony">
-                        <img src="assets/images/client-rudrablessings.png" alt="Rudra Blessings">
-                        <a class="client-wordmark" href="https://ooltool.com" target="_blank" rel="noopener noreferrer" aria-label="OolTool website">OolTool</a>
-                        <img src="assets/images/client1.jpg" alt="Client">
-                        <img src="assets/images/client-canadian-wood.png" alt="">
-                        <img src="assets/images/client-fountains.png" alt="">
-                        <img src="assets/images/client-kallony.jpg" alt="">
-                        <img src="assets/images/client-rudrablessings.png" alt="">
-                        <a class="client-wordmark" href="https://ooltool.com" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">OolTool</a>
-                        <img src="assets/images/client1.jpg" alt="">
-                    </div>
-                </div>
+                <?php
+                require_once __DIR__ . '/includes/client-logos.php';
+                render_client_logo_marquee();
+                ?>
             </div>
         </div>
     </section>
@@ -809,7 +798,7 @@ require_once __DIR__ . '/includes/header.php';
                 <ul class="contact-highlights">
                     <li>
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z"/></svg>
-                        <?php echo htmlspecialchars(SITE_PHONE); ?>
+                        <a href="tel:<?php echo htmlspecialchars(SITE_PHONE_TEL); ?>"><?php echo htmlspecialchars(SITE_PHONE); ?></a>
                     </li>
                     <li>
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 4 8 8 8-8"/></svg>
@@ -844,6 +833,7 @@ require_once __DIR__ . '/includes/header.php';
                         <select id="service" name="service">
                             <option value="">Select a service</option>
                             <option>Web App Development</option>
+                            <option>.NET Development</option>
                             <option>Mobile App Development</option>
                             <option>CMS &amp; E-Commerce</option>
                             <option>UX/UI Design</option>

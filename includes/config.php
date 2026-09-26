@@ -68,7 +68,8 @@ function env_file_value(string $key): string
 define('SITE_NAME', 'Quantum Infoway');
 define('SITE_TAGLINE', 'We Are Top IT Solutions');
 define('SITE_EMAIL', 'hello@quantuminfoway.com');
-define('SITE_PHONE', '+91 85111 08041');
+define('SITE_PHONE', '+91 81608 08041');
+define('SITE_PHONE_TEL', preg_replace('/[^\d+]/', '', SITE_PHONE));
 define('SITE_HOURS', 'Mon-Fri 10am-7pm');
 define('SITE_URL', env_value('APP_URL', 'https://quantuminfoway.com'));
 

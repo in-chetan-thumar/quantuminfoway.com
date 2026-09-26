@@ -42,9 +42,10 @@ $svc_groups = [
         'cards' => [
             ['services/custom-software-development.php', 'Custom Software Development', 'Custom platforms, internal systems, integrations, and AI powered products, built for your exact workflow with published pricing.'],
             ['services/enterprise-application-development.php', 'Enterprise Application Development', 'Custom enterprise platforms, system integration, legacy modernization, and AI powered software — built to scale across an organization.'],
-            ['services/web-app-development.php', 'Web App Development', 'React, Next.js, Node.js, Python, and Java, from MVP to enterprise scale SaaS. AI augmented engineering throughout.'],
+            ['services/web-app-development.php', 'Web App Development', 'React, Next.js, Node.js, .NET, Python, and Java, from MVP to enterprise scale SaaS. AI augmented engineering throughout.'],
             ['services/react-development.php', 'React Development', 'React web apps, dashboards, and SaaS in React, Next.js, and TypeScript, with performance and AI interfaces built in.'],
             ['services/node-js-development.php', 'Node.js Development', 'APIs, real time systems, microservices, and AI product backends in NestJS, Express, and strict TypeScript.'],
+            ['services/dotnet-development.php', '.NET Development', 'ASP.NET Core applications, APIs, and internal platforms in C#, with SQL Server, Entity Framework, and Azure.'],
             ['services/no-code-development.php', 'No-Code & Low-Code Development', 'Webflow, Bubble, Xano, WeWeb, and FlutterFlow. MVPs and internal tools shipped in weeks, with a clean path to custom code as you scale.'],
             ['services/mvp-development.php', 'MVP Build & Rescue', 'Build a production MVP, or scale, rebuild, secure, and take over one built on Supabase, Lovable, Xano, or WeWeb.'],
             ['services/xano-development.php', 'Xano Development', 'Scalable Xano backends. Database, APIs, and business logic in one platform, built AI ready and rescued at scale.'],

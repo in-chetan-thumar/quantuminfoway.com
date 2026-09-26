@@ -171,6 +171,10 @@ $page_og_image = isset($page_og_image) && $page_og_image !== ''
                                     <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/></svg></span>
                                     Node.js Development
                                 </a>
+                                <a href="<?php echo route_attr('services/dotnet-development'); ?>" class="mega-link<?php echo nav_active_class('services/dotnet-development'); ?>"<?php echo nav_aria_current('services/dotnet-development'); ?>>
+                                    <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h5"/></svg></span>
+                                    .NET Development
+                                </a>
                             </div>
                             <div class="mega-col">
                                 <span class="mega-title">Cloud, Data &amp; Workspace</span>
@@ -303,6 +307,10 @@ $page_og_image = isset($page_og_image) && $page_og_image !== ''
                                     <a href="<?php echo route_attr('hire/java-spring-boot-developer'); ?>" class="mega-link<?php echo nav_active_class('hire/java-spring-boot-developer'); ?>" title="Java"<?php echo nav_aria_current('hire/java-spring-boot-developer'); ?>>
                                         <span class="mega-ico mega-ico-logo"><img src="<?php echo $hire_ico; ?>tech__nav__java-nav.svg" alt="" width="28" height="28" loading="lazy"></span>
                                         Java
+                                    </a>
+                                    <a href="<?php echo route_attr('hire/dotnet-developer'); ?>" class="mega-link<?php echo nav_active_class('hire/dotnet-developer'); ?>" title=".NET"<?php echo nav_aria_current('hire/dotnet-developer'); ?>>
+                                        <span class="mega-ico mega-ico-logo"><img src="<?php echo $hire_ico; ?>tech__nav__dotnet-nav.svg" alt="" width="28" height="28" loading="lazy"></span>
+                                        .NET
                                     </a>
                                     <a href="<?php echo route_attr('hire/full-stack-developer'); ?>" class="mega-link<?php echo nav_active_class('hire/full-stack-developer'); ?>" title="Full Stack"<?php echo nav_aria_current('hire/full-stack-developer'); ?>>
                                         <span class="mega-ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></span>
