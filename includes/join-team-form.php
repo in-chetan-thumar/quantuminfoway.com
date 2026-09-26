@@ -108,6 +108,8 @@
         <input type="text" id="qx_hp_field_career" name="qx_hp_field" value="" tabindex="-1" autocomplete="new-password" inputmode="none">
     </div>
 
+    <?php $turnstile_action = 'career'; require __DIR__ . '/turnstile-widget.php'; ?>
+
     <p class="form-privacy">By submitting, you agree to our <a href="<?php echo route_attr('privacy-policy'); ?>">Privacy Policy</a> and <a href="<?php echo route_attr('terms-and-conditions'); ?>">Terms &amp; Conditions</a>.</p>
 
     <button type="submit" class="btn btn-primary btn-block" id="joinTeamSubmitBtn">

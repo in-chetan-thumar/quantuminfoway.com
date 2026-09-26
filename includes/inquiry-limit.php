@@ -26,10 +26,19 @@ function client_ip(): string
 }
 
 /**
- * True when this visitor or email already sent 3 inquiries in the last hour.
+ * True when this visitor or email already sent 3 rows in the last hour.
+ * $table must be one of the known form tables.
  */
-function inquiry_is_rate_limited(string $ip, string $email): bool
+function submission_is_rate_limited(string $table, string $ip, string $email): bool
 {
+    $allowed = [
+        'inquiries' => true,
+        'career_applications' => true,
+    ];
+    if (!isset($allowed[$table])) {
+        return true;
+    }
+
     $email = strtolower(trim($email));
     $parts = [];
     $params = [];
@@ -46,11 +55,21 @@ function inquiry_is_rate_limited(string $ip, string $email): bool
     }
 
     $stmt = db()->prepare(
-        'SELECT COUNT(*) FROM inquiries
+        'SELECT COUNT(*) FROM ' . $table . '
          WHERE created_at >= (NOW() - INTERVAL 1 HOUR)
            AND (' . implode(' OR ', $parts) . ')'
     );
     $stmt->execute($params);
 
     return (int) $stmt->fetchColumn() >= 3;
+}
+
+function inquiry_is_rate_limited(string $ip, string $email): bool
+{
+    return submission_is_rate_limited('inquiries', $ip, $email);
+}
+
+function career_application_is_rate_limited(string $ip, string $email): bool
+{
+    return submission_is_rate_limited('career_applications', $ip, $email);
 }

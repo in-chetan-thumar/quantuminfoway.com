@@ -868,6 +868,13 @@
         return;
       }
 
+      var turnstileWidget = joinForm.querySelector(".cf-turnstile");
+      var turnstileToken = joinForm.querySelector('[name="cf-turnstile-response"]');
+      if (turnstileWidget && (!turnstileToken || !turnstileToken.value)) {
+        showJoinStatus("Please complete the security check and try again.", false);
+        return;
+      }
+
       setJoinButtonLoading(true);
 
       try {
@@ -895,11 +902,17 @@
             data.message || "Your application has been received. We will be in touch soon."
           );
         } else {
+          if (!data.errors && window.turnstile) {
+            window.turnstile.reset();
+          }
           applyServerFieldErrors(joinForm, data.errors);
           showJoinStatus(data.message || "Something went wrong. Please try again.", false);
           setJoinButtonLoading(false);
         }
       } catch (err) {
+        if (window.turnstile) {
+          window.turnstile.reset();
+        }
         showJoinStatus("Network error. Please try again later.", false);
         setJoinButtonLoading(false);
       }
