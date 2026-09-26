@@ -32,6 +32,7 @@ $page_og_image = isset($page_og_image) && $page_og_image !== ''
     <link rel="icon" type="image/svg+xml" href="<?php echo htmlspecialchars($base_path); ?>assets/images/favicon.svg">
     <link rel="alternate icon" type="image/png" href="<?php echo htmlspecialchars($base_path); ?>assets/images/favicon.png">
     <link rel="apple-touch-icon" href="<?php echo htmlspecialchars($base_path); ?>assets/images/apple-touch-icon.png">
+    <link rel="preload" href="<?php echo htmlspecialchars($base_path); ?>assets/fonts/sora-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="<?php echo htmlspecialchars($base_path); ?>assets/css/style.css">
     <script src="/assets/js/consent.js" defer></script>
     <script>

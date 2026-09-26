@@ -31,23 +31,7 @@
     }
   }
 
-  if (reducedMotion || !loader) {
-    finishLoader();
-  } else {
-    var loaderStart = performance.now();
-    var minShow = 900;
-    var hide = function () {
-      var elapsed = performance.now() - loaderStart;
-      var wait = Math.max(0, minShow - elapsed);
-      setTimeout(finishLoader, wait);
-    };
-    if (document.readyState === "complete") {
-      hide();
-    } else {
-      window.addEventListener("load", hide);
-      setTimeout(hide, 2200);
-    }
-  }
+  finishLoader();
 
   /* Sticky header glass on scroll */
   function onScrollHeader() {

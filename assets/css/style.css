@@ -1216,8 +1216,13 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
   }
 }
 
+.hero .hero-content.reveal {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
 body:not(.is-loaded) .hero-content .eyebrow,
-body:not(.is-loaded) .hero-content h1,
 body:not(.is-loaded) .hero-rotator,
 body:not(.is-loaded) .hero-content > p,
 body:not(.is-loaded) .hero-actions,
@@ -1227,7 +1232,6 @@ body:not(.is-loaded) .hero-pills {
 }
 
 body.is-loaded .hero-content .eyebrow,
-body.is-loaded .hero-content h1,
 body.is-loaded .hero-rotator,
 body.is-loaded .hero-content > p,
 body.is-loaded .hero-actions,
@@ -1236,11 +1240,10 @@ body.is-loaded .hero-pills {
 }
 
 body.is-loaded .hero-content .eyebrow { animation-delay: 0.08s; }
-body.is-loaded .hero-content h1       { animation-delay: 0.2s; }
-body.is-loaded .hero-rotator          { animation-delay: 0.34s; }
-body.is-loaded .hero-content > p      { animation-delay: 0.48s; }
-body.is-loaded .hero-actions          { animation-delay: 0.62s; }
-body.is-loaded .hero-pills            { animation-delay: 0.76s; }
+body.is-loaded .hero-rotator          { animation-delay: 0.2s; }
+body.is-loaded .hero-content > p      { animation-delay: 0.32s; }
+body.is-loaded .hero-actions          { animation-delay: 0.44s; }
+body.is-loaded .hero-pills            { animation-delay: 0.56s; }
 
 .hero h1 .gradient-text,
 .hero h1 .headline-rotator {
@@ -2946,16 +2949,6 @@ body.is-loaded .hero-pills            { animation-delay: 0.76s; }
 .delay-3 { transition-delay: 0.3s; }
 .delay-4 { transition-delay: 0.4s; }
 
-/* Page content soft enter after loader */
-body.is-loaded main {
-  animation: pageIn 0.55s var(--ease-premium) both;
-}
-
-@keyframes pageIn {
-  from { opacity: 0.4; filter: blur(4px); }
-  to { opacity: 1; filter: none; }
-}
-
 /* Scroll progress bar (top) */
 .scroll-progress {
   position: fixed;
@@ -3097,14 +3090,13 @@ body.is-loaded .scroll-rail {
     radial-gradient(ellipse at 30% 20%, rgba(109, 77, 246, 0.28), transparent 55%),
     radial-gradient(ellipse at 70% 80%, rgba(14, 194, 232, 0.18), transparent 50%),
     linear-gradient(160deg, #070a16 0%, #0b0e1c 50%, #10152b 100%);
-  transition: opacity 0.65s var(--ease-premium), visibility 0.65s ease, filter 0.65s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
 .page-loader.is-done {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  filter: blur(14px);
 }
 
 .page-loader.is-done .loader-mark {

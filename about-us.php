@@ -65,8 +65,8 @@ $leaders = [
     [
         'img' => 'team-avatar.png',
         'name' => 'Bipin',
-        'role' => 'Sales',
-        'bio' => 'Bipin speaks with new clients about the project, the timeline, and the right way to start, then connects them with the people who will build it.',
+        'role' => 'Business Development',
+        'bio' => 'Bipin leads business development for new leads, working with founders and product leaders on the first conversation and how an engagement starts.',
     ],
     [
         'img' => 'team-avatar.png',
