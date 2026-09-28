@@ -33,7 +33,14 @@ $page_og_image = isset($page_og_image) && $page_og_image !== ''
     <link rel="alternate icon" type="image/png" href="<?php echo htmlspecialchars($base_path); ?>assets/images/favicon.png">
     <link rel="apple-touch-icon" href="<?php echo htmlspecialchars($base_path); ?>assets/images/apple-touch-icon.png">
     <link rel="preload" href="<?php echo htmlspecialchars($base_path); ?>assets/fonts/sora-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="<?php echo htmlspecialchars($base_path); ?>assets/css/style.css">
+    <?php
+    $critical_css = file_get_contents(__DIR__ . '/../assets/css/critical.css');
+    $critical_css = str_replace('__BASE__', $base_path, $critical_css);
+    ?>
+    <style><?php echo $critical_css; ?></style>
+    <?php $css_href = htmlspecialchars($base_path) . 'assets/css/style.css?v=' . filemtime(__DIR__ . '/../assets/css/style.css'); ?>
+    <link rel="preload" href="<?php echo $css_href; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="<?php echo $css_href; ?>"></noscript>
     <script src="/assets/js/consent.js" defer></script>
     <script>
       document.documentElement.classList.add("js");

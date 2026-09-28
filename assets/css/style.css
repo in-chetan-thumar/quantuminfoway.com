@@ -285,11 +285,9 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
 .section-head.reveal p {
   opacity: 0;
   transform: translateY(18px);
-  filter: blur(4px);
   transition:
     opacity var(--reveal-dur) var(--ease-premium),
-    transform var(--reveal-dur) var(--ease-premium),
-    filter var(--reveal-dur) ease;
+    transform var(--reveal-dur) var(--ease-premium);
 }
 
 .section-head.reveal.visible .eyebrow,
@@ -297,7 +295,6 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
 .section-head.reveal.visible p {
   opacity: 1;
   transform: none;
-  filter: none;
 }
 
 .section-head.reveal.visible .eyebrow { transition-delay: 0.05s; }
@@ -679,6 +676,7 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
 
 @media (min-width: 769px) {
   .mega-menu {
+    display: block;
     position: absolute;
     /* Overlap header slightly so cursor never leaves the hover zone */
     top: calc(100% - 2px);
@@ -1206,13 +1204,11 @@ h4 { font-size: 0.95rem; letter-spacing: 0.01em; }
 @keyframes heroUp {
   from {
     opacity: 0;
-    transform: translateY(34px);
-    filter: blur(8px);
+    transform: translateY(22px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    filter: blur(0);
   }
 }
 
@@ -2257,12 +2253,11 @@ body.is-loaded .hero-pills            { animation-delay: 0.56s; }
 .contact-bg {
   position: absolute;
   inset: 0;
-  background: url("../images/cta-bg.jpg") center / cover no-repeat;
-  opacity: 0.08;
-  filter: saturate(0.5);
+  background:
+    radial-gradient(ellipse 70% 55% at 15% 40%, rgba(109, 77, 246, 0.45), transparent 62%),
+    radial-gradient(ellipse 55% 45% at 85% 70%, rgba(47, 107, 255, 0.35), transparent 60%);
+  opacity: 0.55;
   z-index: 0;
-  will-change: transform;
-  transform: translate3d(0, var(--band-shift, 0px), 0);
 }
 
 .contact-bg::after {
@@ -2889,12 +2884,9 @@ body.is-loaded .hero-pills            { animation-delay: 0.56s; }
    --------------------------------------------------------- */
 .reveal {
   opacity: 0;
-  transform: translateY(34px) scale(0.99);
-  filter: blur(5px);
+  transform: translateY(24px);
   transition: opacity var(--reveal-dur) var(--ease-premium),
-              transform var(--reveal-dur) var(--ease-premium),
-              filter var(--reveal-dur) ease;
-  will-change: opacity, transform, filter;
+              transform var(--reveal-dur) var(--ease-premium);
 }
 
 .reveal.reveal-up {
@@ -3084,7 +3076,7 @@ body.is-loaded .scroll-rail {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  display: grid;
+  display: none;
   place-items: center;
   background:
     radial-gradient(ellipse at 30% 20%, rgba(109, 77, 246, 0.28), transparent 55%),
@@ -3447,6 +3439,7 @@ body:not(.is-loaded) .reveal:not(.visible) {
   }
 
   .mega-menu {
+    display: block;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.45s var(--ease-out);

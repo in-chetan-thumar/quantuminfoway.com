@@ -44,7 +44,7 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="proof-bento reveal reveal-up" aria-label="Delivery highlights">
                 <div class="proof-bento-img proof-bento-main">
-                    <img src="assets/images/home/social-proof-main.webp" alt="Quantum Infoway team collaborating" loading="lazy" width="800" height="600">
+                    <img src="assets/images/home/social-proof-main.webp?v=2" alt="Quantum Infoway team collaborating" loading="lazy" decoding="async" width="640" height="300">
                 </div>
                 <article class="proof-stat proof-stat-code">
                     <div class="proof-stat-icon" aria-hidden="true">
@@ -83,7 +83,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                 </article>
                 <div class="proof-bento-img proof-bento-sec">
-                    <img src="assets/images/home/social-proof-2.webp" alt="Team reviewing product work together" loading="lazy" width="800" height="500">
+                    <img src="assets/images/home/social-proof-2.webp?v=2" alt="Team reviewing product work together" loading="lazy" decoding="async" width="640" height="300">
                 </div>
             </div>
         </div>
@@ -294,7 +294,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 0">
             <article class="case-card case-card-flip">
                 <div class="case-media">
-                    <img src="assets/images/case-studies/ev-charger-installation-web-hero.png" alt="EV Charger Installation Management Platform" loading="lazy">
+                    <img src="assets/images/case-studies/home/ev-charger-installation-web-hero.webp" alt="EV Charger Installation Management Platform" loading="lazy" decoding="async" width="960" height="640">
                 </div>
                 <div class="case-body">
                     <div class="case-tags"><span class="tag">EV Infrastructure</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
@@ -318,7 +318,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 1">
             <article class="case-card">
                 <div class="case-media">
-                    <img src="assets/images/case-studies/dealer-management-system-hero.png" alt="Enterprise Dealer Management System" loading="lazy">
+                    <img src="assets/images/case-studies/home/dealer-management-system-hero.webp" alt="Enterprise Dealer Management System" loading="lazy" decoding="async" width="960" height="640">
                 </div>
                 <div class="case-body">
                     <div class="case-tags"><span class="tag">Automotive</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
@@ -342,7 +342,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 2">
             <article class="case-card case-card-flip">
                 <div class="case-media">
-                    <img src="assets/images/case-studies/travel-expense-management-hero.png" alt="Corporate Travel and Expense Management" loading="lazy">
+                    <img src="assets/images/case-studies/home/travel-expense-management-hero.webp" alt="Corporate Travel and Expense Management" loading="lazy" decoding="async" width="960" height="640">
                 </div>
                 <div class="case-body">
                     <div class="case-tags"><span class="tag">HR &amp; Finance</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
@@ -366,7 +366,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 3">
             <article class="case-card">
                 <div class="case-media">
-                    <img src="assets/images/case-studies/invoice-management-system-hero.png" alt="Enterprise Invoice Management System" loading="lazy">
+                    <img src="assets/images/case-studies/home/invoice-management-system-hero.webp" alt="Enterprise Invoice Management System" loading="lazy" decoding="async" width="960" height="640">
                 </div>
                 <div class="case-body">
                     <div class="case-tags"><span class="tag">Finance</span><span class="tag">Procurement</span><span class="tag">Web</span></div>
@@ -390,7 +390,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 4">
             <article class="case-card case-card-flip">
                 <div class="case-media">
-                    <img src="assets/images/case-studies/vehicle-exchange-platform-web-hero.png" alt="Vehicle Exchange Management Platform" loading="lazy">
+                    <img src="assets/images/case-studies/home/vehicle-exchange-platform-web-hero.webp" alt="Vehicle Exchange Management Platform" loading="lazy" decoding="async" width="960" height="640">
                 </div>
                 <div class="case-body">
                     <div class="case-tags"><span class="tag">Automotive Retail</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
@@ -414,7 +414,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="cases-stack-item" style="--i: 5">
             <article class="case-card">
                 <div class="case-media">
-                    <img src="assets/images/case-studies/vehicle-auction-management-web-hero.png" alt="Vehicle Auction Management Platform" loading="lazy">
+                    <img src="assets/images/case-studies/home/vehicle-auction-management-web-hero.webp" alt="Vehicle Auction Management Platform" loading="lazy" decoding="async" width="960" height="640">
                 </div>
                 <div class="case-body">
                     <div class="case-tags"><span class="tag">Automotive Auction</span><span class="tag">Enterprise</span><span class="tag">Web</span></div>
