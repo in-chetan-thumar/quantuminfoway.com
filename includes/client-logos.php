@@ -19,6 +19,13 @@ function client_logo_items(): array
             'w' => 1200,
             'h' => 242,
         ],
+        [
+            'src' => 'assets/images/clients/edge.png',
+            'alt' => 'Edge',
+            'href' => 'https://edgeonline.in',
+            'w' => 239,
+            'h' => 160,
+        ],
         ['src' => 'assets/images/client1.jpg', 'alt' => 'Client', 'w' => 296, 'h' => 103],
     ];
 }
