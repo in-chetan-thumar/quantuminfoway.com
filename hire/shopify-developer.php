@@ -47,13 +47,13 @@ $hire_related = [
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What They Build</a>
                 </div>
                 <div class="hero-trust-pills" aria-label="Delivery highlights">
-                    <span>Shopify specialists</span>
+                    <span>Shopify Partner</span>
                     <span>AI-accelerated delivery</span>
                     <span>Start within a week</span>
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>

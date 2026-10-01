@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'Fintech App Development Company | Quantum Infoway';
-$page_description = 'Fintech app development company for payments, lending, neobanking, wealthtech, and insurtech. Security first, KYC and AML ready, ISO 27001 certified.';
+$page_description = 'Fintech app development company for payments, lending, neobanking, wealthtech, and insurtech. Security first, KYC and AML ready.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -18,7 +18,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <div class="hero-content reveal reveal-scale">
                 <span class="eyebrow">Fintech App Development</span>
                 <h1>Fintech App Development <span class="gradient-text">Company</span></h1>
-                <p>We build the software that moves money, verifies identity, and keeps regulators satisfied, from payments and lending to neobanking, wealthtech, and insurtech. Security first, ISO 27001 certified.</p>
+                <p>We build the software that moves money, verifies identity, and keeps regulators satisfied, from payments and lending to neobanking, wealthtech, and insurtech. Security first.</p>
                 <div class="hero-actions">
                     <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What We Build</a>
@@ -30,7 +30,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
@@ -76,7 +76,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <div class="section-head reveal reveal-up">
                 <span class="eyebrow">How We Work</span>
                 <h2>Delivery that holds up in <span class="gradient-text">production</span></h2>
-                <p>We build the software that moves money, verifies identity, and keeps regulators satisfied, from payments and lending to neobanking, wealthtech, and insurtech. Security first, ISO 27001 certified.</p>
+                <p>We build the software that moves money, verifies identity, and keeps regulators satisfied, from payments and lending to neobanking, wealthtech, and insurtech. Security first.</p>
             </div>
         </div>
     </section>
@@ -236,7 +236,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <div class="faq-list reveal reveal-up">
                 <details class="faq-item"><summary>How much does it cost to build a fintech app?</summary><div class="faq-body">Industry ranges run from roughly 80,000 dollars for a narrow MVP to several hundred thousand for a full platform. Our own published estimates start at 15,000 dollars for tightly scoped MVP work at a blended rate of 25 to 50 dollars per hour. The main cost driver is the compliance and security surface, so we scope a fixed estimate against your real product.</div></details>
                 <details class="faq-item"><summary>How do you handle regulatory compliance such as PCI DSS, KYC, and AML?</summary><div class="faq-body">We treat compliance as an engineering requirement. We build for PCI DSS 4.0 with tokenization so raw card data never sits in your systems, integrate KYC and AML providers such as Onfido and ComplyAdvantage for identity verification and transaction monitoring, and design data protection under GDPR and CCPA with encryption, role based access, and audit logging. We scope which standards apply in the first phase.</div></details>
-                <details class="faq-item"><summary>Are you PCI DSS and ISO certified?</summary><div class="faq-body">We are certified to ISO/IEC 27001:2022 and ISO 9001:2015, and we are GDPR compliant. We build for PCI DSS and HIPAA workloads, meaning we engineer to those requirements and work within a partner or processor environment that carries the formal certification. We do not claim PCI DSS certification ourselves, and we are clear about that distinction.</div></details>
+                <details class="faq-item"><summary>Are you PCI DSS certified?</summary><div class="faq-body">We are GDPR compliant. We build for PCI DSS and HIPAA workloads, meaning we engineer to those requirements and work within a partner or processor environment that carries the formal certification. We do not claim PCI DSS certification ourselves.</div></details>
                 <details class="faq-item"><summary>Which payment and banking APIs do you integrate?</summary><div class="faq-body">We integrate the infrastructure your product needs rather than pushing one vendor. Stripe and similar processors for payments and checkout, account aggregation and open banking connections for balances and transactions, banking as a service providers for neobanking front ends, and KYC and AML providers for onboarding. Where a partner bank or processor is chosen, we build to their APIs.</div></details>
                 <details class="faq-item"><summary>How long does a fintech MVP take to build?</summary><div class="faq-body">A focused MVP that proves one core flow, such as onboarding with KYC or a single payment path, typically takes a few months. The variable that moves the timeline most is the compliance surface rather than the feature list, which is why we scope regulatory requirements and design controls up front instead of retrofitting them.</div></details>
                 <details class="faq-item"><summary>Can you take over or secure an existing fintech app?</summary><div class="faq-body">Yes. We audit an inherited codebase for security and architecture risk, close the gaps that matter, and stabilize it before adding features. If an early version was built on a no-code or AI assisted stack and hit a wall on control, cost, or compliance, we can secure it, scale it, or migrate the parts that need to move onto a system you own.</div></details>

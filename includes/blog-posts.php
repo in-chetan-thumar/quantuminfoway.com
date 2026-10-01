@@ -642,7 +642,7 @@ return [
             'date' => 'May 23, 2026',
             'tag' => 'AI Agents',
             'read' => '8 min read',
-            'excerpt' => 'AI agents are entering enterprise operations faster than governance frameworks can keep up. Four pillars â€” identity, scoped access, audit trails, monitoring â€” and how they map to ISO 27001.',
+            'excerpt' => 'AI agents are entering enterprise operations faster than governance frameworks can keep up. Four pillars â€” identity, scoped access, audit trails, monitoring â€” and how to govern them in production.',
             'service' => 'services/agentic-ai.php',
             'image' => 'assets/images/blogs/ai-agents-enterprise-workflow-automation.png',
             'tint' => '#EDE8FF',

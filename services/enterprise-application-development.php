@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'Enterprise Application Development Company | Quantum Infoway';
-$page_description = 'Enterprise application development company. Platforms, integration, legacy modernization, enterprise mobile, and AI powered software. ISO 27001 certified.';
+$page_description = 'Enterprise application development company. Platforms, integration, legacy modernization, enterprise mobile, and AI powered software.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -30,7 +30,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
@@ -116,7 +116,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <article class="cap-card reveal reveal-up">
                     <div class="cap-top"><div class="cap-ico"><img src="<?php echo $si; ?>icons__Link.webp" alt=""></div><span class="cap-index">06</span></div>
                     <h3>Security, Compliance &amp; Access Control</h3>
-                    <p>Role based access control, encryption, and per record audit trails, delivered under an ISO/IEC 27001:2022 certified ISMS and aligned with GDPR, in cloud accounts you own.</p>
+                    <p>Role based access control, encryption, and per record audit trails, aligned with GDPR, in cloud accounts you own.</p>
                 </article>
             </div>
             <div class="svc-soft-cta reveal reveal-up" style="margin-top: 2.5rem;">
@@ -237,7 +237,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>Do you do enterprise mobile app development?</summary><div class="faq-body">Yes. We build the mobile layer of enterprise software. Field and operations apps, distributor and customer ordering apps, and manager dashboards that read and write the same data as the core platform. Builds are native iOS and Android or cross platform Flutter and React Native, with offline first sync, single sign on, and per role permissions. Shipped examples include the Highlands web and mobile learning platform serving 15,000+ students and the Instant-Ex money transfer app rated 4.2 stars on Google Play.</div></details>
                 <details class="faq-item"><summary>Can you build the mobile app and the enterprise platform together?</summary><div class="faq-body">Yes, and it is usually the better path. One team owning the platform, the APIs, and the mobile apps means one data model, one release plan, and no integration finger pointing between suppliers. The mobile app stays a live window into enterprise data instead of another system to reconcile. It also cuts total cost, because the backend, admin dashboards, and mobile clients share architecture, infrastructure, and a single QA pipeline.</div></details>
                 <details class="faq-item"><summary>How do you integrate with our existing systems like ERP and CRM?</summary><div class="faq-body">Through a dedicated integration and middleware layer. We connect ERPs, CRMs, e-commerce systems, payment gateways, and BI tools over their APIs or event streams, so data flows between the systems you already run without manual rekeying. Where a system has no clean API, we build adapters and reconciliation jobs. The goal is one trusted data model across the business instead of spreadsheets bridging the gaps.</div></details>
-                <details class="faq-item"><summary>How do you handle security and compliance for enterprise software?</summary><div class="faq-body">Security is built in, not added later. We operate an ISO/IEC 27001:2022 certified Information Security Management System and align our handling of personal data with the EU General Data Protection Regulation (GDPR). Enterprise builds include role based access control, encryption in transit and at rest, per record audit trails, and security review as part of the build. We run everything in cloud accounts you own and control, and hand over full source and documentation.</div></details>
+                <details class="faq-item"><summary>How do you handle security and compliance for enterprise software?</summary><div class="faq-body">Security is built in, not added later. We align our handling of personal data with the EU General Data Protection Regulation (GDPR). Enterprise builds include role based access control, encryption in transit and at rest, per record audit trails, and security review as part of the build. We run everything in cloud accounts you own and control, and hand over full source and documentation.</div></details>
                 <details class="faq-item"><summary>Do you modernize or take over legacy enterprise applications?</summary><div class="faq-body">Yes. A large share of our work is inheriting systems other teams built: stabilizing them, adding test coverage, untangling legacy integrations, and modernizing incrementally rather than risking a single big rewrite. We start with a technical audit so you know the real state of the codebase and the data before committing to a roadmap.</div></details>
                 <details class="faq-item"><summary>What technologies do you build enterprise applications with?</summary><div class="faq-body">.NET, Java Spring Boot, Node.js, Python, React, Next.js, and TypeScript on the application side; PostgreSQL and Redis for data; AWS and Google Cloud for infrastructure, with Docker and Kubernetes where the scale calls for it; and AI integration with Claude, GPT, and Gemini where it earns its place. For data heavy products we also build on Xano as an Enterprise tier partner, which can cut backend cost and timeline meaningfully.</div></details>
             </div>

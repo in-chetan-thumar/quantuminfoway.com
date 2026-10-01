@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'React Development Company & Services | Quantum Infoway';
-$page_description = 'React development company for web apps, dashboards, and SaaS. React 19, Next.js, TypeScript, performance and AI interfaces. Published pricing, ISO 27001 certified.';
+$page_description = 'React development company for web apps, dashboards, and SaaS. React 19, Next.js, TypeScript, performance and AI interfaces. Published pricing.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -18,7 +18,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <div class="hero-content reveal reveal-scale">
                 <span class="eyebrow">React Development Company</span>
                 <h1>React Development Company</h1>
-                <p>We design and build React web apps, dashboards, and SaaS products in React 19, Next.js, and TypeScript, with performance and AI interfaces built in. Published pricing, senior engineers, ISO 27001 certified.</p>
+                <p>We design and build React web apps, dashboards, and SaaS products in React 19, Next.js, and TypeScript, with performance and AI interfaces built in. Published pricing and senior engineers.</p>
                 <div class="hero-actions">
                     <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#capabilities" class="btn btn-ghost btn-lg">What We Build</a>
@@ -30,7 +30,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
@@ -76,7 +76,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <div class="section-head reveal reveal-up">
                 <span class="eyebrow">How We Work</span>
                 <h2>Delivery that holds up in <span class="gradient-text">production</span></h2>
-                <p>We design and build React web apps, dashboards, and SaaS products in React 19, Next.js, and TypeScript, with performance and AI interfaces built in. Published pricing, senior engineers, ISO 27001 certified.</p>
+                <p>We design and build React web apps, dashboards, and SaaS products in React 19, Next.js, and TypeScript, with performance and AI interfaces built in. Published pricing and senior engineers.</p>
             </div>
         </div>
     </section>
@@ -213,7 +213,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </article>
                 <article class="guide-item">
                     <h3>How We Build React That Holds Up</h3>
-                    <p>We are an AI native team. Roughly 80 percent of our production code is AI generated and engineer reviewed, verified by our internal team, which lets a senior React team move at startup pace without giving up review discipline. Every build ships in strict TypeScript, with a component test suite in Vitest and React Testing Library, end to end tests in Playwright, and continuous integration that blocks regressions. We treat Core Web Vitals as a delivery target, not an afterthought, and we adopt the React Compiler where it helps. We operate an ISO/IEC 27001:2022 certified information security management system, and you own the full source, documentation, and infrastructure from day one.</p>
+                    <p>We are an AI native team. Roughly 80 percent of our production code is AI generated and engineer reviewed, verified by our internal team, which lets a senior React team move at startup pace without giving up review discipline. Every build ships in strict TypeScript, with a component test suite in Vitest and React Testing Library, end to end tests in Playwright, and continuous integration that blocks regressions. We treat Core Web Vitals as a delivery target, not an afterthought, and we adopt the React Compiler where it helps. You own the full source, documentation, and infrastructure from day one.</p>
                 </article>
             </div>
         </div>

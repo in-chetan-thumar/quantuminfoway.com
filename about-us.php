@@ -1,7 +1,7 @@
 <?php
 $base_path = '';
 $page_title = 'About Us | Quantum Infoway — AI-Native Software Partner';
-$page_description = 'Meet the team behind 250+ products shipped across 10+ countries. Quantum Infoway is an AI-native software partner building web, mobile, and AI systems since 2014.';
+$page_description = 'Meet the team behind 250+ products shipped across 10+ countries. Quantum Infoway is an AI-native software partner building web, mobile, and AI systems since 2020.';
 require_once __DIR__ . '/includes/header.php';
 $bp = htmlspecialchars($base_path);
 $ai = $bp . 'assets/images/about/';
@@ -39,13 +39,10 @@ $proof = [
 ];
 
 $journey = [
-    ['2014', 'Founded in Ahmedabad', 'Quantum Infoway was founded in Ahmedabad in January 2014 to build software that scales, combining production-grade engineering with modern tooling.'],
-    ['2023', 'Best NoCode Agency of the year', 'The NoCode Alliance named Quantum Infoway the Best NoCode Agency of 2023, recognizing our no-code delivery practice.'],
-    ['2025', 'Ranked #13 on the Clutch 100', 'Clutch placed Quantum Infoway at #13 on its 100 fastest-growing companies list, built on verified client reviews and revenue growth.'],
-    ['2025', 'Certified Google Cloud and Workspace Partner', 'Recognized as a Certified Google Cloud and Workspace Partner, delivering Google Workspace consulting and cloud services in India.'],
-    ['2025', 'DesignRush Best Mobile App Design', 'The Highlands Brain learning platform won Best Mobile App Design in the DesignRush Best Design Awards 2025.'],
-    ['2025', 'Xano Enterprise Partner', 'Xano placed Quantum Infoway in its Enterprise tier, the highest level in its global partner program.'],
-    ['2026', 'AI-native delivery on every engagement', 'After a multi-year team transformation, our AI-native delivery model became standard on every project, with 250+ products shipped across 10+ countries.'],
+    ['2020', 'Founded in Ahmedabad', 'Quantum Infoway was founded in Ahmedabad in 2020. The first work was websites and web applications for clients.'],
+    ['2022', 'Mobile development', 'We started building mobile apps alongside the web work, for products that needed an iOS or Android experience.'],
+    ['2024', 'Shopify Partner', 'Quantum Infoway became a Shopify Partner, building stores, themes, and commerce work for clients.'],
+    ['2026', 'Web, mobile, and AI', 'Six years on, the same company ships websites, web apps, mobile products, and AI features, with one team from first scope through launch.'],
 ];
 
 $process = [
@@ -100,14 +97,9 @@ $leaders = [
     ],
 ];
 
-$certs = [
-    ['iso-27001-labeled.webp', 'ISO/IEC 27001:2022'],
-    ['iso-9001-labeled.webp', 'ISO 9001:2015'],
-    ['partner-gcp.webp', 'Google Cloud Partner'],
-    ['partner-google-workspace.webp', 'Google Workspace Partner'],
-    ['client-logo-xano.webp', 'Xano Partner'],
-    ['clutch-badge-2024-2025.webp', 'Clutch'],
-    ['gdpr-badge.webp', 'GDPR'],
+$partners = [
+    ['partner-shopify.svg', 'Shopify Partner'],
+    ['partner-hostinger.svg', 'Hostinger Partner'],
 ];
 ?>
 
@@ -119,7 +111,7 @@ $certs = [
             <div class="hero-content reveal reveal-scale">
                 <span class="eyebrow">About Quantum Infoway</span>
                 <h1>We build and scale custom <span class="gradient-text">digital products</span></h1>
-                <p>Quantum Infoway is an AI-native software development company headquartered in Ahmedabad, founded in 2014, serving clients in 10+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
+                <p>Quantum Infoway is an AI-native software development company headquartered in Ahmedabad, founded in 2020, serving clients in 10+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
                 <div class="hero-actions">
                     <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#proof" class="btn btn-ghost btn-lg">See proof</a>
@@ -143,7 +135,7 @@ $certs = [
     <section class="section about-stats-band" id="about-stats">
         <div class="container">
             <div class="about-stats reveal reveal-up">
-                <div class="about-stat"><strong>12+</strong><span>Years of Experience</span></div>
+                <div class="about-stat"><strong>6+</strong><span>Years of Experience</span></div>
                 <div class="about-stat"><strong>250+</strong><span>Products Delivered</span></div>
                 <div class="about-stat"><strong>10+</strong><span>Countries Served</span></div>
                 <div class="about-stat"><strong>150+</strong><span>Happy Clients</span></div>
@@ -191,7 +183,7 @@ $certs = [
         <div class="container">
             <div class="section-head reveal reveal-up">
                 <span class="eyebrow">Our journey</span>
-                <h2>Twelve years of shipping <span class="gradient-text">software</span></h2>
+                <h2>Shipping software since <span class="gradient-text">2020</span></h2>
             </div>
             <div class="about-timeline reveal reveal-up">
                 <?php foreach ($journey as $j): ?>
@@ -273,14 +265,14 @@ $certs = [
         </div>
     </section>
 
-    <section class="section" id="certs">
+    <section class="section" id="partners">
         <div class="container">
             <div class="section-head reveal reveal-up">
-                <span class="eyebrow">Certifications &amp; partnerships</span>
-                <h2>Credentials that back our <span class="gradient-text">delivery</span></h2>
+                <span class="eyebrow">Partnerships</span>
+                <h2>Platforms we <span class="gradient-text">partner with</span></h2>
             </div>
             <div class="about-certs reveal reveal-up">
-                <?php foreach ($certs as $c): ?>
+                <?php foreach ($partners as $c): ?>
                 <div class="about-cert">
                     <img src="<?php echo $ai . htmlspecialchars($c[0]); ?>" alt="<?php echo htmlspecialchars($c[1]); ?>" loading="lazy">
                 </div>

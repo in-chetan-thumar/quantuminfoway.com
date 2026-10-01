@@ -30,7 +30,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
@@ -232,7 +232,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
             <div class="faq-list reveal reveal-up">
                 <details class="faq-item"><summary>What data analytics services do you offer?</summary><div class="faq-body">We offer descriptive, diagnostic, predictive, and prescriptive analytics. This includes dashboard development, data pipeline automation, ML model building, and data strategy consulting.</div></details>
                 <details class="faq-item"><summary>What tools do you use for data analytics?</summary><div class="faq-body">Power BI, Tableau, Python, R, SQL, BigQuery, Snowflake, and custom-built analytics applications depending on your needs and existing infrastructure.</div></details>
-                <details class="faq-item"><summary>How do you ensure data security?</summary><div class="faq-body">We implement role-based access controls, data encryption at rest and in transit, and audit logging. Quantum Infoway is ISO 27001 and ISO 9001 certified, and we configure pipelines and warehouses to meet GDPR, HIPAA, and other regulated workload requirements based on your specific compliance needs.</div></details>
+                <details class="faq-item"><summary>How do you ensure data security?</summary><div class="faq-body">We implement role-based access controls, data encryption at rest and in transit, and audit logging. We configure pipelines and warehouses to meet GDPR, HIPAA, and other regulated workload requirements based on your specific compliance needs.</div></details>
                 <details class="faq-item"><summary>Can you work with our existing data sources?</summary><div class="faq-body">Yes. We connect to databases, APIs, SaaS tools, spreadsheets, and cloud storage. We build pipelines that unify data from all your sources into one place.</div></details>
                 <details class="faq-item"><summary>How long does a data analytics project take?</summary><div class="faq-body">A basic dashboard takes 2-4 weeks. A full data warehouse with automated pipelines and predictive models typically takes 2-4 months depending on data complexity and the number of source systems we integrate.</div></details>
                 <details class="faq-item"><summary>Do you offer data visualization services?</summary><div class="faq-body">Yes. We build interactive dashboards in Power BI and Tableau, and also build custom data visualization components for web applications when standard tools aren't enough.</div></details>

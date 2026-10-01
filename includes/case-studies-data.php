@@ -79,7 +79,7 @@ if (!function_exists('case_studies_all')) {
                 ],
                 'integrations' => ['OEM ERP inventory sync', 'CRM dealer master', 'Maps geocoding', 'SMS / email notification gateway', 'Document object storage'],
                 'security' => ['RBAC with least-privilege roles', 'Immutable audit log', 'Signed evidence attachments', 'SSO-ready enterprise login'],
-                'delivery_highlights' => ['Cloud-native multi-tenant ready', 'API-first for mobile companions', 'Week-scale module releases', 'ISO-aligned access controls'],
+                'delivery_highlights' => ['Cloud-native multi-tenant ready', 'API-first for mobile companions', 'Week-scale module releases', 'Role-based access controls'],
                 'tech_stack' => ['React', 'Next.js', 'Node.js', 'Laravel', 'PostgreSQL', 'Redis', 'AWS', 'S3', 'Map APIs'],
                 'mobile_apps' => [],
                 'features' => [

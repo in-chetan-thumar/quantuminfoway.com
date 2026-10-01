@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'AI Automation Company & Services | Quantum Infoway';
-$page_description = 'AI automation company for document processing, support triage, and workflow automation. Agentic workflows, RAG, and human in the loop. ISO 27001 certified.';
+$page_description = 'AI automation company for document processing, support triage, and workflow automation. Agentic workflows, RAG, and human in the loop.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -30,7 +30,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
@@ -239,7 +239,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>How much does AI automation cost?</summary><div class="faq-body">A single purpose automation usually costs a few thousand dollars to build with a modest monthly running cost. A multi agent workflow across departments runs into the tens of thousands to build, and enterprise custom systems cost more. Regulated data adds to the total because of extra security and compliance work. We scope a fixed estimate against your real process rather than quoting a template.</div></details>
                 <details class="faq-item"><summary>Should we build custom automation or buy an off the shelf tool?</summary><div class="faq-body">Buy a ready made tool for a standard, validated use case, since it is cheaper and faster to run. Build custom when your workflow exceeds platform limits, when high volume makes task based pricing costly, or when vendor lock in is a long term risk. A common low risk path is to pilot on managed tooling, prove the outcome, then move the important parts onto a system you own.</div></details>
                 <details class="faq-item"><summary>No-code or custom code, which is right for us?</summary><div class="faq-body">Rule based connections between apps suit no-code tools such as n8n, Make, or Zapier. When each step needs the system to reason about a goal, when you need full control, or when the workflow is complex or regulated, a code framework such as LangGraph is the better foundation. We build across both and recommend the one that fits your workflow.</div></details>
-                <details class="faq-item"><summary>Is our data safe, and does a human stay in control?</summary><div class="faq-body">Yes. We use encryption in transit and at rest, role based access, and full logging, and retrieval keeps your proprietary knowledge out of any third party training. Critical actions run through human in the loop checkpoints so a person approves before anything irreversible happens. We deliver under an ISO/IEC 27001:2022 certified information security management system and are GDPR compliant.</div></details>
+                <details class="faq-item"><summary>Is our data safe, and does a human stay in control?</summary><div class="faq-body">Yes. We use encryption in transit and at rest, role based access, and full logging, and retrieval keeps your proprietary knowledge out of any third party training. Critical actions run through human in the loop checkpoints so a person approves before anything irreversible happens. We are GDPR compliant.</div></details>
                 <details class="faq-item"><summary>How do you stop the AI from making things up?</summary><div class="faq-body">We ground the system in your trusted sources using retrieval, so it answers from your data rather than guessing, and we add validation steps that check output before it is acted on. Mature deployments in the industry reach 85 to 95 percent accuracy on tasks such as ticket triage, with people reviewing the remainder. We treat that review path as part of the design, not an afterthought.</div></details>
                 <details class="faq-item"><summary>How do we get started with AI automation?</summary><div class="faq-body">Start with a scoped pilot on your highest friction process, prove the outcome on real data, then expand from there. Data preparation often takes 30 to 40 percent of the timeline, and payback commonly lands within 2 to 6 months. We handle the pilot through to production and hand over code and infrastructure you own.</div></details>
             </div>

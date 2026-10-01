@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'Healthcare App Development Company | Quantum Infoway';
-$page_description = 'Healthcare app development company for telemedicine, remote monitoring, EHR integration, and clinical AI. HIPAA ready builds, ISO 27001 certified.';
+$page_description = 'Healthcare app development company for telemedicine, remote monitoring, EHR integration, and clinical AI. HIPAA ready builds.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -30,7 +30,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
@@ -240,7 +240,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>How does EHR and EMR integration work?</summary><div class="faq-body">Through HL7, and increasingly FHIR, the HL7 API standard, with R4 as the current production baseline. We integrate with electronic health record systems using FHIR APIs, handle older HL7 version 2 messages where needed, and use SMART on FHIR to launch apps inside EHRs such as Epic and Oracle Health with authorized, context aware access.</div></details>
                 <details class="faq-item"><summary>When is a healthcare app a regulated medical device?</summary><div class="faq-body">When it is intended to diagnose, treat, or drive a clinical decision rather than simply inform. Wellness and booking apps are not medical devices. Software that interprets a scan or recommends treatment may be regulated as Software as a Medical Device, which adds design controls and a regulatory pathway. We help place your product on the right side of that line early.</div></details>
                 <details class="faq-item"><summary>How much does it cost to build a healthcare app in 2026?</summary><div class="faq-body">A lean MVP typically starts around 25,000 dollars, a full platform with EHR integration runs into the low hundreds of thousands, and enterprise systems more. The main cost driver is the compliance and interoperability surface. Our published estimate ranges start at 15,000 dollars for tightly scoped work at a blended 25 to 50 dollars per hour, scoped against your real product.</div></details>
-                <details class="faq-item"><summary>How do you keep patient data secure?</summary><div class="faq-body">Encryption in transit and at rest, role based access with multi factor authentication, full audit logging, automatic session timeout, and infrastructure you own. We deliver under an ISO/IEC 27001:2022 certified information security management system, are GDPR compliant, and build for HIPAA workloads, with proven experience detecting and protecting protected health information at scale.</div></details>
+                <details class="faq-item"><summary>How do you keep patient data secure?</summary><div class="faq-body">Encryption in transit and at rest, role based access with multi factor authentication, full audit logging, automatic session timeout, and infrastructure you own. We are GDPR compliant and build for HIPAA workloads, with proven experience detecting and protecting protected health information at scale.</div></details>
                 <details class="faq-item"><summary>Can you build for telemedicine and remote patient monitoring?</summary><div class="faq-body">Yes. We build telemedicine and virtual care with secure video and messaging, and remote patient monitoring that connects wearables and devices through FHIR, designed around the documentation that billing codes require rather than device connectivity alone. Both are core to our healthcare practice.</div></details>
                 <details class="faq-item"><summary>How long does healthcare app development take?</summary><div class="faq-body">A focused MVP that proves one flow typically takes a few months, and a full platform longer. A lean MVP can start within about two weeks of kickoff. The variable that moves the timeline most is the compliance and interoperability surface, which is why we scope those requirements up front and design the controls in rather than retrofitting them.</div></details>
                 <details class="faq-item"><summary>Is there such a thing as HIPAA certified software?</summary><div class="faq-body">No. The Office for Civil Rights, which enforces HIPAA, does not certify software or companies. What exists is HIPAA ready software, built to the Privacy, Security, and Breach Notification Rules, from a partner willing to sign a business associate agreement. Frameworks such as HITRUST and SOC 2 can be certified and show strong controls, but they are not a HIPAA certificate either.</div></details>

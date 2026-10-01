@@ -1,7 +1,7 @@
 <?php
 $base_path = '../';
 $page_title = 'Node.js Development Company & Services | Quantum Infoway';
-$page_description = 'Node.js development company for APIs, real time systems, microservices, and AI backends. NestJS, Express, TypeScript. Published pricing, ISO 27001 certified.';
+$page_description = 'Node.js development company for APIs, real time systems, microservices, and AI backends. NestJS, Express, TypeScript. Published pricing.';
 require_once __DIR__ . '/../includes/header.php';
 $si = htmlspecialchars($base_path) . 'assets/images/services/';
 ?>
@@ -30,7 +30,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 </div>
                 <div class="contact-hero-stats reveal reveal-up">
                     <div class="chs-item"><strong>150+</strong><span>Happy Clients</span></div>
-                    <div class="chs-item"><strong>12+</strong><span>Years Delivery</span></div>
+                    <div class="chs-item"><strong>6+</strong><span>Years Delivery</span></div>
                     <div class="chs-item"><strong>10+</strong><span>Countries Served</span></div>
                     <div class="chs-item"><strong>24h</strong><span>Response Window</span></div>
                 </div>
@@ -243,7 +243,7 @@ $si = htmlspecialchars($base_path) . 'assets/images/services/';
                 <details class="faq-item"><summary>What databases do you pair with Node.js?</summary><div class="faq-body">PostgreSQL is our default for transactional systems, with Redis for caching and queues. MongoDB fits document heavy workloads, and MySQL where a client standardizes on it. Schema design, migrations, and indexing are part of every build, not an afterthought.</div></details>
                 <details class="faq-item"><summary>How long does a Node.js project take?</summary><div class="faq-body">A focused API or backend ships in 4 to 10 weeks. A mid sized platform takes 4 to 8 months. We ship working software in increments from the first weeks, with a staging environment you can click through every sprint, rather than a single delivery at the end.</div></details>
                 <details class="faq-item"><summary>Should we choose Node.js or Python or Java for our backend?</summary><div class="faq-body">Node.js wins for network heavy and real time workloads and for teams that want one language across the stack. Python wins for AI, machine learning, and data science. Java fits large regulated enterprises with long lived systems. Many production stacks combine them, and we build all three, so the recommendation follows your workload rather than our preference.</div></details>
-                <details class="faq-item"><summary>Why choose Quantum Infoway as your Node.js development company?</summary><div class="faq-body">Production evidence. Our fleet management platform delivered 40% faster vehicle onboarding, our manufacturing platform cut reconciliation errors 30%, and StayVista scaled to 1,000+ properties with 50% more booking capacity on a Node backend. We are ISO/IEC 27001:2022 certified, publish our estimate ranges, and hand over full source and documentation in cloud accounts you own.</div></details>
+                <details class="faq-item"><summary>Why choose Quantum Infoway as your Node.js development company?</summary><div class="faq-body">Production evidence. Our fleet management platform delivered 40% faster vehicle onboarding, our manufacturing platform cut reconciliation errors 30%, and StayVista scaled to 1,000+ properties with 50% more booking capacity on a Node backend. We publish our estimate ranges, and hand over full source and documentation in cloud accounts you own.</div></details>
             </div>
             <div class="related-strip reveal reveal-up" style="margin-top: 3rem;">
                 <a class="related-card" href="<?php echo route_attr('services/ai-development'); ?>"><span>Related</span><strong>AI Development →</strong><p>AI Agents</p></a>
