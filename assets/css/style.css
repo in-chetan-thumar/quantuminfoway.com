@@ -10023,3 +10023,71 @@ body:not(.is-loaded) .reveal:not(.visible) {
 .consent-actions button:hover{background:#6756d6}
 .analytics-consent :focus-visible,.cookie-preferences:focus-visible{outline:3px solid #afcbff;outline-offset:3px}
 .consent-status{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+.inquiry-prompt {
+  position: fixed;
+  z-index: 9000;
+  left: 20px;
+  bottom: 20px;
+  width: min(380px, calc(100% - 40px));
+}
+.inquiry-prompt[hidden] { display: none !important; }
+.inquiry-prompt-card {
+  position: relative;
+  padding: 1.35rem 1.35rem 1.15rem;
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px -18px rgba(16, 22, 43, 0.45);
+}
+.inquiry-prompt-card h2 {
+  font-size: 1.2rem;
+  margin: 0 2rem 0.35rem 0;
+  color: var(--text);
+}
+.inquiry-prompt-card p {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.inquiry-prompt-card a {
+  color: var(--violet);
+  font-weight: 600;
+}
+.inquiry-prompt-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}
+.inquiry-prompt-close:hover { color: var(--text); background: #f3f5fb; }
+.inquiry-prompt .form-row { margin-bottom: 0.75rem; }
+.inquiry-prompt textarea { resize: vertical; min-height: 64px; }
+.inquiry-prompt .btn-loading[hidden] { display: none; }
+.inquiry-prompt .btn.is-loading .btn-text { display: none; }
+.inquiry-prompt .form-success-card { padding: 0.4rem 0 0.2rem; }
+.inquiry-prompt .form-success-card h3 { margin-bottom: 0.35rem; }
+@media (max-width: 640px) {
+  .inquiry-prompt {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .inquiry-prompt-card {
+    border-radius: 18px 18px 0 0;
+    max-height: min(88dvh, 640px);
+    overflow: auto;
+    padding-bottom: calc(1.15rem + env(safe-area-inset-bottom));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .inquiry-prompt-card { scroll-behavior: auto; }
+}

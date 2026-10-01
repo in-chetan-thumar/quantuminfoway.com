@@ -138,6 +138,8 @@
         </div>
     </section>
     <span id="consent-status" role="status" class="consent-status"></span>
+    <?php require __DIR__ . '/inquiry-prompt.php'; ?>
     <script src="<?php echo htmlspecialchars($base_path); ?>assets/js/main.js?v=<?php echo filemtime(__DIR__ . '/../assets/js/main.js'); ?>"></script>
+    <script src="<?php echo htmlspecialchars($base_path); ?>assets/js/inquiry-prompt.js?v=<?php echo filemtime(__DIR__ . '/../assets/js/inquiry-prompt.js'); ?>"></script>
 </body>
 </html>

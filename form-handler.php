@@ -45,7 +45,7 @@ $ip          = client_ip();
 
 $allowedPageSources = ['home', 'contact', ''];
 if (!in_array($pageSource, $allowedPageSources, true)) {
-    $pageSource = '';
+    $pageSource = preg_match('#^prompt:/[A-Za-z0-9/_-]{0,32}$#', $pageSource) ? $pageSource : '';
 }
 
 $errors = [];
