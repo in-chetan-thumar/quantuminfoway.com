@@ -1,3 +1,9 @@
+<?php
+if (empty($hide_testimonials)) {
+    require_once __DIR__ . '/testimonials.php';
+    render_site_testimonials();
+}
+?>
 <footer class="site-footer">
         <div class="footer-glow" aria-hidden="true"></div>
         <div class="container footer-inner">

@@ -1,5 +1,6 @@
 <?php
 $base_path = '';
+$hide_testimonials = true;
 $page_title = 'Terms & Conditions | Quantum Infoway';
 $page_description = 'Terms governing your access to and use of the Quantum Infoway website and its content.';
 require_once __DIR__ . '/includes/header.php';

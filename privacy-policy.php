@@ -1,5 +1,6 @@
 <?php
 $base_path = '';
+$hide_testimonials = true;
 $page_title = 'Privacy Policy | Quantum Infoway';
 $page_description = 'How Quantum Infoway collects, uses, shares, and protects personal data when you visit our website or contact us through it.';
 require_once __DIR__ . '/includes/header.php';

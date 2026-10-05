@@ -1,5 +1,6 @@
 <?php
 $base_path = '';
+$hide_testimonials = true;
 $page_title = 'Sitemap | Quantum Infoway';
 $page_description = 'Browse every Quantum Infoway page — services, hire roles, insights, company, and legal.';
 require_once __DIR__ . '/includes/header.php';
