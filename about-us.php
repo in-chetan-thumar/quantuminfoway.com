@@ -67,6 +67,12 @@ $leaders = [
     ],
     [
         'img' => 'team-avatar.png',
+        'name' => 'Dilip',
+        'role' => 'Project Delivery Lead',
+        'bio' => 'Dilip runs project delivery, planning timelines, keeping clients updated, and making sure every release ships on schedule and to scope.',
+    ],
+    [
+        'img' => 'team-avatar.png',
         'name' => 'Abhishek',
         'role' => 'Senior Full Stack Developer & AI Expert',
         'bio' => 'Abhishek builds end-to-end web products and AI features, from architecture through launch, with a focus on clean APIs, modern frontends, and production-ready LLM integrations.',
@@ -91,9 +97,21 @@ $leaders = [
     ],
     [
         'img' => 'team-avatar.png',
+        'name' => 'Jayadeep',
+        'role' => 'Java Developer',
+        'bio' => 'Jayadeep builds backend services and APIs in Java and Spring Boot, with a focus on clean architecture, reliable integrations, and systems that hold up under real production load.',
+    ],
+    [
+        'img' => 'team-avatar.png',
         'name' => 'Amit',
         'role' => 'Mobile App Developer',
         'bio' => 'Amit builds native and cross-platform mobile apps focused on performance, smooth UX, and reliable release pipelines from prototype through store launch.',
+    ],
+    [
+        'img' => 'team-avatar.png',
+        'name' => 'Siddharth',
+        'role' => 'Shopify Expert',
+        'bio' => 'Siddharth builds and customizes Shopify stores, from theme development and app integrations to store setup and migrations, so merchants launch fast and sell reliably.',
     ],
 ];
 
@@ -111,7 +129,7 @@ $partners = [
             <div class="hero-content reveal reveal-scale">
                 <span class="eyebrow">About Quantum Infoway</span>
                 <h1>We build and scale custom <span class="gradient-text">digital products</span></h1>
-                <p>Quantum Infoway is an AI-native software development company headquartered in Ahmedabad, founded in 2020, serving clients in 10+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
+                <p>Quantum Infoway is an AI-native software development company founded in 2020, headquartered in Ahmedabad with a second office in Jamnagar, serving clients in 10+ countries including the United States. We combine the speed of visual development, the depth of traditional engineering, and the power of AI to ship modern, maintainable products, from rapid MVPs to enterprise-grade systems.</p>
                 <div class="hero-actions">
                     <a href="<?php echo route_attr('contact-us'); ?>" class="btn btn-primary btn-lg">Talk to an Expert</a>
                     <a href="#proof" class="btn btn-ghost btn-lg">See proof</a>

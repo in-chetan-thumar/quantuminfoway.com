@@ -71,6 +71,16 @@ define('SITE_EMAIL', 'hello@quantuminfoway.com');
 define('SITE_PHONE', '+91 81608 08041');
 define('SITE_PHONE_TEL', preg_replace('/[^\d+]/', '', SITE_PHONE));
 define('SITE_HOURS', 'Mon-Fri 10am-7pm');
+define('SITE_OFFICES', [
+    [
+        'label' => 'Ahmedabad (Head office)',
+        'address' => 'A-1210 PNTC, Times of India Road, Anand Nagar, Ahmedabad, Gujarat 380015, India',
+    ],
+    [
+        'label' => 'Jamnagar',
+        'address' => '210, Khodiyar Complex, Above Axis Bank, Aerodrome Road, Jamnagar, Gujarat 361002, India',
+    ],
+]);
 define('SITE_URL', env_value('APP_URL', 'https://quantuminfoway.com'));
 
 define('DB_CONNECTION', env_value('DB_CONNECTION', 'mysql'));
